@@ -1004,8 +1004,8 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     border-color: rgba(0, 0, 0, 0.35);
     background-color: rgba(75, 86, 98, 0.2); }
   .primary-toolbar entry selection:focus, headerbar entry selection:focus {
-    background-color: #F7F8F8;
-    color: #557FAF; }
+    background-color: #223449;
+    color: #F7F8F8; }
   .primary-toolbar entry progress, headerbar entry progress {
     border-color: #557FAF;
     background-image: none;
@@ -2890,7 +2890,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
   background-color: #557FAF;
   background-image: url("assets/selected-img-dark.png");
   background-repeat: no-repeat; }
@@ -2910,7 +2910,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-  .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
+  .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
     color: #F7F8F8; }
     row:selected label:disabled, label:disabled:selected, .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus,
     .view text:disabled:selected,
@@ -2924,13 +2924,21 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     modelbutton.flat:disabled:selected,
     modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-    .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover {
+    .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected {
       color: #a6bcd4; }
 
   row:selected label, label:selected {
     color: #F7F7F7; }
     row:selected label:disabled, label:disabled:selected {
       color: #3f5772; }
+
+filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:hover,
+.nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
+.nautilus-window placessidebar.sidebar row.sidebar-row:hover, .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
+  background-color: rgba(247, 248, 248, 0.05);
+  background-image: url("assets/selected-img-dark.png");
+  background-repeat: no-repeat;
+  padding-bottom: 0px; }
 
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
@@ -3978,17 +3986,11 @@ filechooser placessidebar.sidebar,
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
     border: none;
+    color: red;
     color: #F7F8F8; }
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
       color: #acc0d8; }
-    filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:hover,
-    .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
-    .nautilus-window placessidebar.sidebar row.sidebar-row:hover {
-      background-color: rgba(247, 248, 248, 0.05);
-      background-image: url("assets/selected-img-dark.png");
-      background-repeat: no-repeat;
-      padding-bottom: 0px; }
     filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessidebar.sidebar row.sidebar-row:disabled label, filechooser placessidebar.sidebar row.sidebar-row:disabled image,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled label,
@@ -4042,15 +4044,16 @@ filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #333c45; }
 
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
+  background-color: #e6e6e6; }
+.nemo-window .nemo-inactive-pane .iconview {
+  background-color: #e6e6e6; }
 .nemo-window .sidebar {
   color: #F7F8F8;
   background-color: rgba(51, 60, 69, 0.95); }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
     background-color: transparent;
     color: #F7F8F8; }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-      background-color: #557FAF;
-      color: #F7F8F8; }
     .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
       color: rgba(154, 159, 163, 0.975); }
       .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
