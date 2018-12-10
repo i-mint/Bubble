@@ -2640,8 +2640,9 @@ tooltip {
   border-radius: 2px;
   box-shadow: none; }
   tooltip.background {
-    background-color: rgba(73, 86, 98, 0.95);
-    background-clip: padding-box; }
+    background-clip: padding-box;
+    background-color: rgba(51, 60, 69, 0.95);
+    border: 1px solid #557FAF; }
     tooltip.background label {
       padding: 4px; }
   tooltip decoration {
