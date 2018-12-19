@@ -4044,10 +4044,15 @@ filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #333c45; }
 
+.nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
+  background-color: #FFFFFF; }
+  .nemo-window .nemo-window-pane .view .view:selected, .nemo-window .nemo-window-pane iconview .view:selected, .nemo-window .nemo-window-pane .view iconview:selected, .nemo-window .nemo-window-pane iconview iconview:selected {
+    background-color: #557FAF;
+    color: #F7F8F8; }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-  background-color: #e6e6e6; }
+  background-color: #F0F0F0; }
 .nemo-window .nemo-inactive-pane .iconview {
-  background-color: #e6e6e6; }
+  background-color: #F0F0F0; }
 .nemo-window .sidebar {
   color: #F7F8F8;
   background-color: rgba(51, 60, 69, 0.95); }

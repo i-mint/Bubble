@@ -1005,8 +1005,8 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     border-color: rgba(0, 0, 0, 0.35);
     background-color: rgba(75, 86, 98, 0.2); }
   .primary-toolbar entry selection:focus, headerbar entry selection:focus {
-    background-color: #090d12;
-    color: #F7F8F8; }
+    background-color: #F7F8F8;
+    color: #3A587A; }
   .primary-toolbar entry progress, headerbar entry progress {
     border-color: #3A587A;
     background-image: none;
@@ -1485,7 +1485,7 @@ menu,
     .menu menuitem:hover {
       color: #F7F8F8;
       background-color: #3A587A;
-      background-image: url("assets/selected-img-item-dark.png");
+      background-image: url("assets/selected-img.png");
       background-repeat: no-repeat; }
     menu menuitem:disabled,
     .menu menuitem:disabled {
@@ -1696,10 +1696,10 @@ notebook {
       color: rgba(247, 248, 249, 0.45);
       background-color: rgba(43, 50, 57, 0); }
       notebook > header > tabs > tab:hover:not(:checked) {
-        color: rgba(247, 248, 249, 0.725);
+        color: #F7F8F9;
         background-color: #323a42; }
       notebook > header > tabs > tab:checked {
-        color: #F7F8F9;
+        color: #F7F8F8;
         background-color: #3a444d;
         border-top: 2px solid #3A587A;
         padding-top: 0px; }
@@ -2369,22 +2369,24 @@ list {
   list row {
     padding: 2px; }
 
-row:not(:hover) {
-  transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-row.activatable.has-open-popup, row.activatable:hover {
-  background-color: rgba(255, 255, 255, 0.03);
-  background-image: url("assets/selected-img-dark.png");
-  background-repeat: no-repeat; }
-row.activatable:active {
-  color: #F7F8F9; }
-row.activatable:disabled {
-  color: rgba(247, 248, 249, 0.45); }
-  row.activatable:disabled image {
-    color: inherit; }
-row.activatable:selected:active {
-  color: #F7F8F8; }
-row.activatable:selected.has-open-popup, row.activatable:selected:hover {
-  background-color: #344f6e; }
+row {
+  border-bottom: 0.1px solid black; }
+  row:not(:hover) {
+    transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  row.activatable.has-open-popup, row.activatable:hover {
+    background-color: rgba(247, 248, 248, 0.05);
+    background-image: url("assets/selected-img-row.png");
+    background-repeat: no-repeat; }
+  row.activatable:active {
+    color: #F7F8F9; }
+  row.activatable:disabled {
+    color: rgba(247, 248, 249, 0.45); }
+    row.activatable:disabled image {
+      color: inherit; }
+  row.activatable:selected:active {
+    color: #F7F8F8; }
+  row.activatable:selected.has-open-popup, row.activatable:selected:hover {
+    background-color: #344f6e; }
 
 .app-notification {
   padding: 10px;
@@ -2641,9 +2643,8 @@ tooltip {
   border-radius: 2px;
   box-shadow: none; }
   tooltip.background {
-    background-clip: padding-box;
-    background-color: rgba(51, 60, 69, 0.95);
-    border: 1px solid #3A587A; }
+    background-color: rgba(73, 86, 98, 0.95);
+    background-clip: padding-box; }
     tooltip.background label {
       padding: 4px; }
   tooltip decoration {
@@ -2894,7 +2895,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
   background-color: #3A587A;
-  background-image: url("assets/selected-img-dark.png");
+  background-image: url("assets/selected-img.png");
   background-repeat: no-repeat; }
   row:selected label, label:selected, .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
   .view text:selected,
@@ -2929,13 +2930,10 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover {
       color: #99a8b9; }
 
-filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
-.nautilus-window placessidebar.sidebar row.sidebar-row:hover {
-  background-color: rgba(247, 248, 248, 0.05);
-  background-image: url("assets/selected-img-dark.png");
-  background-repeat: no-repeat;
-  padding-bottom: 0px; }
+  row:selected label, label:selected {
+    color: #F7F7F7; }
+    row:selected label:disabled, label:disabled:selected {
+      color: #99a8ba; }
 
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
@@ -3979,11 +3977,17 @@ filechooser placessidebar.sidebar,
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
     border: none;
-    color: red;
     color: #F7F8F8; }
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
-      color: #7698be; }
+      color: rgba(247, 248, 248, 0.6); }
+    filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:hover,
+    .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:hover {
+      background-color: rgba(247, 248, 248, 0.05);
+      background-image: url("assets/selected-img.png");
+      background-repeat: no-repeat;
+      padding-bottom: 0px; }
     filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessidebar.sidebar row.sidebar-row:disabled label, filechooser placessidebar.sidebar row.sidebar-row:disabled image,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled label,
@@ -3994,7 +3998,7 @@ filechooser placessidebar.sidebar,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon {
-      color: inherit; }
+      color: yellow; }
     filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button,
     .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button {
       color: #F7F8F8; }
@@ -4032,20 +4036,11 @@ filechooser placessidebar.sidebar,
         color: #F7F8F8; }
   filechooser placessidebar.sidebar separator,
   .nautilus-window placessidebar.sidebar separator {
-    background-color: #2B3239; }
+    background-color: transparent; }
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #333c45; }
 
-.nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
-  background-color: #2B3239; }
-  .nemo-window .nemo-window-pane .view .view:selected, .nemo-window .nemo-window-pane iconview .view:selected, .nemo-window .nemo-window-pane .view iconview:selected, .nemo-window .nemo-window-pane iconview iconview:selected {
-    background-color: #3A587A;
-    color: #F7F8F8; }
-.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-  background-color: #1A1E22; }
-.nemo-window .nemo-inactive-pane .iconview {
-  background-color: #1A1E22; }
 .nemo-window .sidebar {
   color: #F7F8F8;
   background-color: rgba(51, 60, 69, 0.95); }
@@ -4055,9 +4050,6 @@ filechooser.maximized placessidebar.sidebar,
     .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
       background-color: #3A587A;
       color: #F7F8F8; }
-    .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
-      background-color: rgba(0, 0, 0, 0.3);
-      color: #ffffff; }
     .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
       color: rgba(154, 159, 163, 0.975); }
       .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
@@ -4072,12 +4064,6 @@ filechooser.maximized placessidebar.sidebar,
   color: #F7F8F8;
   caret-color: #F7F8F8;
   background-color: #333c45; }
-  .caja-side-pane:hover,
-  .caja-side-pane > notebook > stack > widget > box:hover,
-  .caja-side-pane text:hover,
-  .caja-side-pane treeview:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #ffffff; }
 .caja-side-pane > box button:not(:active):not(:checked) {
   color: #F7F8F8; }
 .caja-side-pane .frame {
