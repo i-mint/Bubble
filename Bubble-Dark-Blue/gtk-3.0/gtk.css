@@ -1485,7 +1485,7 @@ menu,
     .menu menuitem:hover {
       color: #F7F8F8;
       background-color: #3A587A;
-      background-image: url("assets/selected-img-item-dark.png");
+      background-image: url("assets/selected-img-item.png");
       background-repeat: no-repeat; }
     menu menuitem:disabled,
     .menu menuitem:disabled {
@@ -3387,14 +3387,14 @@ MsdOsdWindow.background.osd {
 .mate-panel-menu-bar, .mate-panel-menu-bar menubar,
 panel-toplevel.background,
 panel-toplevel.background menubar {
-  background-color: #293037; }
+  background-color: #101214; }
 .mate-panel-menu-bar menubar,
 .mate-panel-menu-bar #PanelApplet label,
 .mate-panel-menu-bar #PanelApplet image,
 panel-toplevel.background menubar,
 panel-toplevel.background #PanelApplet label,
 panel-toplevel.background #PanelApplet image {
-  color: #F7F8F8; }
+  color: rgba(246, 248, 250, 0.8); }
 .mate-panel-menu-bar button label, .mate-panel-menu-bar button image,
 .mate-panel-menu-bar #tasklist-button label,
 .mate-panel-menu-bar #tasklist-button image,
@@ -3405,11 +3405,11 @@ panel-toplevel.background #tasklist-button image {
   color: inherit; }
 .mate-panel-menu-bar .wnck-pager,
 panel-toplevel.background .wnck-pager {
-  color: #7c7c7c;
-  background-color: rgba(19, 23, 26, 0.95); }
+  color: rgba(98, 99, 100, 0.9);
+  background-color: rgba(0, 0, 0, 0.95); }
   .mate-panel-menu-bar .wnck-pager:hover,
   panel-toplevel.background .wnck-pager:hover {
-    background-color: rgba(52, 61, 70, 0.95); }
+    background-color: rgba(27, 31, 35, 0.95); }
   .mate-panel-menu-bar .wnck-pager:selected,
   panel-toplevel.background .wnck-pager:selected {
     color: #648ab6;
@@ -3420,17 +3420,17 @@ panel-toplevel.background na-tray-applet {
   -NaTrayApplet-icon-size: 16px; }
 
 .xfce4-panel.panel {
-  background-color: rgba(41, 48, 55, 0.95);
+  background-color: rgba(16, 18, 20, 0.95);
   text-shadow: none;
   -gtk-icon-shadow: none; }
 
 #tasklist-button {
-  color: rgba(247, 248, 248, 0.8);
+  color: rgba(246, 248, 250, 0.6);
   border-radius: 0;
   border: none;
-  background-color: rgba(41, 48, 55, 0); }
+  background-color: rgba(16, 18, 20, 0); }
   #tasklist-button:hover {
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.17); }
   #tasklist-button:checked {
     color: white;
@@ -3439,14 +3439,14 @@ panel-toplevel.background na-tray-applet {
 
 .mate-panel-menu-bar button:not(#tasklist-button),
 panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
-  color: #F7F8F8;
+  color: rgba(246, 248, 250, 0.8);
   border-radius: 0;
   border: none;
-  background-color: rgba(41, 48, 55, 0); }
+  background-color: rgba(16, 18, 20, 0); }
   .mate-panel-menu-bar button:hover:not(#tasklist-button),
   panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
     border: none;
-    background-color: rgba(62, 74, 85, 0.95); }
+    background-color: rgba(38, 44, 49, 0.95); }
   .mate-panel-menu-bar button:active:not(#tasklist-button),
   panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.sidebar-button:active, .mate-panel-menu-bar button:checked:not(#tasklist-button),
   panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:checked {
@@ -3584,11 +3584,11 @@ UnityDecoration {
 UnityPanelWidget,
 .unity-panel {
   background-image: linear-gradient(to bottom, #2f343f, #2f343f);
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   box-shadow: none; }
   UnityPanelWidget:backdrop,
   .unity-panel:backdrop {
-    color: #fafafa; }
+    color: rgba(249, 251, 252, 0.8); }
 
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem *:hover {
@@ -3838,18 +3838,18 @@ GtkListBox .h4 {
   padding-left: 6px; }
 
 #panel_window {
-  background-color: rgba(41, 48, 55, 0.95);
-  color: #F7F8F8;
+  background-color: rgba(16, 18, 20, 0.95);
+  color: rgba(246, 248, 250, 0.8);
   font-weight: bold;
-  box-shadow: inset 0 -1px rgba(26, 30, 35, 0.95); }
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.95); }
   #panel_window menubar {
     padding-left: 5px; }
     #panel_window menubar, #panel_window menubar > menuitem {
       background-color: transparent;
-      color: #F7F8F8;
+      color: rgba(246, 248, 250, 0.8);
       font-weight: bold; }
   #panel_window menubar menuitem:disabled {
-    color: rgba(247, 248, 248, 0.5); }
+    color: rgba(246, 248, 250, 0.3); }
     #panel_window menubar menuitem:disabled label {
       color: inherit; }
   #panel_window menubar menu > menuitem {
@@ -4219,3 +4219,21 @@ filechooser placessidebar.sidebar scrollbar,
 @define-color wm_icon_unfocused_bg #666A74;
 @define-color wm_icon_hover_bg #C4C7CC;
 @define-color wm_icon_active_bg #F7F8F8;
+.budgie-container .horizontal .raven-frame {
+  background-color: rgba(34, 40, 46, 0.9); }
+  .budgie-container .horizontal .raven-frame .raven-header {
+    background-color: rgba(19, 22, 25, 0.9); }
+.budgie-container .horizontal .shadow-block {
+  background-color: #2B3239; }
+
+.budgie-container .vertical .budgie-panel {
+  background-color: rgba(16, 18, 20, 0.95);
+  color: rgba(246, 248, 250, 0.8); }
+  .budgie-container .vertical .budgie-panel #tasklist-button {
+    background-color: rgba(27, 31, 35, 0.95); }
+    .budgie-container .vertical .budgie-panel #tasklist-button:hover, .budgie-container .vertical .budgie-panel #tasklist-button:selected, .budgie-container .vertical .budgie-panel #tasklist-button:active, .budgie-container .vertical .budgie-panel #tasklist-button:selected:hover, .budgie-container .vertical .budgie-panel #tasklist-button:active:hover {
+      background-color: rgba(53, 61, 70, 0.95);
+      color: #F7F8F8; }
+    .budgie-container .vertical .budgie-panel #tasklist-button:checked {
+      background-color: rgba(42, 49, 55, 0.95);
+      color: #F7F8F8; }
