@@ -2374,7 +2374,7 @@ list {
 
 row:not(:hover) {
   transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-row.activatable.has-open-popup, row.activatable:hover {
+row.activatable.has-open-popup, row.activatable:hover:not(.budgie-menu row):not(.budgie-menu list) {
   background-color: rgba(0, 0, 0, 0.05);
   background-image: url("assets/selected-img.png");
   background-repeat: no-repeat; }
@@ -4244,3 +4244,53 @@ filechooser placessidebar.sidebar scrollbar,
     .budgie-container .vertical .budgie-panel #tasklist-button:checked {
       background-color: #FFFFFF;
       color: black; }
+
+.budgie-menu.background {
+  background-color: #FFFFFF; }
+.budgie-menu .budgie-container {
+  background-color: #FFFFFF; }
+.budgie-menu .categories {
+  background-color: #FFFFFF; }
+  .budgie-menu .categories button {
+    background-color: transparent;
+    color: #282E34; }
+  .budgie-menu .categories button:hover {
+    background-color: rgba(85, 127, 175, 0.28);
+    border-color: transparent; }
+  .budgie-menu .categories button:checked {
+    background-color: #557FAF;
+    border-color: transparent;
+    color: #F7F8F8; }
+  .budgie-menu .categories button:active {
+    background-color: transparent;
+    color: #7899bf;
+    border-color: transparent; }
+
+.budgie-menu row {
+  background-color: #FFFFFF; }
+.budgie-menu list {
+  background-color: transparent; }
+.budgie-menu row button {
+  background-color: transparent;
+  color: #282E34; }
+  .budgie-menu row button:hover {
+    background-color: rgba(85, 127, 175, 0.28);
+    border-color: transparent; }
+  .budgie-menu row button:active {
+    color: #7899bf;
+    background-color: transparent;
+    border-color: transparent; }
+  .budgie-menu row button:checked {
+    background-color: #557FAF;
+    border-color: transparent;
+    color: #F7F8F8; }
+.budgie-menu entry.search, .budgie-menu entry.search:focus {
+  background-color: #557FAF;
+  border-radius: 2.5px;
+  border-color: transparent;
+  color: #F7F8F8;
+  caret-color: #F7F8F8; }
+.budgie-menu entry image {
+  color: #F7F8F8; }
+.budgie-menu .container {
+  background-color: #FFFFFF; }
