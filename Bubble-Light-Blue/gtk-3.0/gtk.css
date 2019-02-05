@@ -4044,6 +4044,13 @@ filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #333c45; }
 
+.nautilus-window notebook stack {
+  background-color: #FFFFFF; }
+.nautilus-window notebook stack:backdrop {
+  background-color: #e6e6e6; }
+.nautilus-window notebook stack:disabled {
+  background-color: #e6e6e6; }
+
 .nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
   background-color: #FFFFFF; }
   .nemo-window .nemo-window-pane .view .view:selected, .nemo-window .nemo-window-pane iconview .view:selected, .nemo-window .nemo-window-pane .view iconview:selected, .nemo-window .nemo-window-pane iconview iconview:selected {
