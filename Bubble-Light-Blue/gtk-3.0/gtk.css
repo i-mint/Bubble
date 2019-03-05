@@ -4056,6 +4056,17 @@ filechooser.maximized placessidebar.sidebar,
   background-color: #e6e6e6; }
 .nautilus-window notebook stack:disabled {
   background-color: #e6e6e6; }
+.nautilus-window .searchbar-container entry.search {
+  background-color: rgba(85, 127, 175, 0.35);
+  color: #F7F8F8;
+  border-radius: 20px; }
+  .nautilus-window .searchbar-container entry.search image {
+    color: #F7F8F8; }
+  .nautilus-window .searchbar-container entry.search:focus {
+    background-color: rgba(85, 127, 175, 0.55);
+    color: #F7F8F8;
+    border-radius: 20px;
+    border-color: rgba(85, 127, 175, 0.55); }
 
 .nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
   background-color: #FFFFFF; }
