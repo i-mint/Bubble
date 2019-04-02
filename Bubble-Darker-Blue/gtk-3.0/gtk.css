@@ -3556,6 +3556,98 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .menu .spinner {
   opacity: 1; }
 
+.primary-toolbar toolitem:first-child .raised:first-child {
+  color: #557FAF; }
+.primary-toolbar toolitem:first-child .raised:first-child:hover {
+  color: #7899bf;
+  background-color: transparent;
+  border-color: transparent; }
+.primary-toolbar toolitem:first-child .raised:first-child:active {
+  color: #9ab3d0;
+  background-color: transparent; }
+.primary-toolbar toolitem:first-child .raised:nth-child(2) {
+  color: #CD0000; }
+.primary-toolbar toolitem:first-child .raised:nth-child(2):hover {
+  border-color: transparent;
+  color: #ff0101;
+  background-color: transparent; }
+.primary-toolbar toolitem:first-child .raised:nth-child(2):active {
+  color: #ff6767;
+  background-color: transparent; }
+.primary-toolbar toolitem:first-child .raised:nth-child(3) {
+  color: #557FAF; }
+.primary-toolbar toolitem:first-child .raised:nth-child(3):hover {
+  border-color: transparent;
+  color: #7899bf;
+  background-color: transparent; }
+.primary-toolbar toolitem:first-child .raised:nth-child(3):active {
+  color: #9ab3d0;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(1) {
+  color: #557FAF; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(1):checked {
+  border-color: transparent;
+  color: #CD0000;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(1):checked:hover {
+  border-color: transparent;
+  color: #ff0101;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(1):checked:hover:active {
+  border-color: transparent;
+  color: #ff6767;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(1):hover {
+  border-color: transparent;
+  color: #7899bf;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(1):active {
+  color: #9ab3d0;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(2) {
+  color: #557FAF; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(2):checked {
+  border-color: transparent;
+  color: #CD0000;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(2):checked:hover {
+  border-color: transparent;
+  color: #ff0101;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(2):checked:hover:active {
+  border-color: transparent;
+  color: #ff6767;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(2):hover {
+  border-color: transparent;
+  color: #7899bf;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(2) .raised:nth-child(2):active {
+  color: #9ab3d0;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(4) grid:nth-child(1) {
+  color: #557FAF;
+  font-style: italic;
+  font-size: small; }
+.primary-toolbar toolitem:nth-child(4) button:nth-child(2) label {
+  color: #CD0000; }
+.primary-toolbar toolitem:nth-child(4) button:nth-child(2):hover {
+  border-color: transparent;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(4) button:nth-child(2):hover label {
+  color: #ff0101; }
+.primary-toolbar toolitem:nth-child(4) button:nth-child(2):active label {
+  color: #ff6767; }
+.primary-toolbar toolitem:nth-child(4) button:nth-child(4) image {
+  color: #CD0000; }
+.primary-toolbar toolitem:nth-child(4) button:nth-child(4):hover {
+  border-color: transparent;
+  background-color: transparent; }
+.primary-toolbar toolitem:nth-child(4) button:nth-child(4):hover image {
+  color: #ff0101; }
+.primary-toolbar toolitem:nth-child(4) button:nth-child(4):active image {
+  color: #ff6767; }
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
