@@ -1695,14 +1695,24 @@ notebook {
     notebook > header > tabs > tab {
       color: rgba(40, 46, 52, 0.55);
       background-color: rgba(255, 255, 255, 0); }
+      notebook > header > tabs > tab:backdrop {
+        background-color: rgba(255, 255, 255, 0.23);
+        color: rgba(40, 46, 52, 0.33); }
       notebook > header > tabs > tab:hover:not(:checked) {
         color: rgba(40, 46, 52, 0.775);
         background-color: white; }
+        notebook > header > tabs > tab:hover:not(:checked):backdrop {
+          color: rgba(40, 46, 52, 0.555);
+          background-color: rgba(255, 255, 255, 0.78); }
       notebook > header > tabs > tab:checked {
         color: #282E34;
         background-color: #f9f9f9;
         border-top: 2px solid #557FAF;
         padding-top: 0px; }
+        notebook > header > tabs > tab:checked:backdrop {
+          color: rgba(40, 46, 52, 0.78);
+          background-color: rgba(249, 249, 249, 0.78);
+          border-top: 2px solid rgba(85, 127, 175, 0.78); }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         min-height: 22px;
         min-width: 16px;
@@ -2283,6 +2293,10 @@ frame > border.flat,
 
 scrolledwindow viewport.frame {
   border-style: none; }
+scrolledwindow .view:backdrop, scrolledwindow iconview:backdrop {
+  color: rgba(40, 46, 52, 0.67); }
+  scrolledwindow .view:backdrop:selected, scrolledwindow iconview:backdrop:selected {
+    color: rgba(247, 248, 248, 0.67); }
 scrolledwindow overshoot.top {
   background-image: -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(85, 127, 175, 0.2)), to(rgba(85, 127, 175, 0)));
   background-size: 100% 60%;
@@ -2913,6 +2927,20 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
   .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
     color: #F7F8F8; }
+    row:selected label:backdrop, label:backdrop:selected, .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
+    .view text:backdrop:selected,
+    iconview text:backdrop:selected,
+    textview text:backdrop:selected,
+    iconview text:backdrop:selected:focus,
+    textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
+    textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+    modelbutton.flat:backdrop:active,
+    modelbutton.flat:active arrow:backdrop,
+    modelbutton.flat:backdrop:selected,
+    modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
+      color: rgba(247, 248, 248, 0.78); }
     row:selected label:disabled, label:disabled:selected, .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus,
     .view text:disabled:selected,
     iconview text:disabled:selected,
@@ -2927,6 +2955,21 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover {
       color: #a6bcd4; }
+  .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
+  .view text:backdrop:selected,
+  iconview text:backdrop:selected,
+  textview text:backdrop:selected,
+  iconview text:backdrop:selected:focus,
+  textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
+  textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+  modelbutton.flat:backdrop:active,
+  modelbutton.flat:active arrow:backdrop,
+  modelbutton.flat:backdrop:selected,
+  modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
+  .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
+  .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
+    background-color: rgba(85, 127, 175, 0.78);
+    color: rgba(247, 248, 248, 0.78); }
 
 filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
@@ -4082,20 +4125,43 @@ filechooser placessidebar.sidebar,
     border: none;
     color: red;
     color: #F7F8F8; }
+    filechooser placessidebar.sidebar row.sidebar-row:backdrop,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop {
+      color: rgba(247, 248, 248, 0.78); }
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
       color: #acc0d8; }
+      filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon:backdrop,
+      .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon:backdrop {
+        color: rgba(172, 192, 216, 0.78); }
+    filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop, filechooser placessidebar.sidebar row.sidebar-row:hover:backdrop,
+    .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:hover:backdrop {
+      color: rgba(247, 248, 248, 0.78); }
     filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessidebar.sidebar row.sidebar-row:disabled label, filechooser placessidebar.sidebar row.sidebar-row:disabled image,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled label,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled image {
       color: rgba(247, 248, 248, 0.4); }
+    filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop, filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop, filechooser placessidebar.sidebar row.sidebar-row:selected:hover:backdrop, filechooser placessidebar.sidebar row.sidebar-row:active:hover:backdrop,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover:backdrop,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover:backdrop {
+      color: rgba(247, 248, 248, 0.78);
+      background-color: rgba(85, 127, 175, 0.78); }
     filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon {
       color: inherit; }
+      filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon:backdrop, filechooser placessidebar.sidebar row.sidebar-row:selected .sidebar-icon:backdrop, filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon:backdrop, filechooser placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon:backdrop,
+      .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon:backdrop,
+      .nautilus-window placessidebar.sidebar row.sidebar-row:selected .sidebar-icon:backdrop,
+      .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon:backdrop,
+      .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon:backdrop {
+        color: rgba(247, 248, 248, 0.78); }
     filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button,
     .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button {
       color: #F7F8F8; }
@@ -4137,24 +4203,30 @@ filechooser placessidebar.sidebar,
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #333c45; }
+filechooser .nautilus-desktop,
+.nautilus-window .nautilus-desktop {
+  color: #e4e7e7; }
+  filechooser .nautilus-desktop:backdrop,
+  .nautilus-window .nautilus-desktop:backdrop {
+    color: rgba(228, 231, 231, 0.78); }
 
-.nautilus-window notebook stack {
-  background-color: #FFFFFF; }
-.nautilus-window notebook stack:backdrop {
-  background-color: #e6e6e6; }
-.nautilus-window notebook stack:disabled {
-  background-color: #e6e6e6; }
-.nautilus-window .searchbar-container entry.search {
-  background-color: rgba(85, 127, 175, 0.35);
-  color: #F7F8F8;
-  border-radius: 20px; }
-  .nautilus-window .searchbar-container entry.search image {
-    color: #F7F8F8; }
-  .nautilus-window .searchbar-container entry.search:focus {
-    background-color: rgba(85, 127, 175, 0.55);
+.nautilus-window {
+  /*remove on 1.2.3
+    notebook stack {background-color: $base_color;}
+    notebook stack:backdrop {background-color: if($variant=='light', darken($base_color, 10%), darken($base_color,20%))}
+    notebook stack:disabled {background-color: if($variant=='light', darken($base_color, 10%), darken($base_color,20%))}
+    */ }
+  .nautilus-window .searchbar-container entry.search {
+    background-color: rgba(85, 127, 175, 0.35);
     color: #F7F8F8;
-    border-radius: 20px;
-    border-color: rgba(85, 127, 175, 0.55); }
+    border-radius: 20px; }
+    .nautilus-window .searchbar-container entry.search image {
+      color: #F7F8F8; }
+    .nautilus-window .searchbar-container entry.search:focus {
+      background-color: rgba(85, 127, 175, 0.55);
+      color: #F7F8F8;
+      border-radius: 20px;
+      border-color: rgba(85, 127, 175, 0.55); }
 
 .nemo-window {
   /*
