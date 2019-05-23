@@ -4446,6 +4446,21 @@ filechooser placessidebar.sidebar scrollbar,
       background-color: rgba(53, 61, 70, 0.95);
       border-top: 2px solid #557FAF;
       color: #F7F8F8; }
+  .budgie-container .vertical .budgie-panel budgie-menu-launcher, .budgie-container .vertical .budgie-panel button.flat, .budgie-container .vertical .budgie-panel button.sidebar-button, .budgie-container .vertical .budgie-panel button.flat.launcher, .budgie-container .vertical .budgie-panel button.launcher.sidebar-button, .budgie-container .vertical .budgie-panel button.flat.raven-trigger, .budgie-container .vertical .budgie-panel button.raven-trigger.sidebar-button {
+    background-color: transparent;
+    color: rgba(246, 249, 249, 0.8); }
+    .budgie-container .vertical .budgie-panel budgie-menu-launcher:hover, .budgie-container .vertical .budgie-panel button.flat:hover, .budgie-container .vertical .budgie-panel button.sidebar-button:hover, .budgie-container .vertical .budgie-panel button.flat.launcher:hover, .budgie-container .vertical .budgie-panel button.launcher.sidebar-button:hover, .budgie-container .vertical .budgie-panel button.flat.raven-trigger:hover, .budgie-container .vertical .budgie-panel button.raven-trigger.sidebar-button:hover {
+      background-color: rgba(85, 127, 175, 0.45);
+      border-color: rgba(85, 127, 175, 0.45);
+      color: rgba(246, 249, 249, 0.8); }
+    .budgie-container .vertical .budgie-panel budgie-menu-launcher:checked, .budgie-container .vertical .budgie-panel button.flat:checked, .budgie-container .vertical .budgie-panel button.sidebar-button:checked, .budgie-container .vertical .budgie-panel button.flat.launcher:checked, .budgie-container .vertical .budgie-panel button.launcher.sidebar-button:checked, .budgie-container .vertical .budgie-panel button.flat.raven-trigger:checked, .budgie-container .vertical .budgie-panel button.raven-trigger.sidebar-button:checked {
+      background-color: #557FAF;
+      border-color: #557FAF;
+      color: rgba(246, 249, 249, 0.8); }
+    .budgie-container .vertical .budgie-panel budgie-menu-launcher:active, .budgie-container .vertical .budgie-panel button.flat:active, .budgie-container .vertical .budgie-panel button.sidebar-button:active, .budgie-container .vertical .budgie-panel button.flat.launcher:active, .budgie-container .vertical .budgie-panel button.launcher.sidebar-button:active, .budgie-container .vertical .budgie-panel button.flat.raven-trigger:active, .budgie-container .vertical .budgie-panel button.raven-trigger.sidebar-button:active {
+      background-color: rgba(85, 127, 175, 0.12);
+      border-color: rgba(85, 127, 175, 0.12);
+      color: #557FAF; }
 
 .budgie-menu.background {
   background-color: #FFFFFF; }
