@@ -1546,6 +1546,18 @@ menu,
       background-color: transparent;
       border-color: transparent; }
 
+popover entry.search {
+  background-color: rgba(85, 127, 175, 0.35);
+  color: #F7F8F8;
+  border-radius: 20px; }
+  popover entry.search image {
+    color: #F7F8F8; }
+  popover entry.search:focus {
+    background-color: rgba(85, 127, 175, 0.55);
+    color: #F7F8F8;
+    border-radius: 20px;
+    border-color: rgba(85, 127, 175, 0.55); }
+
 popover,
 popover.background {
   padding: 2px;
