@@ -860,6 +860,17 @@ searchbar {
   border-color: #e1e1e1;
   border-width: 0 0 1px;
   padding: 3px; }
+  searchbar entry.search {
+    background-color: rgba(175, 41, 41, 0.35);
+    color: #f8f7f7;
+    border-radius: 20px; }
+    searchbar entry.search image {
+      color: #f8f7f7; }
+    searchbar entry.search:focus {
+      background-color: rgba(175, 41, 41, 0.55);
+      color: #f8f7f7;
+      border-radius: 20px;
+      border-color: rgba(175, 41, 41, 0.55); }
 
 actionbar {
   padding: 6px;
