@@ -3007,6 +3007,16 @@ filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser pl
   padding-bottom: 0px;
   background-position: left; }
 
+widget list row .text-button {
+  background-color: #557FAF;
+  color: #F7F8F8; }
+  widget list row .text-button:hover {
+    background-color: #6389b6;
+    color: #F7F8F8; }
+  widget list row .text-button:active {
+    background-color: #6a8fb9;
+    color: #F7F8F8; }
+
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #e1e1e1; }
