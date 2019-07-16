@@ -12,8 +12,8 @@ gtk-color-scheme = "notebook_bg: #ffffff"
 gtk-color-scheme = "dark_sidebar_bg: #392B2B"
 gtk-color-scheme = "link_color: #5294e2"
 gtk-color-scheme = "menu_bg: #ffffff"
-gtk-color-scheme = "menubar_bg: #F8F8F8"
-gtk-color-scheme = "menubar_fg: #282E34"
+gtk-color-scheme = "menubar_bg: #251919"
+gtk-color-scheme = "menubar_fg: #f9f7f7"
 
 gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1
@@ -23,4 +23,4 @@ include "main.rc"
 include "apps.rc"
 include "panel.rc"
 include "xfce-notify.rc"
-include "menubar-toolbar/menubar-toolbar.rc"
+include "menubar-toolbar/menubar-toolbar-dark.rc"
