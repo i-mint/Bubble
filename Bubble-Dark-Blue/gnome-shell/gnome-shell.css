@@ -129,21 +129,31 @@ StScrollBar {
       background-color: #3A587A; }
 
 .slider {
+  -barlevel-height: 4px;
+  -barlevel-background-color: rgba(247, 248, 249, 0.12);
+  -barlevel-border-color: rgba(0, 0, 0, 0);
+  -barlevel-active-background-color: rgba(247, 248, 249, 0.56);
+  -barlevel-active-border-color: rgba(0, 0, 0, 0);
+  -barlevel-border-width: 0px;
   -slider-height: 4px;
-  -slider-background-color: #15191c;
-  -slider-border-color: transparent;
-  -slider-active-background-color: #3A587A;
-  -slider-active-border-color: transparent;
+  -slider-background-color: rgba(247, 248, 249, 0.12);
+  -slider-border-color: rgba(0, 0, 0, 0);
+  -slider-active-background-color: rgba(247, 248, 249, 0.56);
+  -slider-active-border-color: rgba(0, 0, 0, 0);
   -slider-border-width: 0;
-  -slider-handle-radius: 0px;
+  -slider-handle-radius: 7px;
   height: 18px;
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 5px;
-  color: transparent; }
+  color: #3A587A; }
+  .slider:hover {
+    color: rgba(247, 248, 249, 0.12); }
+  .slider:active {
+    color: rgba(247, 248, 249, 0.56); }
   .popup-menu-item.selected .slider {
-    -slider-background-color: rgba(0, 0, 0, 0.2);
-    -slider-active-background-color: #F7F8F8; }
+    -slider-background-color: rgba(247, 248, 249, 0.12);
+    -slider-active-background-color: rgba(247, 248, 249, 0.56); }
 
 .check-box StBoxLayout {
   spacing: .8em; }
@@ -374,7 +384,7 @@ StScrollBar {
     padding-bottom: 8px; }
 
 .hidden {
-  color: transparent; }
+  color: rgba(0, 0, 0, 0); }
 
 .polkit-dialog-user-layout {
   padding-left: 10px;
@@ -453,7 +463,7 @@ StScrollBar {
   spacing-columns: 1em; }
 
 .popup-menu {
-  min-width: 15em;
+  min-width: 10em;
   color: #F7F8F9;
   border-image: url("dark-assets/menu/menu.svg") 9 9 9 9; }
   .popup-menu .popup-sub-menu {
@@ -463,20 +473,24 @@ StScrollBar {
   .popup-menu .popup-menu-content {
     padding: 1em 0em 1em 0em; }
   .popup-menu .popup-menu-item {
-    spacing: 12px; }
+    spacing: 12px;
+    margin: 0 4px 0 4px; }
     .popup-menu .popup-menu-item:ltr {
-      padding: .4em 3em .4em 0em; }
+      padding: .4em 1.75em .4em 0em; }
     .popup-menu .popup-menu-item:rtl {
-      padding: .4em 0em .4em 3em; }
+      padding: .4em 0em .4em 1.75em; }
     .popup-menu .popup-menu-item:checked {
       font-weight: normal;
       background: none;
       box-shadow: none;
-      border-image: url("dark-assets/menu/submenu-open.svg") 9 9 9 9; }
+      background-color: #3A587A;
+      color: #F7F8F8; }
+      .popup-menu .popup-menu-item:checked:hover {
+        background-color: #3A587A;
+        color: #F7F8F8; }
     .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
-      color: #F7F8F8;
-      background-color: transparent;
-      border-image: url("dark-assets/menu/menu-hover.svg") 9 9 1 1; }
+      color: #F7F8F9;
+      background-color: rgba(255, 255, 255, 0.08); }
     .popup-menu .popup-menu-item:insensitive {
       color: rgba(247, 248, 249, 0.5);
       background: none; }
@@ -495,9 +509,9 @@ StScrollBar {
 
 .popup-menu-boxpointer {
   -arrow-border-radius: 2px;
-  -arrow-background-color: transparent;
+  -arrow-background-color: rgba(0, 0, 0, 0);
   -arrow-border-width: 1px;
-  -arrow-border-color: transparent;
+  -arrow-border-color: rgba(0, 0, 0, 0);
   -arrow-base: 0;
   -arrow-rise: 0; }
 
@@ -587,7 +601,7 @@ StScrollBar {
     background: rgba(247, 248, 249, 0.33); }
 
 .switcher-arrow {
-  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0);
   color: #F7F8F8; }
   .switcher-arrow:highlighted {
     color: white; }
@@ -661,7 +675,7 @@ StScrollBar {
     spacing: 8px; }
   #panel .panel-corner {
     -panel-corner-radius: 0px;
-    -panel-corner-background-color: transparent;
+    -panel-corner-background-color: rgba(0, 0, 0, 0);
     -panel-corner-border-width: 0px;
     -panel-corner-border-color: black; }
     #panel .panel-corner:active, #panel .panel-corner:overview, #panel .panel-corner:focus {

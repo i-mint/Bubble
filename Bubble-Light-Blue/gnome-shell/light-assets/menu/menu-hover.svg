@@ -15,7 +15,7 @@
    viewBox="0 0 31.999999 33"
    id="svg6927"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="menu-hover.svg">
   <defs
      id="defs6929">
@@ -36,8 +36,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.919596"
-     inkscape:cx="9.8160027"
-     inkscape:cy="23.312104"
+     inkscape:cx="15.200813"
+     inkscape:cy="14.601387"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -45,10 +45,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
-     inkscape:window-height="702"
-     inkscape:window-x="0"
-     inkscape:window-y="38"
+     inkscape:window-width="1327"
+     inkscape:window-height="713"
+     inkscape:window-x="39"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="false"
@@ -81,14 +81,14 @@
     <g
        transform="matrix(0.0689655,0,0,1.0000001,71.275885,274.36218)"
        id="g6908"
-       style="fill:#557faf;fill-opacity:1">
+       style="fill:#7294ba;fill-opacity:0.21960784;opacity:1">
       <rect
          y="108"
          x="1011"
          height="33"
          width="348"
          id="rect5271"
-         style="opacity:1;fill:#557faf;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
+         style="opacity:1;fill:#7294ba;fill-opacity:0.21960784;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
     </g>
   </g>
 </svg>
