@@ -4615,6 +4615,32 @@ filechooser placessidebar.sidebar scrollbar,
   background-color: #2F2121; }
   .budgie-popover list {
     background-color: transparent; }
+  .budgie-popover.places-menu {
+    background-color: #2F2121;
+    border-color: #2F2121;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.33); }
+    .budgie-popover.places-menu row:hover {
+      border-radius: 0px;
+      border-color: transparent;
+      color: #f9f7f7;
+      background-color: rgba(133, 7, 7, 0.12); }
+    .budgie-popover.places-menu button:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: #f9f7f7; }
+  .budgie-popover.user-menu {
+    background-color: #2F2121;
+    border-color: #2F2121;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.33); }
+    .budgie-popover.user-menu row:hover {
+      border-radius: 0px;
+      border-color: transparent;
+      color: #f9f7f7;
+      background-color: rgba(133, 7, 7, 0.12); }
+    .budgie-popover.user-menu button:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: #f9f7f7; }
 
 .workspace-switcher .workspace-layout {
   background-color: rgba(61, 40, 40, 0.95);
