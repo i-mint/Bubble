@@ -4656,3 +4656,20 @@ filechooser placessidebar.sidebar scrollbar,
 .workspace-switcher .current-workspace {
   background-color: #AF2929;
   color: #f8f7f7; }
+
+.budgie-run-dialog {
+  background-color: #AF2929;
+  border-radius: 2.5px;
+  border-color: #FFFFFF;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.11); }
+  .budgie-run-dialog entry.search {
+    background-color: #AF2929;
+    color: #f8f7f7;
+    border-radius: 2.5px;
+    border-color: #AF2929;
+    padding-top: 4px;
+    padding-bottom: 4px; }
+    .budgie-run-dialog entry.search image {
+      color: #f8f7f7; }
+    .budgie-run-dialog entry.search label {
+      color: #f8f7f7; }
