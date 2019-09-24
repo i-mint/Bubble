@@ -3733,25 +3733,6 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .primary-toolbar toolitem:nth-child(4) button:nth-child(4):active image {
   color: #dc7676; }
 
-/*
-//
-//gnome-calendar
-//1.3.4
-
-calendar-view {
-	& box {
-	& box:nth-child(1) {
-		background-color: if($variant=='dark', lighten($header_bg, 2%), $bg_color); 
-		& label.mont-name, & label.secondary-label {color: $fg_color} 
-		}
-	& box:nth-child(2) {
-		background-color: $selected_bg_color;
-		& label.header {background-color: $selected_bg_color; color: $selected_fg_color}
-		}
-	}
-}
-
-*/
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
@@ -4533,154 +4514,235 @@ filechooser placessidebar.sidebar scrollbar,
 @define-color wm_icon_unfocused_bg #666A74;
 @define-color wm_icon_hover_bg #C4C7CC;
 @define-color wm_icon_active_bg #F7F8F8;
-.budgie-container .horizontal .raven-frame {
-  background-color: rgba(34, 40, 46, 0.9); }
-  .budgie-container .horizontal .raven-frame .raven-header {
-    background-color: rgba(19, 22, 25, 0.9); }
-.budgie-container .horizontal .shadow-block {
-  background-color: #2B3239; }
-
-.budgie-container .vertical .budgie-panel {
-  background-color: rgba(16, 18, 20, 0.95);
-  color: rgba(246, 248, 250, 0.8); }
-  .budgie-container .vertical .budgie-panel #tasklist-button {
-    background-color: rgba(27, 31, 35, 0.95);
-    border-top: 2px solid transparent;
-    color: rgba(247, 248, 249, 0.78); }
-    .budgie-container .vertical .budgie-panel #tasklist-button:hover {
-      background-color: rgba(38, 44, 49, 0.95);
+.budgie-menu.background {
+  background-color: #2B3239;
+  padding: 0px;
+  border-color: #2B3239; }
+.budgie-menu .container {
+  background-color: #2B3239;
+  padding: 0px;
+  border-color: #2B3239; }
+.budgie-menu entry.search, .budgie-menu entry.search:focus {
+  border-style: none;
+  background-color: #3A587A;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 1px;
+  border-color: #3A587A;
+  border-bottom: 0px solid #3A587A;
+  box-shadow: none;
+  font-size: 102%;
+  color: #F7F8F8; }
+  .budgie-menu entry.search label, .budgie-menu entry.search:focus label {
+    color: #F7F8F8; }
+  .budgie-menu entry.search image, .budgie-menu entry.search:focus image {
+    color: #F7F8F8; }
+.budgie-menu .categories {
+  background-color: #22282E; }
+  .budgie-menu .categories label {
+    color: #F7F8F9; }
+.budgie-menu .category-button {
+  background-color: transparent; }
+  .budgie-menu .category-button label {
+    color: #F7F8F9; }
+  .budgie-menu .category-button:hover {
+    background-color: #2b323a;
+    border-color: #22282E; }
+    .budgie-menu .category-button:hover label {
+      color: #F7F8F9; }
+  .budgie-menu .category-button:active {
+    background-color: #3A587A;
+    border-color: #3A587A; }
+    .budgie-menu .category-button:active label {
       color: #F7F8F8; }
-    .budgie-container .vertical .budgie-panel #tasklist-button:checked {
-      background-color: rgba(53, 61, 70, 0.95);
-      border-top: 2px solid #3A587A;
+  .budgie-menu .category-button:checked {
+    background-color: #3A587A;
+    border-color: #3A587A; }
+    .budgie-menu .category-button:checked label {
       color: #F7F8F8; }
-  .budgie-container .vertical .budgie-panel budgie-menu-launcher, .budgie-container .vertical .budgie-panel button.flat, .budgie-container .vertical .budgie-panel button.sidebar-button, .budgie-container .vertical .budgie-panel button.flat.launcher, .budgie-container .vertical .budgie-panel button.launcher.sidebar-button, .budgie-container .vertical .budgie-panel button.flat.raven-trigger, .budgie-container .vertical .budgie-panel button.raven-trigger.sidebar-button {
+.budgie-menu row {
+  background-color: #2B3239;
+  padding: 0px;
+  border-color: #2B3239; }
+  .budgie-menu row label {
+    color: #F7F8F9; }
+  .budgie-menu row button {
     background-color: transparent;
+    border-color: transparent; }
+    .budgie-menu row button label {
+      color: #F7F8F9; }
+    .budgie-menu row button:hover {
+      background-color: transparent;
+      border-color: transparent; }
+      .budgie-menu row button:hover label {
+        color: #F7F8F9; }
+  .budgie-menu row:hover {
+    background-color: #343c45; }
+    .budgie-menu row:hover label {
+      color: #F7F8F9; }
+
+.budgie-panel {
+  background-color: rgba(16, 18, 20, 0.95);
+  color: rgba(246, 248, 250, 0.8);
+  border-color: rgba(16, 18, 20, 0.95); }
+  .budgie-panel widget button {
+    background-color: transparent;
+    border-color: transparent;
     color: rgba(246, 248, 250, 0.8); }
-    .budgie-container .vertical .budgie-panel budgie-menu-launcher:hover, .budgie-container .vertical .budgie-panel button.flat:hover, .budgie-container .vertical .budgie-panel button.sidebar-button:hover, .budgie-container .vertical .budgie-panel button.flat.launcher:hover, .budgie-container .vertical .budgie-panel button.launcher.sidebar-button:hover, .budgie-container .vertical .budgie-panel button.flat.raven-trigger:hover, .budgie-container .vertical .budgie-panel button.raven-trigger.sidebar-button:hover {
-      background-color: rgba(58, 88, 122, 0.45);
-      border-color: rgba(58, 88, 122, 0.45);
+    .budgie-panel widget button label {
       color: rgba(246, 248, 250, 0.8); }
-    .budgie-container .vertical .budgie-panel budgie-menu-launcher:checked, .budgie-container .vertical .budgie-panel button.flat:checked, .budgie-container .vertical .budgie-panel button.sidebar-button:checked, .budgie-container .vertical .budgie-panel button.flat.launcher:checked, .budgie-container .vertical .budgie-panel button.launcher.sidebar-button:checked, .budgie-container .vertical .budgie-panel button.flat.raven-trigger:checked, .budgie-container .vertical .budgie-panel button.raven-trigger.sidebar-button:checked {
+    .budgie-panel widget button image {
+      color: rgba(246, 248, 250, 0.8); }
+    .budgie-panel widget button:hover {
+      background-color: rgba(58, 88, 122, 0.23);
+      color: rgba(246, 248, 250, 0.8);
+      border-color: rgba(58, 88, 122, 0.23); }
+      .budgie-panel widget button:hover label {
+        color: rgba(246, 248, 250, 0.8); }
+      .budgie-panel widget button:hover image {
+        color: rgba(246, 248, 250, 0.8); }
+    .budgie-panel widget button:checked {
       background-color: #3A587A;
       border-color: #3A587A;
-      color: rgba(246, 248, 250, 0.8); }
-    .budgie-container .vertical .budgie-panel budgie-menu-launcher:active, .budgie-container .vertical .budgie-panel button.flat:active, .budgie-container .vertical .budgie-panel button.sidebar-button:active, .budgie-container .vertical .budgie-panel button.flat.launcher:active, .budgie-container .vertical .budgie-panel button.launcher.sidebar-button:active, .budgie-container .vertical .budgie-panel button.flat.raven-trigger:active, .budgie-container .vertical .budgie-panel button.raven-trigger.sidebar-button:active {
-      background-color: rgba(58, 88, 122, 0.12);
-      border-color: rgba(58, 88, 122, 0.12);
+      color: #F7F8F8; }
+      .budgie-panel widget button:checked label {
+        color: #F7F8F8; }
+      .budgie-panel widget button:checked image {
+        color: #F7F8F8; }
+    .budgie-panel widget button:active {
+      background-color: rgba(58, 88, 122, 0.23);
+      border-color: rgba(58, 88, 122, 0.23);
       color: #3A587A; }
-
-.budgie-menu.background {
-  background-color: #2B3239; }
-.budgie-menu .budgie-container {
-  background-color: #2B3239; }
-.budgie-menu .categories {
-  background-color: rgba(51, 60, 69, 0.95); }
-  .budgie-menu .categories button {
-    background-color: transparent;
-    color: #F7F8F9; }
-  .budgie-menu .categories button:hover {
-    background-color: rgba(58, 88, 122, 0.28);
-    border-color: transparent; }
-  .budgie-menu .categories button:checked {
+      .budgie-panel widget button:active label {
+        color: #3A587A; }
+      .budgie-panel widget button:active image {
+        color: #3A587A; }
+  .budgie-panel #tasklist-button {
+    background-color: rgba(27, 31, 35, 0.95);
+    border-top: 2px solid transparent;
+    color: rgba(246, 248, 250, 0.8); }
+    .budgie-panel #tasklist-button:hover {
+      background-color: rgba(40, 46, 52, 0.95);
+      color: rgba(246, 248, 250, 0.8);
+      border-color: rgba(40, 46, 52, 0.95); }
+      .budgie-panel #tasklist-button:hover label {
+        color: rgba(246, 248, 250, 0.8); }
+    .budgie-panel #tasklist-button:checked {
+      background-color: rgba(53, 61, 70, 0.95);
+      border-color: rgba(53, 61, 70, 0.95);
+      border-top: 2px solid #3A587A;
+      color: rgba(246, 248, 250, 0.8); }
+      .budgie-panel #tasklist-button:checked label {
+        color: rgba(246, 248, 250, 0.8); }
+    .budgie-panel #tasklist-button:active {
+      background-color: rgba(42, 49, 55, 0.95);
+      color: rgba(246, 248, 250, 0.8);
+      border-color: rgba(42, 49, 55, 0.95); }
+      .budgie-panel #tasklist-button:active label {
+        color: rgba(246, 248, 250, 0.8); }
+  .budgie-panel .workspace-switcher .workspace-layout {
+    background-color: rgba(40, 46, 52, 0.95);
+    border-color: rgba(40, 46, 52, 0.95);
+    color: rgba(246, 248, 250, 0.8); }
+    .budgie-panel .workspace-switcher .workspace-layout label, .budgie-panel .workspace-switcher .workspace-layout image {
+      color: rgba(246, 248, 250, 0.8); }
+  .budgie-panel .workspace-switcher .current-workspace {
     background-color: #3A587A;
-    border-color: transparent;
+    border-color: #3A587A;
     color: #F7F8F8; }
-  .budgie-menu .categories button:active {
-    background-color: transparent;
-    color: #4a719d;
-    border-color: transparent; }
-
-.budgie-menu scrolledwindow {
-  background-color: #2B3239; }
-.budgie-menu row {
-  background-color: #2B3239; }
-  .budgie-menu row:hover {
-    background-color: rgba(58, 88, 122, 0.12);
-    border-color: transparent;
-    color: #F7F8F9; }
-  .budgie-menu row:active {
-    background-color: #3A587A; }
-.budgie-menu list {
-  background-color: transparent; }
-.budgie-menu row button {
-  background-color: transparent;
-  color: #F7F8F9; }
-  .budgie-menu row button:hover {
-    background-color: transparent;
-    border-color: transparent; }
-.budgie-menu entry.search, .budgie-menu entry.search:focus {
-  background-color: #3A587A;
-  border-radius: 2.5px;
-  border-color: transparent;
-  color: #F7F8F8;
-  caret-color: #F7F8F8;
-  box-shadow: none;
-  font-size: 101%;
-  padding-top: 4px;
-  padding-bottom: 4px; }
-.budgie-menu entry image {
-  color: #F7F8F8; }
-.budgie-menu .container {
-  background-color: #2B3239; }
+    .budgie-panel .workspace-switcher .current-workspace label, .budgie-panel .workspace-switcher .current-workspace image {
+      color: #F7F8F8; }
 
 .budgie-popover {
   border-style: none;
   border-width: 0px;
   border-color: transparent;
   border-radius: 1px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.33);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
   background-color: #2B3239; }
   .budgie-popover list {
     background-color: transparent; }
   .budgie-popover.places-menu {
     background-color: #2B3239;
     border-color: #2B3239;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.33); }
-    .budgie-popover.places-menu row:hover {
-      border-radius: 0px;
-      border-color: transparent;
-      color: #F7F8F9;
-      background-color: rgba(58, 88, 122, 0.12); }
-    .budgie-popover.places-menu button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22); }
+    .budgie-popover.places-menu row {
+      background-color: #2B3239;
+      border-color: #2B3239;
+      border-radius: 0px; }
+      .budgie-popover.places-menu row label {
+        color: #F7F8F9; }
+      .budgie-popover.places-menu row:hover {
+        background-color: #343c45;
+        border-color: #343c45;
+        border-radius: 0px; }
+        .budgie-popover.places-menu row:hover label {
+          color: #F7F8F9; }
+    .budgie-popover.places-menu button {
       background-color: transparent;
       border-color: transparent;
-      color: #F7F8F9; }
+      border-radius: 0px; }
+      .budgie-popover.places-menu button label {
+        color: #F7F8F9; }
+      .budgie-popover.places-menu button:hover {
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 0px; }
+        .budgie-popover.places-menu button:hover label {
+          color: #F7F8F9; }
   .budgie-popover.user-menu {
     background-color: #2B3239;
     border-color: #2B3239;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.33); }
-    .budgie-popover.user-menu row:hover {
-      border-radius: 0px;
-      border-color: transparent;
-      color: #F7F8F9;
-      background-color: rgba(58, 88, 122, 0.12); }
-    .budgie-popover.user-menu button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22); }
+    .budgie-popover.user-menu button {
       background-color: transparent;
       border-color: transparent;
-      color: #F7F8F9; }
-
-.workspace-switcher .workspace-layout {
-  background-color: rgba(53, 61, 70, 0.95);
-  color: rgba(246, 248, 250, 0.8);
-  border-radius: 0px; }
-.workspace-switcher .current-workspace {
-  background-color: #3A587A;
-  color: #F7F8F8; }
+      border-radius: 0px; }
+      .budgie-popover.user-menu button label {
+        color: #F7F8F9; }
+      .budgie-popover.user-menu button:hover {
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 0px; }
+        .budgie-popover.user-menu button:hover label {
+          color: #F7F8F9; }
+    .budgie-popover.user-menu row {
+      background-color: #2B3239;
+      border-color: #2B3239;
+      border-radius: 0px; }
+      .budgie-popover.user-menu row label {
+        color: #F7F8F9; }
+      .budgie-popover.user-menu row:hover {
+        background-color: #343c45;
+        border-color: #343c45;
+        border-radius: 0px; }
+        .budgie-popover.user-menu row:hover label {
+          color: #F7F8F9; }
 
 .budgie-run-dialog {
   background-color: #3A587A;
-  border-radius: 2.5px;
-  border-color: #2B3239;
-  box-shadow: 2px 4px rgba(0, 0, 0, 0.33); }
+  border-radius: 1px;
+  border-color: #3A587A;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.22); }
   .budgie-run-dialog entry.search {
     background-color: #3A587A;
     color: #F7F8F8;
-    border-radius: 2.5px;
+    border-radius: 1px;
     border-color: #3A587A;
-    padding-top: 4px;
-    padding-bottom: 4px; }
-    .budgie-run-dialog entry.search image {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #3A587A;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.22); }
+    .budgie-run-dialog entry.search label, .budgie-run-dialog entry.search image {
       color: #F7F8F8; }
-    .budgie-run-dialog entry.search label {
-      color: #F7F8F8; }
+    .budgie-run-dialog entry.search:focus {
+      background-color: #3A587A;
+      color: #F7F8F8;
+      border-radius: 1px;
+      border-color: #3A587A;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #3A587A;
+      box-shadow: 1px 2px rgba(0, 0, 0, 0.22); }
+      .budgie-run-dialog entry.search:focus label, .budgie-run-dialog entry.search:focus image {
+        color: #F7F8F8; }
