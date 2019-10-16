@@ -3700,6 +3700,27 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .primary-toolbar toolitem:nth-child(4) button:nth-child(4):active image {
   color: #dc7676; }
 
+.thunar .sidebar .view, .thunar .sidebar iconview {
+  background-color: rgba(51, 60, 69, 0.95);
+  color: #F7F8F8; }
+  .thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected, .thunar .sidebar .view.cell:selected:hover, .thunar .sidebar iconview.cell:selected:hover {
+    background: #3A587A;
+    color: #F7F8F8; }
+  .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover {
+    background-color: rgba(247, 248, 248, 0.12);
+    color: #F7F8F8; }
+  .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
+    background-color: #3f5f84;
+    color: #F7F8F8; }
+.thunar notebook .view, .thunar notebook iconview {
+  background-color: #2B3239;
+  color: #F7F8F9; }
+  .thunar notebook .view .rubberband, .thunar notebook iconview .rubberband {
+    background-color: rgba(42, 63, 87, 0.2); }
+  .thunar notebook .view:selected, .thunar notebook iconview:selected {
+    background-color: #3A587A;
+    color: #F7F8F8; }
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
