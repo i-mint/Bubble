@@ -5,18 +5,18 @@ style "theme-panel" {
 
   bg[NORMAL] = "#F0F0F0"
   bg[ACTIVE] = @selected_bg_color
-  bg[PRELIGHT] = "#BFBFBF"
+  bg[PRELIGHT] = "#CCCCCC"
   bg[SELECTED] = @selected_bg_color
 
-  fg[NORMAL] = "#342828"
-  fg[PRELIGHT] = "#513E3E"
-  fg[ACTIVE] = @selected_bg_color
-  fg[SELECTED] = @selected_bg_color
+  fg[NORMAL] = @fg_color
+  fg[PRELIGHT] = @fg_color
+  fg[ACTIVE] = @selected_fg_color
+  fg[SELECTED] = @selected_fg_color
 
-  text[NORMAL] = "#342828"
-  text[PRELIGHT] = "#342828"
-  text[ACTIVE] = "#342828"
-  text[SELECTED] = "#342828"
+  text[NORMAL] = @fg_color
+  text[PRELIGHT] = @fg_color
+  text[ACTIVE] = @fg_color
+  text[SELECTED] = @fg_color
 
   engine "murrine" {
     reliefstyle = 0
@@ -36,9 +36,9 @@ style "theme-panel-progressbar" {
 
 style "panelbar" {
 
-  fg[NORMAL] = "#edf5fb"
-  fg[ACTIVE] = "#edf5fb"
-  fg[PRELIGHT] = "#edf5fb"
+  fg[NORMAL] = "#F7DEDE"
+  fg[ACTIVE] = "#F7DEDE"
+  fg[PRELIGHT] = "#F7DEDE"
   fg[SELECTED] = @selected_fg_color
 
   bg[SELECTED] = @selected_bg_color
@@ -58,13 +58,13 @@ style "panelbuttons" {
 
 style "theme-panel-text" {
 
-  fg[NORMAL] = "#edf5fb"
+  fg[NORMAL] = "#F7DEDE"
   fg[PRELIGHT] = @selected_fg_color
-  fg[ACTIVE] = "#edf5fb"
+  fg[ACTIVE] = "#F7DEDE"
 
-  text[NORMAL] = "#edf5fb"
+  text[NORMAL] = "#F7DEDE"
   text[PRELIGHT] = @selected_fg_color
-  text[ACTIVE] = "#edf5fb"
+  text[ACTIVE] = "#F7DEDE"
 
   engine "murrine" {
     textstyle = 0
