@@ -4247,7 +4247,8 @@ filechooser headerbar widget stack box.path-bar-box,
   color: rgba(57, 35, 35, 0.8);
   border-color: rgba(57, 35, 35, 0.1);
   background-color: rgba(253, 253, 253, 0.9);
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  border: 1px solid rgba(57, 35, 35, 0.1); }
   filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button,
   .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button {
     color: rgba(57, 35, 35, 0.8);
@@ -4262,13 +4263,13 @@ filechooser headerbar widget stack box.path-bar-box,
       color: rgba(57, 35, 35, 0.8); }
     filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:hover,
     .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:hover {
-      background-color: #fbfbfb;
-      border-top: 2px solid #ededed;
-      color: rgba(63, 39, 39, 0.8);
+      background-color: #f6f6f6;
+      border-top: 2px solid #d4d4d4;
+      color: rgba(52, 40, 40, 0.89);
       margin: 0px; }
       filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:hover label,
       .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:hover label {
-        color: rgba(63, 39, 39, 0.8); }
+        color: rgba(52, 40, 40, 0.89); }
     filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked,
     .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:active,
     .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:checked {
