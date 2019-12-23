@@ -4638,6 +4638,9 @@ filechooser placessidebar.sidebar scrollbar,
     color: rgba(246, 249, 249, 0.8); }
     .budgie-panel .workspace-switcher .workspace-layout label, .budgie-panel .workspace-switcher .workspace-layout image {
       color: rgba(246, 249, 249, 0.8); }
+    .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
+      background-color: rgba(85, 127, 175, 0.45);
+      margin: 7px; }
   .budgie-panel .workspace-switcher .current-workspace {
     background-color: #557FAF;
     border-color: #557FAF;
