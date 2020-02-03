@@ -4733,15 +4733,29 @@ filechooser placessidebar.sidebar scrollbar,
     color: rgba(246, 248, 250, 0.8); }
     .budgie-panel .workspace-switcher .workspace-layout label, .budgie-panel .workspace-switcher .workspace-layout image {
       color: rgba(246, 248, 250, 0.8); }
-    .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
-      background-color: rgba(58, 88, 122, 0.45);
-      margin: 7px; }
+  .budgie-panel .workspace-switcher .workspace-item {
+    background-color: rgba(40, 46, 52, 0.95);
+    color: rgba(246, 248, 250, 0.8); }
+    .budgie-panel .workspace-switcher .workspace-item grid {
+      background-color: transparent;
+      padding: 0px;
+      margin-left: 4px;
+      margin-right: 4px;
+      border-bottom: 2px solid rgba(246, 248, 250, 0.36); }
   .budgie-panel .workspace-switcher .current-workspace {
-    background-color: #3A587A;
-    border-color: #3A587A;
-    color: #F7F8F8; }
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(246, 248, 250, 0.8);
+    border-left: 2px solid rgba(40, 46, 52, 0.95);
+    border-right: 2px solid rgba(40, 46, 52, 0.95); }
     .budgie-panel .workspace-switcher .current-workspace label, .budgie-panel .workspace-switcher .current-workspace image {
-      color: #F7F8F8; }
+      color: rgba(246, 248, 250, 0.8); }
+    .budgie-panel .workspace-switcher .current-workspace grid {
+      background-color: transparent;
+      padding: 0px;
+      margin-left: 4px;
+      margin-right: 4px;
+      border-bottom: 2px solid #3A587A; }
 
 .budgie-popover {
   border-style: none;
