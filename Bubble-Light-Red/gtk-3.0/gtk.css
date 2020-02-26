@@ -1540,6 +1540,39 @@ popover, popover.background {
   background-clip: border-box;
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.07); }
+  popover stack button,
+  popover.background stack button {
+    background-color: whitesmoke;
+    border-color: rgba(0, 0, 0, 0.04);
+    color: #342828; }
+    popover stack button label, popover stack button image,
+    popover.background stack button label,
+    popover.background stack button image {
+      color: #342828; }
+    popover stack button:hover,
+    popover.background stack button:hover {
+      background-color: #e6e6e6;
+      border-color: rgba(0, 0, 0, 0.04);
+      color: #342828; }
+      popover stack button:hover label, popover stack button:hover image,
+      popover.background stack button:hover label,
+      popover.background stack button:hover image {
+        color: #342828; }
+    popover stack button:active, popover stack button:focus, popover stack button:checked,
+    popover.background stack button:active,
+    popover.background stack button:focus,
+    popover.background stack button:checked {
+      background-color: #AF2929;
+      border-color: rgba(0, 0, 0, 0.04);
+      color: #f8f7f7; }
+      popover stack button:active label, popover stack button:active image, popover stack button:focus label, popover stack button:focus image, popover stack button:checked label, popover stack button:checked image,
+      popover.background stack button:active label,
+      popover.background stack button:active image,
+      popover.background stack button:focus label,
+      popover.background stack button:focus image,
+      popover.background stack button:checked label,
+      popover.background stack button:checked image {
+        color: #f8f7f7; }
   popover label,
   popover.background label {
     color: #342828;
@@ -4837,6 +4870,70 @@ filechooser placessidebar.sidebar scrollbar,
       box-shadow: 1px 2px rgba(0, 0, 0, 0.22); }
       .budgie-run-dialog entry.search:focus label, .budgie-run-dialog entry.search:focus image {
         color: #f8f7f7; }
+
+.raven-frame {
+  background-color: #F8F8F8;
+  color: #342828;
+  border-radius: 2px; }
+  .raven-frame list {
+    background-color: #FFFFFF;
+    color: #342828;
+    border-radius: 2px; }
+  .raven-frame .raven-header {
+    background-color: #F8F8F8;
+    color: #342828;
+    border-radius: 2px; }
+    .raven-frame .raven-header.top, .raven-frame .raven-header.bottom {
+      padding: 0px; }
+    .raven-frame .raven-header.top stackswitcher.linked > button {
+      background-color: #fdfdfd;
+      color: #342828;
+      border-radius: 2px; }
+      .raven-frame .raven-header.top stackswitcher.linked > button:hover {
+        background-color: #ebebeb;
+        color: #342828;
+        border-radius: 2px; }
+      .raven-frame .raven-header.top stackswitcher.linked > button:active, .raven-frame .raven-header.top stackswitcher.linked > button:checked, .raven-frame .raven-header.top stackswitcher.linked > button:selected {
+        background-color: #AF2929;
+        color: #f8f7f7;
+        border-radius: 2px; }
+    .raven-frame .raven-header.bottom button {
+      background-color: #fdfdfd;
+      color: #342828;
+      border-color: #cfd6e6;
+      border-radius: 2px; }
+      .raven-frame .raven-header.bottom button:hover {
+        background-color: #ebebeb;
+        color: #342828;
+        border-radius: 2px; }
+      .raven-frame .raven-header.bottom button:active, .raven-frame .raven-header.bottom button:checked, .raven-frame .raven-header.bottom button:selected {
+        background-color: #AF2929;
+        color: #f8f7f7;
+        border-radius: 2px; }
+  .raven-frame .raven-background {
+    background-color: #FFFFFF;
+    color: #342828;
+    border-radius: 2px; }
+    .raven-frame .raven-background stackswitcher.linked > button, .raven-frame .raven-background button {
+      background-color: #fdfdfd;
+      color: #342828;
+      border-radius: 2px; }
+      .raven-frame .raven-background stackswitcher.linked > button:hover, .raven-frame .raven-background button:hover {
+        background-color: #ebebeb;
+        color: #342828;
+        border-radius: 2px; }
+      .raven-frame .raven-background stackswitcher.linked > button:active, .raven-frame .raven-background stackswitcher.linked > button:checked, .raven-frame .raven-background stackswitcher.linked > button:selected, .raven-frame .raven-background button:active, .raven-frame .raven-background button:checked, .raven-frame .raven-background button:selected {
+        background-color: #AF2929;
+        color: #f8f7f7;
+        border-radius: 2px; }
+  .raven-frame calendar.raven-calendar {
+    background-color: #FFFFFF;
+    color: #342828;
+    border-radius: 2px; }
+    .raven-frame calendar.raven-calendar:selected {
+      background-color: #AF2929;
+      color: #f8f7f7;
+      border-radius: 2px; }
 
 .background headerbar entry.pathbar {
   margin: 0px;
