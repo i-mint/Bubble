@@ -3790,6 +3790,18 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   .thunar notebook .view:selected, .thunar notebook iconview:selected {
     background-color: #3A587A;
     color: #F7F8F8; }
+.thunar notebook tabs > tab button.flat image, .thunar notebook tabs > tab button.sidebar-button image {
+  background-color: transparent;
+  border: 0.5px solid transparent;
+  border-radius: 2px; }
+.thunar notebook tabs > tab button.flat:hover image, .thunar notebook tabs > tab button.sidebar-button:hover image {
+  background-color: #1c2025;
+  border: 0.5px solid #0c0e10;
+  border-radius: 2px; }
+.thunar notebook tabs > tab button.flat:active image, .thunar notebook tabs > tab button.sidebar-button:active image {
+  background-color: #576573;
+  border: 0.5px solid #1c2025;
+  border-radius: 2px; }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
