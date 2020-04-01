@@ -4435,49 +4435,30 @@ filechooser headerbar widget stack box.path-bar-box,
       border-radius: 20px;
       border-color: rgba(175, 41, 41, 0.55); }
 
-.nemo-window {
-  /*
-  .nemo-window-pane {
-    .view {
-      //background-color:$base_color;
-      //1.2.1
-      //1.2.1, 1.1.3
-    :selected{background-color: $selected_bg_color; color: $selected_fg_color;}
-    }
-    //1.2.1
-    .iconview{background-color: $base_color;}
-    //
-  }
-  */
-  /*
-  .nemo-window-pane {
-    .view:selected {background-color: $selected_bg_color; color: $selected_fg_color;}
-  }
-  */ }
-  .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-    background-color: rgba(240, 240, 240, 0.95);
-    color: rgba(52, 40, 40, 0.56); }
-  .nemo-window .nemo-inactive-pane .iconview {
-    background-color: rgba(240, 240, 240, 0.95);
-    color: rgba(52, 40, 40, 0.56); }
-  .nemo-window .sidebar {
-    color: #F7F8F8;
-    background-color: rgba(69, 51, 51, 0.95); }
-    .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
-      background-color: transparent;
-      color: #F7F8F8; }
-      .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-        background-color: #AF2929;
-        color: #f8f7f7; }
-      .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
-        background-color: rgba(0, 0, 0, 0.3);
-        color: #ffffff; }
-      .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
-        color: rgba(162, 154, 154, 0.975); }
-        .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
-          color: #F7F8F8; }
-    .nemo-window .sidebar separator {
-      background-color: transparent; }
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
+  background-color: rgba(240, 240, 240, 0.95);
+  color: rgba(52, 40, 40, 0.56); }
+.nemo-window .nemo-inactive-pane .iconview {
+  background-color: rgba(240, 240, 240, 0.95);
+  color: rgba(52, 40, 40, 0.56); }
+.nemo-window .sidebar {
+  color: #F7F8F8;
+  background-color: rgba(69, 51, 51, 0.95); }
+  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
+    background-color: transparent;
+    color: #F7F8F8; }
+    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover {
+      background-image: linear-gradient(to right, #AF2929, #AF2929);
+      color: #f8f7f7; }
+    .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #ffffff; }
+    .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
+      color: rgba(162, 154, 154, 0.975); }
+      .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
+        color: #F7F8F8; }
+  .nemo-window .sidebar separator {
+    background-color: transparent; }
 
 .caja-side-pane,
 .caja-side-pane > notebook > stack > widget > box,
