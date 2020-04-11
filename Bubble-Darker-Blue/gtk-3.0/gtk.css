@@ -4327,45 +4327,80 @@ filechooser headerbar widget stack box.path-bar-box,
   background-color: rgba(75, 86, 98, 0.35);
   background-color: #2B3239;
   border: 1px solid rgba(0, 0, 0, 0.35); }
-  filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button,
-  .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button {
+  filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button,
+  .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button {
     color: rgba(246, 249, 249, 0.8);
     border-color: rgba(0, 0, 0, 0.35);
     background-color: rgba(75, 86, 98, 0.35);
     background-color: #2B3239;
     border-color: transparent;
     border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     margin: 0px; }
-    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button image,
-    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button label,
-    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button image {
+    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button image,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button label,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button image {
       color: rgba(246, 249, 249, 0.8); }
-  filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover,
-  .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover {
-    background-color: #323a42;
-    border-top: 2px solid #3a444d;
-    color: rgba(247, 248, 248, 0.89);
-    margin: 0px; }
-    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover image,
-    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover label,
-    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover image {
-      color: rgba(247, 248, 248, 0.89); }
-  filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked,
-  .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:active,
-  .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked {
-    color: #F7F8F8;
-    border-color: transparent;
-    background-color: #557FAF;
+  filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)),
+  .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) {
     background-color: #3a444d;
     border-color: transparent;
     border-top: 2px solid #557FAF;
+    border-bottom: 2px solid transparent;
     color: #F7F8F8;
     margin: 0px; }
-    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active image, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked image,
-    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:active label,
-    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:active image,
-    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked label,
-    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked image {
+    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) image,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) label,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) image {
+      color: #F7F8F8; }
+    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):hover,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):hover {
+      background-color: #3f4953;
+      border-top: 2px solid #557FAF;
+      border-bottom: 2px solid transparent;
+      color: #F7F8F8;
+      margin: 0px; }
+      filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):hover label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):hover image,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):hover label,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):hover image {
+        color: #F7F8F8; }
+    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):active,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):active {
+      background-color: #434e59;
+      border-color: transparent;
+      border-top: 2px solid #557FAF;
+      border-bottom: 2px solid transparent;
+      color: #F7F8F8;
+      margin: 0px; }
+      filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):active label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):active image,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):active label,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):active image {
+        color: #F7F8F8; }
+  filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:hover,
+  .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:hover {
+    background-color: #323a42;
+    border-top: 2px solid #3a444d;
+    border-bottom: 2px solid transparent;
+    color: rgba(247, 248, 248, 0.89);
+    margin: 0px; }
+    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:hover label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:hover image,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:hover label,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:hover image {
+      color: rgba(247, 248, 248, 0.89); }
+  filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:active, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:checked,
+  .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:active,
+  .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:checked {
+    background-color: #3a444d;
+    border-color: transparent;
+    border-top: 2px solid #557FAF;
+    border-bottom: 2px solid transparent;
+    color: #F7F8F8;
+    margin: 0px; }
+    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:active label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:active image, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:checked label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:checked image,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:active label,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:active image,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:checked label,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button:checked image {
       color: #F7F8F8; }
   filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button,
   .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button {
