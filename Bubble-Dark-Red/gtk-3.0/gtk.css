@@ -4238,10 +4238,10 @@ filechooser placessidebar.sidebar,
       color: rgba(247, 248, 248, 0.78); }
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
-      color: #a70909; }
+      color: rgba(243, 25, 25, 0.67); }
       filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon:backdrop,
       .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon:backdrop {
-        color: rgba(243, 25, 25, 0.78); }
+        color: rgba(243, 25, 25, 0.45); }
     filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop, filechooser placessidebar.sidebar row.sidebar-row:hover:backdrop,
     .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop,
     .nautilus-window placessidebar.sidebar row.sidebar-row:hover:backdrop {
@@ -4447,10 +4447,10 @@ filechooser headerbar widget stack box.path-bar-box,
 
 .nautilus-window {
   /*remove on 1.2.3
-    notebook stack {background-color: $base_color;}
-    notebook stack:backdrop {background-color: if($variant=='light', darken($base_color, 10%), darken($base_color,20%))}
-    notebook stack:disabled {background-color: if($variant=='light', darken($base_color, 10%), darken($base_color,20%))}
-    */ }
+  notebook stack {background-color: $base_color;}
+  notebook stack:backdrop {background-color: if($variant=='light', darken($base_color, 10%), darken($base_color,20%))}
+  notebook stack:disabled {background-color: if($variant=='light', darken($base_color, 10%), darken($base_color,20%))}
+   */ }
   .nautilus-window .searchbar-container entry.search {
     background-color: rgba(133, 7, 7, 0.5);
     color: #f8f7f7;
