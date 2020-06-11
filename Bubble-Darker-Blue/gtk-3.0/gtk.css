@@ -4230,6 +4230,14 @@ GtkListBox .h4 {
   border-bottom-width: 0;
   font-weight: bold; }
 
+overlay calendar-view event {
+  background-image: linear-gradient(to bottom, #c7d5e5, #bacbde);
+  border: 2px solid #bacbde; }
+  overlay calendar-view event label {
+    color: rgba(40, 46, 52, 0.78);
+    padding: 4px 6px;
+    font-weight: normal; }
+
 .nautilus-window paned > separator {
   background-image: linear-gradient(to bottom, rgba(51, 60, 69, 0.95), rgba(51, 60, 69, 0.95)); }
   .nautilus-window paned > separator:dir(ltr) {
