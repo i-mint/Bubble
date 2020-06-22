@@ -151,6 +151,10 @@ entry {
     color: rgba(247, 248, 249, 0.45);
     border-color: rgba(26, 30, 34, 0.55);
     background-color: rgba(26, 30, 34, 0.33); }
+  entry selection:focus, entry selection {
+    color: #3A587A;
+    background-image: linear-gradient(to left, #F7F8F8, #F7F8F8);
+    border-color: transparent; }
   entry.warning {
     color: white;
     border-color: #1A1E22;
@@ -889,6 +893,10 @@ searchbar {
       box-shadow: inset 1px 0 #3A587A, inset -1px 0 #3A587A, inset 0 1px #3A587A, inset 0 -1px #3A587A; }
       searchbar entry.search:focus image, searchbar entry.search:focus image:hover {
         color: #F7F8F8; }
+    searchbar entry.search selection, searchbar entry.search selection:focus {
+      color: #3A587A;
+      background-image: linear-gradient(to left, #F7F8F8, #F7F8F8);
+      border-color: transparent; }
 
 actionbar {
   padding: 6px;
@@ -1007,9 +1015,10 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     color: rgba(246, 248, 250, 0.35);
     border-color: rgba(39, 45, 51, 0.78);
     background-color: rgba(43, 50, 57, 0.63); }
-  .primary-toolbar entry selection:focus, headerbar entry selection:focus {
-    background-color: #090d12;
-    color: #F7F8F8; }
+  .primary-toolbar entry selection, headerbar entry selection, .primary-toolbar entry selection:focus, headerbar entry selection:focus {
+    color: #3A587A;
+    background-image: linear-gradient(to left, #F7F8F8, #F7F8F8);
+    border-color: transparent; }
   .primary-toolbar entry progress, headerbar entry progress {
     border-color: #3A587A;
     background-image: none;
@@ -3002,7 +3011,7 @@ textview text:selected,
 iconview text:selected:focus,
 textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
 textview text selection:focus,
-textview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
+textview text selection, flowbox flowboxchild:selected, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
@@ -3019,7 +3028,7 @@ textview text selection, flowbox flowboxchild:selected, entry selection:focus, e
   iconview text:selected:focus,
   textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
-  textview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
+  textview text selection, flowbox flowboxchild:selected, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
   .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
@@ -3031,7 +3040,7 @@ textview text selection, flowbox flowboxchild:selected, entry selection:focus, e
     textview text:backdrop:selected,
     iconview text:backdrop:selected:focus,
     textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-    textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
+    textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
     .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
       color: rgba(247, 248, 248, 0.78); }
@@ -3041,7 +3050,7 @@ textview text selection, flowbox flowboxchild:selected, entry selection:focus, e
     textview text:disabled:selected,
     iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
-    textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, entry selection:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
+    textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover {
       color: #99a8b9; }
@@ -3051,7 +3060,7 @@ textview text selection, flowbox flowboxchild:selected, entry selection:focus, e
   textview text:backdrop:selected,
   iconview text:backdrop:selected:focus,
   textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-  textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
+  textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
   .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
     background-color: rgba(58, 88, 122, 0.78);
@@ -4673,6 +4682,10 @@ filechooser placessidebar.sidebar scrollbar,
     color: #F7F8F9; }
   .budgie-menu entry.search image, .budgie-menu entry.search:focus image {
     color: #F7F8F9; }
+  .budgie-menu entry.search selection, .budgie-menu entry.search selection:focus, .budgie-menu entry.search:focus selection, .budgie-menu entry.search:focus selection:focus {
+    color: #080706;
+    background-image: linear-gradient(to left, #b8b4b0, #b8b4b0);
+    border-color: transparent; }
 .budgie-menu .categories {
   background-color: #22282E; }
   .budgie-menu .categories label {
@@ -4810,6 +4823,10 @@ filechooser placessidebar.sidebar scrollbar,
       box-shadow: 1px 2px rgba(0, 0, 0, 0.22); }
       .budgie-run-dialog entry.search:focus label, .budgie-run-dialog entry.search:focus image {
         color: #F7F8F8; }
+    .budgie-run-dialog entry.search selection, .budgie-run-dialog entry.search selection:focus {
+      color: #3A587A;
+      background-image: linear-gradient(to left, #F7F8F8, #F7F8F8);
+      border-color: transparent; }
 
 .raven-frame {
   background-color: #22282E;
