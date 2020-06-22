@@ -99,7 +99,7 @@ StEntry {
   padding: 7px;
   caret-size: 1px;
   caret-color: #F7F8F8;
-  selection-background-color: #557FAF;
+  selection-background-color: #2f4865;
   selected-color: #F7F8F8;
   transition-duration: 300ms;
   border-radius: 3px;
@@ -112,6 +112,8 @@ StEntry {
     background-color: #FFFFFF;
     border: 1px solid #557FAF;
     box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05); }
+    StEntry:focus .hint-text, StEntry:hover .hint-text {
+      color: rgba(247, 248, 248, 0.56); }
   StEntry:insensitive {
     color: rgba(40, 46, 52, 0.55);
     background-color: #fcfcfc;
@@ -1246,8 +1248,8 @@ StScrollBar {
     color: #F7F8F8;
     caret-color: #F7F8F8;
     background-color: #557FAF;
-    selection-background-color: #F7F8F8;
-    selected-color: #557FAF; }
+    selection-background-color: #2f4865;
+    selected-color: #F7F8F8; }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #F7F8F8; }
 
