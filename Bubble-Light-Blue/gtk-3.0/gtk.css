@@ -3542,21 +3542,36 @@ panel-toplevel.background na-tray-applet {
 
 .xfce4-panel.panel {
   background-color: rgba(228, 228, 228, 0.95);
+  color: rgba(35, 46, 57, 0.8);
+  font-weight: normal;
   text-shadow: none;
   -gtk-icon-shadow: none; }
 
-#tasklist-button {
+.xfce4-panel .tasklist button {
   color: rgba(35, 46, 57, 0.6);
   border-radius: 0;
   border: none;
-  background-color: rgba(228, 228, 228, 0); }
-  #tasklist-button:hover {
-    color: rgba(55, 72, 88, 0.8);
-    background-color: rgba(0, 0, 0, 0.17); }
-  #tasklist-button:checked {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 -2px #557FAF; }
+  border-top: 2px solid transparent;
+  background-color: rgba(203, 203, 203, 0.95); }
+  .xfce4-panel .tasklist button:hover {
+    background-color: rgba(190, 190, 190, 0.95);
+    border: none;
+    border-top: 2px solid #557FAF;
+    color: rgba(35, 46, 57, 0.8); }
+  .xfce4-panel .tasklist button:active {
+    background-color: rgba(177, 177, 177, 0.95);
+    border: none;
+    border-top: 2px solid #557FAF;
+    color: rgba(35, 46, 57, 0.8); }
+  .xfce4-panel .tasklist button:checked {
+    background-color: rgba(190, 190, 190, 0.95);
+    border: none;
+    border-top: 2px solid #557FAF;
+    color: rgba(35, 46, 57, 0.8); }
+
+.xfce4-panel wnck-pager {
+  background-color: rgba(85, 127, 175, 0.12);
+  color: #F7F8F8; }
 
 .mate-panel-menu-bar button:not(#tasklist-button),
 panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
@@ -3567,7 +3582,7 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   .mate-panel-menu-bar button:hover:not(#tasklist-button),
   panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
     border: none;
-    background-color: rgba(254, 254, 254, 0.95); }
+    background-color: rgba(203, 203, 203, 0.95); }
   .mate-panel-menu-bar button:active:not(#tasklist-button),
   panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.sidebar-button:active, .mate-panel-menu-bar button:checked:not(#tasklist-button),
   panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:checked {
