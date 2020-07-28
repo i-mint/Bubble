@@ -4,7 +4,7 @@ Links : https://github.com/horst3180/arc-theme</br>
 License : GPLv3 (https://choosealicense.com/licenses/gpl-3.0/)</br>
 
 # Installation
-Have been test on : Linux Mint 19 (Cinnamon)</br>
+Have been test on : Linux Mint 20 (Ulyana) Cinnamon Edition</br>
 Install themes : Extract Archive File On Directory <i> /usr/share/themes (as root) or <i> /.themes</i> </br>
 
 ## Change themes
