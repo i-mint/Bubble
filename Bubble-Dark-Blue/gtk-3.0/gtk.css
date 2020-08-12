@@ -3826,6 +3826,44 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   border: 0.5px solid #1c2025;
   border-radius: 2px; }
 
+#whiskermenu-window {
+  background-color: #22282E;
+  color: #F7F8F9; }
+  #whiskermenu-window stack {
+    background-color: #22282E;
+    color: #F7F8F9; }
+  #whiskermenu-window .view, #whiskermenu-window iconview {
+    background-color: #2B3239;
+    color: #F8F8F8; }
+    #whiskermenu-window .view:selected, #whiskermenu-window iconview:selected {
+      background-color: #52606d;
+      background-size: 0% 0%;
+      color: inherit; }
+  #whiskermenu-window button {
+    margin-right: 9px;
+    background-color: #22282E;
+    color: #F7F8F9;
+    border: none; }
+    #whiskermenu-window button:hover {
+      background-color: #495663;
+      color: inherit; }
+    #whiskermenu-window button:active, #whiskermenu-window button:checked {
+      background-color: #3A587A;
+      color: #F7F8F8; }
+  #whiskermenu-window entry:focus, #whiskermenu-window entry.search {
+    color: #F7F8F8;
+    border-color: #1A1E22;
+    background-color: #3A587A;
+    box-shadow: inset 1px 0 #3A587A, inset -1px 0 #3A587A, inset 0 1px #3A587A, inset 0 -1px #3A587A; }
+    #whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
+      color: #F7F8F8; }
+
+#whiskermenu-button {
+  color: rgba(246, 248, 250, 0.8);
+  border-left: 22px solid rgba(64, 74, 84, 0.95);
+  border-right: 22px solid rgba(64, 74, 84, 0.95);
+  background-color: rgba(64, 74, 84, 0.95); }
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
