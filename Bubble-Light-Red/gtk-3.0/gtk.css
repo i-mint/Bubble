@@ -236,6 +236,8 @@ button {
   color: #342828;
   border-color: #F0F0F0;
   background-color: #fdfdfd; }
+  button:backdrop {
+    color: rgba(52, 40, 40, 0.67); }
   button separator {
     margin: 4px 1px; }
   button.flat, button.sidebar-button {
@@ -259,6 +261,8 @@ button {
     background-color: #AF2929;
     background-clip: border-box;
     transition-duration: 50ms; }
+    button:active:backdrop, button:checked:backdrop {
+      color: rgba(248, 247, 247, 0.67); }
     button:active:not(:disabled) label:disabled, button:checked:not(:disabled) label:disabled {
       color: inherit;
       opacity: 0.6; }
@@ -459,6 +463,8 @@ button {
   color: #342828;
   border-color: #F0F0F0;
   background-color: #fdfdfd; }
+  .inline-toolbar toolbutton > button:backdrop {
+    color: rgba(52, 40, 40, 0.67); }
   .inline-toolbar toolbutton > button:hover {
     color: #342828;
     border-color: #F0F0F0;
@@ -467,6 +473,8 @@ button {
     color: #f8f7f7;
     border-color: #AF2929;
     background-color: #AF2929; }
+    .inline-toolbar toolbutton > button:active:backdrop, .inline-toolbar toolbutton > button:checked:backdrop {
+      color: rgba(248, 247, 247, 0.67); }
   .inline-toolbar toolbutton > button:disabled {
     border-color: rgba(240, 240, 240, 0.55);
     background-color: rgba(253, 253, 253, 0.55); }
@@ -2800,6 +2808,8 @@ colorswatch#add-color-button {
   color: #342828;
   border-color: #F0F0F0;
   background-color: #fdfdfd; }
+  colorswatch#add-color-button:backdrop {
+    color: rgba(52, 40, 40, 0.67); }
   colorswatch#add-color-button:hover {
     color: #342828;
     border-color: #F0F0F0;
@@ -3029,7 +3039,7 @@ textview text:selected,
 iconview text:selected:focus,
 textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
 textview text selection:focus,
-textview text selection {
+textview text selection, .thunar notebook .view:selected, .thunar notebook iconview:selected {
   background-color: #AF2929;
   background-image: url("assets/selected-img-dark.png");
   background-repeat: no-repeat;
@@ -3044,7 +3054,7 @@ textview text selection {
   iconview text:selected:focus,
   textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
-  textview text selection {
+  textview text selection, .thunar notebook .view:selected, .thunar notebook iconview:selected {
     color: #f8f7f7; }
     .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
     .view text:backdrop:selected,
@@ -3052,7 +3062,7 @@ textview text selection {
     textview text:backdrop:selected,
     iconview text:backdrop:selected:focus,
     textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-    textview text selection:backdrop {
+    textview text selection:backdrop, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected {
       color: rgba(248, 247, 247, 0.78); }
     .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus,
     .view text:disabled:selected,
@@ -3060,7 +3070,7 @@ textview text selection {
     textview text:disabled:selected,
     iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
-    textview text selection:disabled {
+    textview text selection:disabled, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected {
       color: #f8f7f7; }
   .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
   .view text:backdrop:selected,
@@ -3068,7 +3078,7 @@ textview text selection {
   textview text:backdrop:selected,
   iconview text:backdrop:selected:focus,
   textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-  textview text selection:backdrop {
+  textview text selection:backdrop, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected {
     background-color: rgba(175, 41, 41, 0.78);
     color: rgba(248, 247, 247, 0.78); }
 
@@ -3080,7 +3090,7 @@ textview text:selected,
 iconview text:selected:focus,
 textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
 textview text selection:focus,
-textview text selection {
+textview text selection, .thunar notebook .view:selected, .thunar notebook iconview:selected {
   background-color: #AF2929;
   background-image: url("assets/selected-img-dark.png");
   background-repeat: no-repeat;
@@ -3095,7 +3105,7 @@ textview text selection {
   iconview text:selected:focus,
   textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
-  textview text selection {
+  textview text selection, .thunar notebook .view:selected, .thunar notebook iconview:selected {
     color: #f8f7f7; }
     .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
     .view text:backdrop:selected,
@@ -3103,7 +3113,7 @@ textview text selection {
     textview text:backdrop:selected,
     iconview text:backdrop:selected:focus,
     textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-    textview text selection:backdrop {
+    textview text selection:backdrop, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected {
       color: rgba(248, 247, 247, 0.56); }
     .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus,
     .view text:disabled:selected,
@@ -3111,7 +3121,7 @@ textview text selection {
     textview text:disabled:selected,
     iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
-    textview text selection:disabled {
+    textview text selection:disabled, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected {
       color: #f8f7f7; }
   .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
   .view text:backdrop:selected,
@@ -3119,7 +3129,7 @@ textview text selection {
   textview text:backdrop:selected,
   iconview text:backdrop:selected:focus,
   textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-  textview text selection:backdrop {
+  textview text selection:backdrop, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected {
     background-color: rgba(175, 41, 41, 0.56);
     color: rgba(248, 247, 247, 0.78);
     background-image: url("assets/selected-img-dark.png");
@@ -3858,14 +3868,17 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: #bb2c2c;
     color: #f8f7f7; }
+  .thunar .sidebar .view:backdrop, .thunar .sidebar iconview:backdrop, .thunar .sidebar .view.cell:backdrop, .thunar .sidebar iconview.cell:backdrop {
+    color: rgba(247, 248, 248, 0.67); }
+  .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
+    color: rgba(248, 247, 247, 0.78); }
 .thunar notebook .view, .thunar notebook iconview {
   background-color: #FFFFFF;
   color: #342828; }
   .thunar notebook .view .rubberband, .thunar notebook iconview .rubberband {
     background-color: rgba(134, 31, 31, 0.2); }
-  .thunar notebook .view:selected, .thunar notebook iconview:selected {
-    background-color: #AF2929;
-    color: #f8f7f7; }
+  .thunar notebook .view:backdrop, .thunar notebook iconview:backdrop {
+    color: rgba(52, 40, 40, 0.67); }
 .thunar notebook tabs > tab button.flat image, .thunar notebook tabs > tab button.sidebar-button image {
   background-color: transparent;
   border: 0.5px solid transparent;
@@ -4240,6 +4253,8 @@ GtkListBox .h4 {
   color: #342828;
   border-color: #F0F0F0;
   background-color: #fdfdfd; }
+  #content_frame button:backdrop {
+    color: rgba(52, 40, 40, 0.67); }
   #content_frame button:hover {
     color: #342828;
     border-color: #F0F0F0;
@@ -4248,6 +4263,8 @@ GtkListBox .h4 {
     color: #f8f7f7;
     border-color: #AF2929;
     background-color: #AF2929; }
+    #content_frame button:active:backdrop, #content_frame button:checked:backdrop {
+      color: rgba(248, 247, 247, 0.67); }
   #content_frame button:disabled {
     border-color: rgba(240, 240, 240, 0.55);
     background-color: rgba(253, 253, 253, 0.55); }
@@ -4401,6 +4418,9 @@ filechooser placessidebar.sidebar,
         color: #f8f7f7;
         border-color: #AF2929;
         background-color: #AF2929; }
+        filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop,
+        .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop {
+          color: rgba(248, 247, 247, 0.67); }
       filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
       .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {
         opacity: 0.5; }
