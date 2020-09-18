@@ -1738,30 +1738,33 @@ notebook {
       notebook > header > tabs > arrow:disabled {
         color: rgba(247, 248, 249, 0.15); }
     notebook > header.top > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 -1px #15191c; }
+      box-shadow: inset 0 -1px #2B3239; }
     notebook > header.bottom > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 1px #15191c; }
+      box-shadow: inset 0 1px #2B3239; }
     notebook > header.left > tabs > tab:hover:not(:checked) {
-      box-shadow: inset -1px 0 #15191c; }
+      box-shadow: inset -1px 0 #2B3239; }
     notebook > header.right > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 1px 0 #15191c; }
+      box-shadow: inset 1px 0 #2B3239; }
     notebook > header > tabs > tab {
       color: rgba(247, 248, 249, 0.45);
-      background-color: rgba(43, 50, 57, 0); }
+      background-color: rgba(43, 50, 57, 0);
+      border-top: 2px solid rgba(43, 50, 57, 0);
+      margin-bottom: 1px; }
       notebook > header > tabs > tab:backdrop {
         background-color: rgba(43, 50, 57, 0.23);
         color: rgba(247, 248, 249, 0.23); }
       notebook > header > tabs > tab:hover:not(:checked) {
         color: rgba(247, 248, 249, 0.725);
-        background-color: #323a42; }
+        background-color: #323a42;
+        border-top: 2px solid rgba(248, 248, 248, 0.12); }
         notebook > header > tabs > tab:hover:not(:checked):backdrop {
           color: rgba(247, 248, 249, 0.505);
-          background-color: rgba(50, 58, 66, 0.78); }
+          background-color: rgba(50, 58, 66, 0.78);
+          border-top: 2px solid if false, rgba(58, 88, 122, 0.12), rgba(58, 88, 122, 0.01); }
       notebook > header > tabs > tab:checked {
         color: #F7F8F9;
         background-color: #3a444d;
-        border-top: 2px solid #3A587A;
-        padding-top: 0px; }
+        border-top: 2px solid #3A587A; }
         notebook > header > tabs > tab:checked:backdrop {
           color: rgba(247, 248, 249, 0.78);
           background-color: rgba(58, 68, 77, 0.78);

@@ -1738,30 +1738,33 @@ notebook {
       notebook > header > tabs > arrow:disabled {
         color: rgba(249, 247, 247, 0.15); }
     notebook > header.top > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 -1px #130d0d; }
+      box-shadow: inset 0 -1px #2F2121; }
     notebook > header.bottom > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 1px #130d0d; }
+      box-shadow: inset 0 1px #2F2121; }
     notebook > header.left > tabs > tab:hover:not(:checked) {
-      box-shadow: inset -1px 0 #130d0d; }
+      box-shadow: inset -1px 0 #2F2121; }
     notebook > header.right > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 1px 0 #130d0d; }
+      box-shadow: inset 1px 0 #2F2121; }
     notebook > header > tabs > tab {
       color: rgba(249, 247, 247, 0.45);
-      background-color: rgba(47, 33, 33, 0); }
+      background-color: rgba(47, 33, 33, 0);
+      border-top: 2px solid rgba(47, 33, 33, 0);
+      margin-bottom: 1px; }
       notebook > header > tabs > tab:backdrop {
         background-color: rgba(47, 33, 33, 0.23);
         color: rgba(249, 247, 247, 0.23); }
       notebook > header > tabs > tab:hover:not(:checked) {
         color: rgba(249, 247, 247, 0.725);
-        background-color: #382727; }
+        background-color: #382727;
+        border-top: 2px solid rgba(248, 248, 248, 0.12); }
         notebook > header > tabs > tab:hover:not(:checked):backdrop {
           color: rgba(249, 247, 247, 0.505);
-          background-color: rgba(56, 39, 39, 0.78); }
+          background-color: rgba(56, 39, 39, 0.78);
+          border-top: 2px solid if false, rgba(133, 7, 7, 0.12), rgba(133, 7, 7, 0.01); }
       notebook > header > tabs > tab:checked {
         color: #f9f7f7;
         background-color: #443030;
-        border-top: 2px solid #850707;
-        padding-top: 0px; }
+        border-top: 2px solid #850707; }
         notebook > header > tabs > tab:checked:backdrop {
           color: rgba(249, 247, 247, 0.78);
           background-color: rgba(68, 48, 48, 0.78);

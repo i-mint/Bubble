@@ -1740,30 +1740,33 @@ notebook {
       notebook > header > tabs > arrow:disabled {
         color: rgba(40, 46, 52, 0.25); }
     notebook > header.top > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 -1px #e1e1e1; }
+      box-shadow: inset 0 -1px #FFFFFF; }
     notebook > header.bottom > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 1px #e1e1e1; }
+      box-shadow: inset 0 1px #FFFFFF; }
     notebook > header.left > tabs > tab:hover:not(:checked) {
-      box-shadow: inset -1px 0 #e1e1e1; }
+      box-shadow: inset -1px 0 #FFFFFF; }
     notebook > header.right > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 1px 0 #e1e1e1; }
+      box-shadow: inset 1px 0 #FFFFFF; }
     notebook > header > tabs > tab {
       color: rgba(40, 46, 52, 0.55);
-      background-color: rgba(255, 255, 255, 0); }
+      background-color: rgba(255, 255, 255, 0);
+      border-top: 2px solid rgba(255, 255, 255, 0);
+      margin-bottom: 1px; }
       notebook > header > tabs > tab:backdrop {
         background-color: rgba(255, 255, 255, 0.23);
         color: rgba(40, 46, 52, 0.33); }
       notebook > header > tabs > tab:hover:not(:checked) {
         color: rgba(40, 46, 52, 0.775);
-        background-color: white; }
+        background-color: white;
+        border-top: 2px solid rgba(35, 40, 45, 0.23); }
         notebook > header > tabs > tab:hover:not(:checked):backdrop {
           color: rgba(40, 46, 52, 0.555);
-          background-color: rgba(255, 255, 255, 0.78); }
+          background-color: rgba(255, 255, 255, 0.78);
+          border-top: 2px solid if true, rgba(85, 127, 175, 0.12), rgba(85, 127, 175, 0.01); }
       notebook > header > tabs > tab:checked {
         color: #282E34;
-        background-color: #f9f9f9;
-        border-top: 2px solid #557FAF;
-        padding-top: 0px; }
+        background-color: #eeeeee;
+        border-top: 2px solid #557FAF; }
         notebook > header > tabs > tab:checked:backdrop {
           color: rgba(40, 46, 52, 0.78);
           background-color: rgba(249, 249, 249, 0.78);
