@@ -3073,6 +3073,7 @@ iconview text:selected:focus,
 textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
 textview text selection:focus,
 textview text selection, .thunar notebook .view:selected, .thunar notebook iconview:selected {
+  background-color: #557FAF;
   background-image: linear-gradient(to right, #3c5c80 77%, #557FAF 33%);
   border-radius: 2px; }
   .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
@@ -4577,6 +4578,8 @@ filechooser headerbar widget stack box.path-bar-box,
     .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar .view.cell:selected:focus, .nemo-window .sidebar iconview.cell:selected:focus, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover, .nemo-window .sidebar row.cell:selected:focus {
       background-image: linear-gradient(to right, #557FAF, #557FAF);
       color: #F7F8F8; }
+      .nemo-window .sidebar .view.cell:selected:backdrop, .nemo-window .sidebar iconview.cell:selected:backdrop, .nemo-window .sidebar .view.cell:selected:hover:backdrop, .nemo-window .sidebar iconview.cell:selected:hover:backdrop, .nemo-window .sidebar .view.cell:selected:focus:backdrop, .nemo-window .sidebar iconview.cell:selected:focus:backdrop, .nemo-window .sidebar row.cell:selected:backdrop, .nemo-window .sidebar row.cell:selected:hover:backdrop, .nemo-window .sidebar row.cell:selected:focus:backdrop {
+        color: rgba(247, 248, 248, 0.67); }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
       background-color: rgba(0, 0, 0, 0.3);
       color: #ffffff; }
@@ -4584,6 +4587,8 @@ filechooser headerbar widget stack box.path-bar-box,
       color: rgba(154, 159, 163, 0.975); }
       .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
         color: #F7F8F8; }
+    .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar iconview:backdrop, .nemo-window .sidebar .view.cell:backdrop, .nemo-window .sidebar iconview.cell:backdrop, .nemo-window .sidebar row:backdrop, .nemo-window .sidebar row.cell:backdrop {
+      color: rgba(247, 248, 248, 0.67); }
   .nemo-window .sidebar separator {
     background-color: transparent; }
 
