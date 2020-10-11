@@ -19,7 +19,7 @@ Global Mixin
 /****************
 Global Placeholder
 ******************/
-.calendar, .world-clocks-button, .weather-button {
+.calendar, .world-clocks-button, .weather-button, .events-button {
   background-color: #f7f7f7;
   padding: 0;
   padding: 4px 2px;
@@ -219,10 +219,9 @@ StScrollBar {
 
 .modal-dialog {
   color: #342828;
-  background-color: rgba(248, 248, 248, 0);
+  background-color: #f8f8f8;
   border: none;
-  border-image: url("light-assets/misc/modal.svg") 9 9 9 67;
-  padding: 0 5px 6px 5px; }
+  padding: 0; }
   .modal-dialog .modal-dialog-content-box {
     padding: 20px 10px 10px 10px; }
   .modal-dialog-linked-button {
@@ -233,11 +232,11 @@ StScrollBar {
     border-bottom-width: 0;
     color: #F7F8F8;
     background-color: rgba(69, 51, 51, 0.95);
-    border-color: rgba(54, 40, 40, 0.95); }
+    border-color: rgba(66, 49, 49, 0.95); }
     .modal-dialog-linked-button:hover {
       background-color: rgba(84, 62, 62, 0.95); }
     .modal-dialog-linked-button:focus {
-      color: #AF2929; }
+      color: #F7F8F8; }
     .modal-dialog-linked-button:active {
       color: #f8f7f7;
       background-color: #AF2929; }
@@ -265,6 +264,32 @@ StScrollBar {
 .end-session-dialog-subject {
   font-size: 11pt;
   font-weight: bold;
+  color: #342828; }
+
+.run-dialog .modal-dialog-content-box {
+  margin-top: 24px;
+  margin-bottom: 14px; }
+.run-dialog .run-dialog-entry {
+  color: #2d2323;
+  background-color: #FFFFFF;
+  border: 1px solid #cfd6e6;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05);
+  width: 20em;
+  padding: 7px;
+  caret-size: 1px;
+  caret-color: #f8f7f7;
+  selection-background-color: #541414;
+  selected-color: #f8f7f7;
+  transition-duration: 300ms;
+  border-radius: 20px; }
+  .run-dialog .run-dialog-entry:hover, .run-dialog .run-dialog-entry:focus {
+    color: #f8f7f7;
+    caret-color: #f8f7f7;
+    background-color: #AF2929;
+    selection-background-color: #541414;
+    selected-color: #f8f7f7; }
+.run-dialog .run-dialog-description {
+  text-align: center;
   color: #342828; }
 
 .end-session-dialog {
@@ -1024,6 +1049,25 @@ StScrollBar {
     color: rgba(52, 40, 40, 0.56); }
   .weather-button .weather-forecast-temp {
     font-weight: bold; }
+
+.events-button {
+  color: #6f6666;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: #eeeeee; }
+  .events-button .events-box {
+    spacing: 2px; }
+  .events-button .events-list {
+    spacing: 4px; }
+  .events-button .events-title {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4px; }
+  .events-button .event-time {
+    color: #6f6666;
+    font-feature-settings: "tnum";
+    font-size: 99%;
+    margin-top: 4px; }
 
 .message-list {
   width: 31.5em; }
