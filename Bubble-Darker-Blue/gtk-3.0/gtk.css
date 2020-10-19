@@ -1545,94 +1545,12 @@ menu, .menu {
       background-color: transparent;
       border-color: transparent; }
 
-popover entry.search {
-  background-color: rgba(85, 127, 175, 0.35);
-  color: #F7F8F8;
-  border-radius: 20px; }
-  popover entry.search image {
-    color: #F7F8F8; }
-  popover entry.search:focus {
-    background-color: rgba(85, 127, 175, 0.55);
-    color: #F7F8F8;
-    border-radius: 20px;
-    border-color: rgba(85, 127, 175, 0.55); }
-
 popover, popover.background {
   padding: 2px;
   border-radius: 3px;
   background-clip: border-box;
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.07); }
-  popover stack button,
-  popover.background stack button {
-    background-color: whitesmoke;
-    border-color: rgba(0, 0, 0, 0.04);
-    color: #282E34; }
-    popover stack button label, popover stack button image,
-    popover.background stack button label,
-    popover.background stack button image {
-      color: #282E34; }
-    popover stack button:hover,
-    popover.background stack button:hover {
-      background-color: #e6e6e6;
-      border-color: rgba(0, 0, 0, 0.04);
-      color: #282E34; }
-      popover stack button:hover label, popover stack button:hover image,
-      popover.background stack button:hover label,
-      popover.background stack button:hover image {
-        color: #282E34; }
-    popover stack button:active, popover stack button:focus, popover stack button:checked,
-    popover.background stack button:active,
-    popover.background stack button:focus,
-    popover.background stack button:checked {
-      background-color: #557FAF;
-      border-color: rgba(0, 0, 0, 0.04);
-      color: #F7F8F8; }
-      popover stack button:active label, popover stack button:active image, popover stack button:focus label, popover stack button:focus image, popover stack button:checked label, popover stack button:checked image,
-      popover.background stack button:active label,
-      popover.background stack button:active image,
-      popover.background stack button:focus label,
-      popover.background stack button:focus image,
-      popover.background stack button:checked label,
-      popover.background stack button:checked image {
-        color: #F7F8F8; }
-  popover label,
-  popover.background label {
-    color: #282E34;
-    font-style: normal;
-    font-weight: normal;
-    text-shadow: none; }
-  popover .sidebar .view, popover .sidebar iconview, popover treeview .view, popover treeview iconview,
-  popover.background .sidebar .view,
-  popover.background .sidebar iconview,
-  popover.background treeview .view,
-  popover.background treeview iconview {
-    color: #282E34;
-    font-style: normal;
-    font-weight: normal;
-    text-shadow: none; }
-    popover .sidebar .view:hover, popover .sidebar iconview:hover, popover treeview .view:hover, popover treeview iconview:hover,
-    popover.background .sidebar .view:hover,
-    popover.background .sidebar iconview:hover,
-    popover.background treeview .view:hover,
-    popover.background treeview iconview:hover {
-      color: #282E34;
-      background-color: #f0f0f0; }
-    popover .sidebar .view:selected, popover .sidebar iconview:selected, popover .sidebar .view:active, popover .sidebar iconview:active, popover .sidebar .view:checked, popover .sidebar iconview:checked, popover treeview .view:selected, popover treeview iconview:selected, popover treeview .view:active, popover treeview iconview:active, popover treeview .view:checked, popover treeview iconview:checked,
-    popover.background .sidebar .view:selected,
-    popover.background .sidebar iconview:selected,
-    popover.background .sidebar .view:active,
-    popover.background .sidebar iconview:active,
-    popover.background .sidebar .view:checked,
-    popover.background .sidebar iconview:checked,
-    popover.background treeview .view:selected,
-    popover.background treeview iconview:selected,
-    popover.background treeview .view:active,
-    popover.background treeview iconview:active,
-    popover.background treeview .view:checked,
-    popover.background treeview iconview:checked {
-      color: #F7F8F8;
-      background-color: #557FAF; }
   .csd popover, popover,
   .csd popover.background, popover.background {
     border: 1px solid #d4d4d4; }
@@ -1649,6 +1567,25 @@ popover, popover.background {
   popover.background > .inline-toolbar {
     border-style: none;
     background-color: transparent; }
+
+popover.menu stack button:not(.flat):not(.toggle):not(.switcher) {
+  background-color: whitesmoke;
+  border-color: rgba(0, 0, 0, 0.04);
+  color: #282E34; }
+  popover.menu stack button:not(.flat):not(.toggle):not(.switcher) label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher) image {
+    color: inherit; }
+  popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover {
+    background-color: #e6e6e6;
+    border-color: rgba(0, 0, 0, 0.04);
+    color: #282E34; }
+    popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover image {
+      color: inherit; }
+  popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked {
+    background-color: #557FAF;
+    border-color: rgba(0, 0, 0, 0.04);
+    color: #F7F8F8; }
+    popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked image {
+      color: inherit; }
 
 cursor-handle {
   background-color: transparent;
@@ -3114,6 +3051,11 @@ textview text selection, .thunar notebook .view:selected, .thunar notebook iconv
   background-image: linear-gradient(to right, rgba(77, 93, 111, 0.95) 91%, rgba(85, 127, 175, 0.78) 9%);
   border-radius: 2px; }
 
+*:selected {
+  background-color: #557FAF; }
+  *:selected label, *:selected image, *:selected {
+    color: #F7F8F8; }
+
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #e1e1e1; }
@@ -3739,6 +3681,124 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .panel .menu .spinner,
 .menu .spinner {
   opacity: 1; }
+
+popover button.toggle, popover button.image-button:not(.flat):not(.toggle):not(.switcher) {
+  background-color: #ededed;
+  border-color: #dbdbdb;
+  box-shadow: none;
+  -gtk-icon-shadow: none; }
+  popover button.toggle image, popover button.image-button:not(.flat):not(.toggle):not(.switcher) image, popover button.toggle label, popover button.image-button:not(.flat):not(.toggle):not(.switcher) label, popover button.toggle, popover button.image-button:not(.flat):not(.toggle):not(.switcher) {
+    color: rgba(35, 40, 45, 0.45); }
+  popover button.toggle:hover, popover button.image-button:hover:not(.flat):not(.toggle):not(.switcher), popover button.toggle:focus, popover button.image-button:focus:not(.flat):not(.toggle):not(.switcher) {
+    background-color: #e8e8e8;
+    border-color: #dbdbdb; }
+    popover button.toggle:hover image, popover button.image-button:hover:not(.flat):not(.toggle):not(.switcher) image, popover button.toggle:hover label, popover button.image-button:hover:not(.flat):not(.toggle):not(.switcher) label, popover button.toggle:hover, popover button.image-button:hover:not(.flat):not(.toggle):not(.switcher), popover button.toggle:focus image, popover button.image-button:focus:not(.flat):not(.toggle):not(.switcher) image, popover button.toggle:focus label, popover button.image-button:focus:not(.flat):not(.toggle):not(.switcher) label, popover button.toggle:focus, popover button.image-button:focus:not(.flat):not(.toggle):not(.switcher) {
+      color: rgba(35, 40, 45, 0.67); }
+  popover button.toggle:active, popover button.image-button:active:not(.flat):not(.toggle):not(.switcher), popover button.toggle:selected, popover button.image-button:selected:not(.flat):not(.toggle):not(.switcher), popover button.toggle:checked, popover button.image-button:checked:not(.flat):not(.toggle):not(.switcher) {
+    background-color: #dbdbdb;
+    border-color: #d1d1d1; }
+    popover button.toggle:active image, popover button.image-button:active:not(.flat):not(.toggle):not(.switcher) image, popover button.toggle:active label, popover button.image-button:active:not(.flat):not(.toggle):not(.switcher) label, popover button.toggle:active, popover button.image-button:active:not(.flat):not(.toggle):not(.switcher), popover button.toggle:selected image, popover button.image-button:selected:not(.flat):not(.toggle):not(.switcher) image, popover button.toggle:selected label, popover button.image-button:selected:not(.flat):not(.toggle):not(.switcher) label, popover button.toggle:selected, popover button.image-button:selected:not(.flat):not(.toggle):not(.switcher), popover button.toggle:checked image, popover button.image-button:checked:not(.flat):not(.toggle):not(.switcher) image, popover button.toggle:checked label, popover button.image-button:checked:not(.flat):not(.toggle):not(.switcher) label, popover button.toggle:checked, popover button.image-button:checked:not(.flat):not(.toggle):not(.switcher) {
+      color: #23282D; }
+
+popover {
+  background-color: #FFFFFF;
+  color: #23282D; }
+  popover label, popover image, popover {
+    font-style: normal;
+    font-weight: normal;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    color: #23282D; }
+  popover button {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF; }
+    popover button label, popover button image, popover button {
+      color: #23282D; }
+    popover button:hover {
+      background-color: #ededed;
+      border-color: #ededed; }
+      popover button:hover label, popover button:hover image, popover button:hover {
+        color: #23282D; }
+    popover button:active, popover button:focus, popover button:checked {
+      background-color: #557FAF;
+      border-color: #557FAF; }
+      popover button:active label, popover button:active image, popover button:active, popover button:focus label, popover button:focus image, popover button:focus, popover button:checked label, popover button:checked image, popover button:checked {
+        color: #F7F8F8; }
+    popover button.flat, popover button.sidebar-button {
+      background-color: #FFFFFF;
+      border-color: #FFFFFF; }
+      popover button.flat label, popover button.sidebar-button label, popover button.flat image, popover button.sidebar-button image, popover button.flat, popover button.sidebar-button {
+        color: #23282D; }
+      popover button.flat:hover, popover button.sidebar-button:hover {
+        background-color: #ededed;
+        border-color: #ededed; }
+        popover button.flat:hover label, popover button.sidebar-button:hover label, popover button.flat:hover image, popover button.sidebar-button:hover image, popover button.flat:hover, popover button.sidebar-button:hover {
+          color: #23282D; }
+      popover button.flat:active, popover button.sidebar-button:active, popover button.flat:focus, popover button.sidebar-button:focus, popover button.flat:checked, popover button.sidebar-button:checked {
+        background-color: #557FAF;
+        border-color: #557FAF; }
+        popover button.flat:active label, popover button.sidebar-button:active label, popover button.flat:active image, popover button.sidebar-button:active image, popover button.flat:active, popover button.sidebar-button:active, popover button.flat:focus label, popover button.sidebar-button:focus label, popover button.flat:focus image, popover button.sidebar-button:focus image, popover button.flat:focus, popover button.sidebar-button:focus, popover button.flat:checked label, popover button.sidebar-button:checked label, popover button.flat:checked image, popover button.sidebar-button:checked image, popover button.flat:checked, popover button.sidebar-button:checked {
+          color: #F7F8F8; }
+  popover switch, popover button.switcher {
+    background-color: transparent; }
+  popover entry, popover entry.search {
+    color: #23282D;
+    border-color: #F0F0F0;
+    background-color: rgba(240, 240, 240, 0.89); }
+    popover entry image, popover entry image:hover, popover entry.search image, popover entry.search image:hover {
+      color: rgba(40, 46, 52, 0.55); }
+    popover entry:focus, popover entry.search:focus {
+      color: #F7F8F8;
+      border-color: #F0F0F0;
+      background-color: #557FAF; }
+      popover entry:focus image, popover entry:focus image:hover, popover entry.search:focus image, popover entry.search:focus image:hover {
+        color: #F7F8F8; }
+  popover .sidebar, popover .sidebar .view, popover .sidebar iconview, popover .view, popover iconview, popover row, popover list {
+    background-color: #FFFFFF;
+    color: #23282D; }
+  popover .sidebar row {
+    padding: 7px;
+    background-color: #FFFFFF; }
+    popover .sidebar row label, popover .sidebar row image, popover .sidebar row {
+      color: #23282D; }
+    popover .sidebar row:hover {
+      background-color: #ededed;
+      border-color: #ededed; }
+      popover .sidebar row:hover label, popover .sidebar row:hover image, popover .sidebar row:hover {
+        color: #23282D; }
+    popover .sidebar row:active, popover .sidebar row:checked, popover .sidebar row:selected {
+      background-color: #557FAF;
+      border-color: #557FAF; }
+      popover .sidebar row:active label, popover .sidebar row:active image, popover .sidebar row:active, popover .sidebar row:checked label, popover .sidebar row:checked image, popover .sidebar row:checked, popover .sidebar row:selected label, popover .sidebar row:selected image, popover .sidebar row:selected {
+        color: #F7F8F8; }
+  popover modelbutton, popover radiobutton, popover checkbutton, popover button.check {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF); }
+    popover modelbutton label, popover modelbutton image, popover modelbutton, popover radiobutton label, popover radiobutton image, popover radiobutton, popover checkbutton label, popover checkbutton image, popover checkbutton, popover button.check label, popover button.check image, popover button.check {
+      color: #23282D; }
+    popover modelbutton:hover, popover radiobutton:hover, popover checkbutton:hover, popover button.check:hover {
+      background-color: #ededed;
+      border-color: #ededed;
+      background-image: linear-gradient(to right, #ededed, #ededed); }
+      popover modelbutton:hover label, popover modelbutton:hover image, popover modelbutton:hover, popover radiobutton:hover label, popover radiobutton:hover image, popover radiobutton:hover, popover checkbutton:hover label, popover checkbutton:hover image, popover checkbutton:hover, popover button.check:hover label, popover button.check:hover image, popover button.check:hover {
+        color: #23282D; }
+    popover modelbutton:active, popover radiobutton:active, popover checkbutton:active, popover button.check:active {
+      background-color: #557FAF;
+      border-color: #557FAF;
+      background-image: linear-gradient(to right, #557FAF, #557FAF); }
+      popover modelbutton:active label, popover modelbutton:active image, popover modelbutton:active, popover radiobutton:active label, popover radiobutton:active image, popover radiobutton:active, popover checkbutton:active label, popover checkbutton:active image, popover checkbutton:active, popover button.check:active label, popover button.check:active image, popover button.check:active {
+        color: #F7F8F8; }
+  popover radiobutton, popover checkbutton, popover button.check {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF); }
+    popover radiobutton label, popover radiobutton image, popover radiobutton, popover checkbutton label, popover checkbutton image, popover checkbutton, popover button.check label, popover button.check image, popover button.check {
+      color: #23282D; }
+    popover radiobutton:hover, popover radiobutton:active, popover radiobutton:checked, popover radiobutton:selected, popover checkbutton:hover, popover checkbutton:active, popover checkbutton:checked, popover checkbutton:selected, popover button.check:hover, popover button.check:active, popover button.check:checked, popover button.check:selected {
+      background-color: #557FAF;
+      background-image: linear-gradient(to right, #557FAF, #557FAF); }
+      popover radiobutton:hover label, popover radiobutton:hover image, popover radiobutton:hover, popover radiobutton:active label, popover radiobutton:active image, popover radiobutton:active, popover radiobutton:checked label, popover radiobutton:checked image, popover radiobutton:checked, popover radiobutton:selected label, popover radiobutton:selected image, popover radiobutton:selected, popover checkbutton:hover label, popover checkbutton:hover image, popover checkbutton:hover, popover checkbutton:active label, popover checkbutton:active image, popover checkbutton:active, popover checkbutton:checked label, popover checkbutton:checked image, popover checkbutton:checked, popover checkbutton:selected label, popover checkbutton:selected image, popover checkbutton:selected, popover button.check:hover label, popover button.check:hover image, popover button.check:hover, popover button.check:active label, popover button.check:active image, popover button.check:active, popover button.check:checked label, popover button.check:checked image, popover button.check:checked, popover button.check:selected label, popover button.check:selected image, popover button.check:selected {
+        color: #F7F8F8; }
 
 .primary-toolbar toolitem:first-child .raised:first-child {
   color: #557FAF; }
