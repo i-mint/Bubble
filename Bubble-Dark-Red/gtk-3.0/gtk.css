@@ -1041,7 +1041,9 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   background-color: rgba(23, 15, 15, 0);
   border-color: rgba(23, 15, 15, 0); }
   .primary-toolbar button:backdrop, headerbar button:backdrop {
-    opacity: 0.7; }
+    opacity: 0.5; }
+    .primary-toolbar button:backdrop label, headerbar button:backdrop label, .primary-toolbar button:backdrop, headerbar button:backdrop {
+      color: rgba(250, 246, 246, 0.8); }
   .primary-toolbar button:hover, headerbar button:hover {
     color: rgba(250, 246, 246, 0.8);
     border-color: rgba(0, 0, 0, 0.35);
