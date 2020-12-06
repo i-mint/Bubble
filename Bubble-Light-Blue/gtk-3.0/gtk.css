@@ -371,61 +371,85 @@ button {
     color: white;
     background-color: #557FAF;
     border-color: #557FAF; }
+    button.suggested-action label {
+      color: inherit; }
     button.suggested-action.flat, button.suggested-action.sidebar-button {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
       color: #557FAF; }
+      button.suggested-action.flat label, button.suggested-action.sidebar-button label {
+        color: inherit; }
     button.suggested-action:hover {
       background-clip: border-box;
       color: white;
       background-color: #7899bf;
       border-color: #7899bf; }
+      button.suggested-action:hover label {
+        color: inherit; }
     button.suggested-action:active, button.suggested-action:checked {
       background-clip: border-box;
       color: white;
       background-color: #43668e;
       border-color: #43668e; }
+      button.suggested-action:active label, button.suggested-action:checked label {
+        color: inherit; }
     button.suggested-action.flat:disabled, button.suggested-action.sidebar-button:disabled {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
       color: rgba(40, 46, 52, 0.55); }
+      button.suggested-action.flat:disabled label, button.suggested-action.sidebar-button:disabled label {
+        color: inherit; }
     button.suggested-action:disabled {
       border-color: rgba(240, 240, 240, 0.55);
       background-color: rgba(253, 253, 253, 0.55); }
       button.suggested-action:disabled label, button.suggested-action:disabled {
         color: rgba(40, 46, 52, 0.55); }
+      button.suggested-action:disabled label {
+        color: inherit; }
   button.destructive-action {
     background-clip: border-box;
     color: white;
     background-color: #F04A50;
     border-color: #F04A50; }
+    button.destructive-action label {
+      color: inherit; }
     button.destructive-action.flat, button.destructive-action.sidebar-button {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
       color: #F04A50; }
+      button.destructive-action.flat label, button.destructive-action.sidebar-button label {
+        color: inherit; }
     button.destructive-action:hover {
       background-clip: border-box;
       color: white;
       background-color: #f4797e;
       border-color: #f4797e; }
+      button.destructive-action:hover label {
+        color: inherit; }
     button.destructive-action:active, button.destructive-action:checked {
       background-clip: border-box;
       color: white;
       background-color: #ec1b22;
       border-color: #ec1b22; }
+      button.destructive-action:active label, button.destructive-action:checked label {
+        color: inherit; }
     button.destructive-action.flat:disabled, button.destructive-action.sidebar-button:disabled {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
       color: rgba(40, 46, 52, 0.55); }
+      button.destructive-action.flat:disabled label, button.destructive-action.sidebar-button:disabled label {
+        color: inherit; }
     button.destructive-action:disabled {
       border-color: rgba(240, 240, 240, 0.55);
       background-color: rgba(253, 253, 253, 0.55); }
       button.destructive-action:disabled label, button.destructive-action:disabled {
         color: rgba(40, 46, 52, 0.55); }
+      button.destructive-action:disabled label {
+        color: inherit; }
   .stack-switcher > button {
     outline-offset: -3px; }
     .stack-switcher > button > label {
