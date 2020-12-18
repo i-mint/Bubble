@@ -1857,6 +1857,8 @@ switch {
     color: transparent;
     border: none;
     box-shadow: none; }
+  popover switch image, popover switch {
+    color: transparent; }
 
 switch {
   background-image: -gtk-scaled(url("assets/switch.png"), url("assets/switch@2.png")); }
