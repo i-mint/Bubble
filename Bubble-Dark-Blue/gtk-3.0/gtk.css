@@ -4393,11 +4393,16 @@ GtkListBox .h4 {
 
 overlay calendar-view event {
   background-image: linear-gradient(to bottom, #2e4762, #283d54);
-  border: 2px solid #283d54; }
+  border: 0px solid #283d54; }
   overlay calendar-view event label {
     color: rgba(247, 248, 248, 0.78);
     padding: 4px 6px;
     font-weight: normal; }
+  overlay calendar-view event.slanted-end label {
+    color: black; }
+
+event.slanted-end label {
+  color: rgba(0, 0, 0, 0.8); }
 
 .nautilus-window paned > separator {
   background-image: linear-gradient(to bottom, rgba(40, 47, 54, 0.95), rgba(40, 47, 54, 0.95)); }

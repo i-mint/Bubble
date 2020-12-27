@@ -4765,11 +4765,14 @@ filechooser placessidebar.sidebar scrollbar,
 
 overlay calendar-view event {
   background-image: linear-gradient(to bottom, #e79999, #e38989);
-  border: 2px solid #e38989; }
+  border: 0px solid #e38989; }
   overlay calendar-view event label {
     color: rgba(52, 40, 40, 0.78);
     padding: 4px 6px;
     font-weight: normal; }
+
+event.slanted-end label {
+  color: rgba(0, 0, 0, 0.8); }
 
 @define-color theme_fg_color #342828;
 @define-color theme_text_color #2d2323;
