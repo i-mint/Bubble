@@ -1108,7 +1108,7 @@ StScrollBar {
     color: rgba(52, 40, 40, 0.89);
     border-image: url("light-assets/misc/message-hover.svg") 9 9 9 9; }
   .message:active {
-    color: #342828;
+    color: #f8f7f7;
     border-image: url("light-assets/misc/message-active.svg") 9 9 9 9; }
   .message-icon-bin {
     padding: 8px 0px 8px 8px; }
@@ -1136,6 +1136,12 @@ StScrollBar {
     color: inherit;
     padding: 8px;
     font-size: 1em; }
+  .message .message-body, .message:hover .message-body {
+    color: rgba(52, 40, 40, 0.78); }
+  .message:hover .message-body {
+    color: rgba(52, 40, 40, 0.89); }
+  .message:active .message-body {
+    color: #f8f7f7; }
 
 .message-media-control {
   padding: 6px;
