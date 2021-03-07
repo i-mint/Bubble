@@ -1904,6 +1904,18 @@ headerbar switch:checked:disabled,
 .primary-toolbar switch:checked:disabled {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header-dark.png"), url("assets/switch-active-insensitive-header-dark@2.png")); }
 
+checkbutton check:hover, popover check:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-selected.png"), url("assets/checkbox-unchecked-selected-selected@2.png")); }
+
+checkbutton check:checked:hover, popover check:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"), url("assets/checkbox-checked-selected@2.png")); }
+
+radiobutton radio:hover, popover radio:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-selected.png"), url("assets/radio-unchecked-selected-selected@2.png")); }
+
+radiobutton radio:checked:hover, popover radio:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"), url("assets/radio-checked-selected@2.png")); }
+
 .check,
 check,
 treeview.check {
@@ -1913,7 +1925,6 @@ treeview.check {
 filechooser actionbar check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png")); }
 
-popover check:hover,
 menuitem check:hover,
 .view check:selected,
 iconview check:selected,
@@ -1931,7 +1942,6 @@ treeview.check:disabled {
 filechooser actionbar check:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png")); }
 
-popover check:disabled:hover,
 menuitem check:disabled:hover,
 .view check:disabled:selected,
 iconview check:disabled:selected,
@@ -1949,7 +1959,6 @@ treeview.check:indeterminate {
 filechooser actionbar check:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), url("assets/checkbox-mixed-dark@2.png")); }
 
-popover check:indeterminate:hover,
 menuitem check:indeterminate:hover,
 .view check:indeterminate:selected,
 iconview check:indeterminate:selected,
@@ -1967,7 +1976,6 @@ treeview.check:indeterminate:disabled {
 filechooser actionbar check:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png")); }
 
-popover check:indeterminate:disabled:hover,
 menuitem check:indeterminate:disabled:hover,
 .view check:indeterminate:disabled:selected,
 iconview check:indeterminate:disabled:selected,
@@ -1985,7 +1993,6 @@ treeview.check:checked {
 filechooser actionbar check:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
-popover check:checked:hover,
 menuitem check:checked:hover,
 .view check:checked:selected,
 iconview check:checked:selected,
@@ -2003,7 +2010,6 @@ treeview.check:checked:disabled {
 filechooser actionbar check:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png")); }
 
-popover check:checked:disabled:hover,
 menuitem check:checked:disabled:hover,
 .view check:checked:disabled:selected,
 iconview check:checked:disabled:selected,
@@ -2021,7 +2027,6 @@ treeview.radio {
 filechooser actionbar radio {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png")); }
 
-popover radio:hover,
 menuitem radio:hover,
 .view radio:selected,
 iconview radio:selected,
@@ -2039,7 +2044,6 @@ treeview.radio:disabled {
 filechooser actionbar radio:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png")); }
 
-popover radio:disabled:hover,
 menuitem radio:disabled:hover,
 .view radio:disabled:selected,
 iconview radio:disabled:selected,
@@ -2057,7 +2061,6 @@ treeview.radio:indeterminate {
 filechooser actionbar radio:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png")); }
 
-popover radio:indeterminate:hover,
 menuitem radio:indeterminate:hover,
 .view radio:indeterminate:selected,
 iconview radio:indeterminate:selected,
@@ -2075,7 +2078,6 @@ treeview.radio:indeterminate:disabled {
 filechooser actionbar radio:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png")); }
 
-popover radio:indeterminate:disabled:hover,
 menuitem radio:indeterminate:disabled:hover,
 .view radio:indeterminate:disabled:selected,
 iconview radio:indeterminate:disabled:selected,
@@ -2093,7 +2095,6 @@ treeview.radio:checked {
 filechooser actionbar radio:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
-popover radio:checked:hover,
 menuitem radio:checked:hover,
 .view radio:checked:selected,
 iconview radio:checked:selected,
@@ -2111,7 +2112,6 @@ treeview.radio:checked:disabled {
 filechooser actionbar radio:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png")); }
 
-popover radio:checked:disabled:hover,
 menuitem radio:checked:disabled:hover,
 .view radio:checked:disabled:selected,
 iconview radio:checked:disabled:selected,
@@ -4507,9 +4507,6 @@ filechooser headerbar widget stack box.path-bar-box,
   background-color: rgba(91, 59, 59, 0.35);
   background-color: #2F2121;
   border: 1px solid rgba(0, 0, 0, 0.35); }
-  filechooser headerbar widget stack box.path-bar-box button,
-  .nautilus-window headerbar widget stack box.path-bar-box button {
-    padding: 0px 6px; }
   filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button,
   .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.text-button {
     color: rgba(246, 249, 249, 0.8);
@@ -4896,78 +4893,71 @@ event.slanted-end label {
     .budgie-menu row:hover label {
       color: #342828; }
 
-.budgie-popover, .budgie-popover.background {
+.budgie-popover {
   border-style: none;
   border-width: 0px;
-  border-color: rgba(0, 0, 0, 0.23);
-  border-radius: 4px;
+  border-color: transparent;
+  border-radius: 1px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
-  background-color: #FFFFFF;
-  background-clip: border-box; }
-  .budgie-popover list, .budgie-popover.background list {
+  background-color: #FFFFFF; }
+  .budgie-popover list {
     background-color: transparent; }
-  .budgie-popover.places-menu, .budgie-popover.background.places-menu {
+  .budgie-popover.places-menu {
     background-color: #FFFFFF;
-    border-color: rgba(0, 0, 0, 0.23);
+    border-color: #FFFFFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22); }
-    .budgie-popover.places-menu row, .budgie-popover.background.places-menu row {
+    .budgie-popover.places-menu row {
       background-color: #FFFFFF;
-      border-color: rgba(0, 0, 0, 0.23);
+      border-color: #FFFFFF;
       border-radius: 0px; }
-      .budgie-popover.places-menu row label, .budgie-popover.background.places-menu row label {
+      .budgie-popover.places-menu row label {
         color: #342828; }
-      .budgie-popover.places-menu row:hover, .budgie-popover.background.places-menu row:hover {
+      .budgie-popover.places-menu row:hover {
         background-color: whitesmoke;
         border-color: whitesmoke;
         border-radius: 0px; }
-        .budgie-popover.places-menu row:hover label, .budgie-popover.background.places-menu row:hover label {
+        .budgie-popover.places-menu row:hover label {
           color: #342828; }
-    .budgie-popover.places-menu button, .budgie-popover.background.places-menu button {
+    .budgie-popover.places-menu button {
       background-color: transparent;
       border-color: transparent;
       border-radius: 0px; }
-      .budgie-popover.places-menu button label, .budgie-popover.background.places-menu button label {
+      .budgie-popover.places-menu button label {
         color: #342828; }
-      .budgie-popover.places-menu button:hover, .budgie-popover.background.places-menu button:hover {
+      .budgie-popover.places-menu button:hover {
         background-color: transparent;
         border-color: transparent;
         border-radius: 0px; }
-        .budgie-popover.places-menu button:hover label, .budgie-popover.background.places-menu button:hover label {
+        .budgie-popover.places-menu button:hover label {
           color: #342828; }
-  .budgie-popover.user-menu, .budgie-popover.background.user-menu {
+  .budgie-popover.user-menu {
     background-color: #FFFFFF;
-    border-color: rgba(0, 0, 0, 0.23);
+    border-color: #FFFFFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22); }
-    .budgie-popover.user-menu button, .budgie-popover.background.user-menu button {
+    .budgie-popover.user-menu button {
       background-color: transparent;
       border-color: transparent;
       border-radius: 0px; }
-      .budgie-popover.user-menu button label, .budgie-popover.background.user-menu button label {
+      .budgie-popover.user-menu button label {
         color: #342828; }
-      .budgie-popover.user-menu button:hover, .budgie-popover.background.user-menu button:hover {
+      .budgie-popover.user-menu button:hover {
         background-color: transparent;
         border-color: transparent;
         border-radius: 0px; }
-        .budgie-popover.user-menu button:hover label, .budgie-popover.background.user-menu button:hover label {
+        .budgie-popover.user-menu button:hover label {
           color: #342828; }
-    .budgie-popover.user-menu row, .budgie-popover.background.user-menu row {
+    .budgie-popover.user-menu row {
       background-color: #FFFFFF;
-      border-color: rgba(0, 0, 0, 0.23);
+      border-color: #FFFFFF;
       border-radius: 0px; }
-      .budgie-popover.user-menu row label, .budgie-popover.background.user-menu row label {
+      .budgie-popover.user-menu row label {
         color: #342828; }
-      .budgie-popover.user-menu row:hover, .budgie-popover.background.user-menu row:hover {
+      .budgie-popover.user-menu row:hover {
         background-color: whitesmoke;
         border-color: whitesmoke;
         border-radius: 0px; }
-        .budgie-popover.user-menu row:hover label, .budgie-popover.background.user-menu row:hover label {
+        .budgie-popover.user-menu row:hover label {
           color: #342828; }
-  .budgie-popover frame > border, .budgie-popover .frame, .budgie-popover.background frame > border, .budgie-popover.background .frame {
-    border: none; }
-
-.budgie-popover .container {
-  background-color: #FFFFFF;
-  border: none; }
 
 .budgie-run-dialog {
   background-color: #AF2929;
