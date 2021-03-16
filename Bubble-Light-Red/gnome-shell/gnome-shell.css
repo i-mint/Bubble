@@ -776,6 +776,9 @@ StScrollBar {
       box-shadow: none;
       border: none;
       border-color: transparent; }
+  #panel .panel-button.clock-display:active > * > *:last-child, #panel .panel-button.clock-display:checked > * > *:last-child {
+    color: #f8f7f7;
+    background-color: #AF2929; }
   #panel #panelActivities.panel-button {
     -natural-hpadding: 12px; }
   #panel .panel-status-indicators-box,
@@ -786,7 +789,7 @@ StScrollBar {
   #panel .screencast-indicator {
     color: #FC4138; }
   #panel .clock-display > * > *:last-child {
-    color: #AF2929;
+    color: #c42e2e;
     margin-left: .3em; }
   #panel .popup-menu-arrow {
     width: 0; }
