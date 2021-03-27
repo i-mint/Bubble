@@ -2995,16 +2995,6 @@ filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser pl
   padding-bottom: 0px;
   background-position: left; }
 
-widget list row .text-button {
-  background-color: #3A587A;
-  color: #F7F8F8; }
-  widget list row .text-button:hover {
-    background-color: #416288;
-    color: #F7F8F8; }
-  widget list row .text-button:active {
-    background-color: #44678f;
-    color: #F7F8F8; }
-
 .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
 .view text:selected,
 iconview text:selected,
