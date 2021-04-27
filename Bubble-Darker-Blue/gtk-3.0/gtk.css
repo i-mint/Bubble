@@ -4704,7 +4704,7 @@ filechooser headerbar widget stack box.path-bar-box,
   .nautilus-window headerbar widget stack box.path-bar-box .path-bar .dim-label,
   .nautilus-window headerbar widget stack box.path-bar-box .path-bar label.separator,
   .nautilus-window headerbar widget stack box.path-bar-box .path-bar .subtitle {
-    color: #557FAF;
+    color: transparent;
     border: transparent; }
 
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
