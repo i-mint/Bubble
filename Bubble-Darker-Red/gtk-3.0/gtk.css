@@ -817,6 +817,10 @@ spinbutton.vertical > entry:focus + button {
   border-top-color: #AF2929; }
 spinbutton.vertical > entry:drop(active) + button {
   border-top-color: #F08437; }
+spinbutton entry {
+  background-color: #fdfdfd; }
+spinbutton button:hover {
+  background-color: #e6e6e6; }
 
 combobox button.combo {
   min-width: 0;
@@ -2464,6 +2468,8 @@ row.activatable:selected:active {
   color: #f8f7f7; }
 row.activatable:selected.has-open-popup, row.activatable:selected:hover {
   background-color: #9e2525; }
+row.activatable button:hover {
+  background-color: #e6e6e6; }
 
 .app-notification {
   padding: 10px;
