@@ -21,11 +21,11 @@ Global Placeholder
 ******************/
 .calendar, .world-clocks-button, .weather-button, .events-button {
   background-color: #f7f7f7;
-  padding: 0;
-  padding: 4px 2px;
+  padding: 4px 8px;
   border: 1px;
   border-radius: 4px;
-  border-color: #e1e1e1; }
+  border-color: #e1e1e1;
+  box-shadow: 0.2px 0 0 1px rgba(225, 225, 225, 0.3); }
 
 /* Copyright 2009, 2015 Red Hat, Inc.
  *
@@ -537,7 +537,7 @@ StScrollBar {
         color: #F7F8F8; }
     .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
       color: #282E34;
-      background-color: rgba(0, 0, 0, 0.05); }
+      background-color: rgba(0, 0, 0, 0.07); }
     .popup-menu .popup-menu-item:insensitive {
       color: rgba(40, 46, 52, 0.5);
       background: none; }
@@ -574,8 +574,17 @@ StScrollBar {
   height: 2px;
   margin: 0;
   background-color: transparent;
-  border: none;
-  border-image: url("common-assets/menu/menu-separator.svg") 1 1 1 1; }
+  border: none; }
+
+.popup-separator-menu-item {
+  padding: 0; }
+  .popup-separator-menu-item .popup-separator-menu-item-separator {
+    height: 2px;
+    margin: 0;
+    background-color: transparent; }
+    .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+      margin: 0;
+      background-color: transparent; }
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -931,10 +940,10 @@ StScrollBar {
   text-align: center;
   font-feature-settings: "tnum"; }
   .calendar .calendar-day-base:hover, .calendar .calendar-day-base:focus {
-    background-color: #eeeeee;
+    background-color: rgba(0, 0, 0, 0.07);
     border-radius: 16px; }
   .calendar .calendar-day-base:active, .calendar .calendar-day-base:selected {
-    background-color: #e6e6e6; }
+    background-color: gainsboro; }
   .calendar .calendar-day-base.calendar-day-heading {
     color: black;
     background-color: transparent;
@@ -977,20 +986,19 @@ StScrollBar {
   height: 8px;
   width: 12px;
   border-radius: 2px;
-  padding: 4px;
-  padding: 1.1em 4px 0 4px;
-  background-color: rgba(40, 46, 52, 0.04);
+  margin: 4px;
+  padding: 0 4px 2px 4px;
+  background-color: rgba(40, 46, 52, 0.14);
   color: #3d4248;
   text-align: center; }
 
 .world-clocks-button {
   color: #666b6f;
-  border-radius: 4px;
-  box-shadow: none; }
+  border-radius: 4px; }
   .world-clocks-button:hover {
-    background-color: #eeeeee; }
+    background-color: rgba(0, 0, 0, 0.07); }
   .world-clocks-button:active {
-    background-color: #e6e6e6; }
+    background-color: gainsboro; }
     .world-clocks-button:active .world-clocks-grid, .world-clocks-button:active .world-clocks-timezone {
       background-color: transparent; }
     .world-clocks-button:active .world-clocks-time {
@@ -1019,9 +1027,9 @@ StScrollBar {
   border-radius: 4px;
   box-shadow: none; }
   .weather-button:hover {
-    background-color: #eeeeee; }
+    background-color: rgba(0, 0, 0, 0.07); }
   .weather-button:active {
-    background-color: #e6e6e6; }
+    background-color: gainsboro; }
     .weather-button:active .weather-forecast-icon {
       color: rgba(40, 46, 52, 0.62); }
   .weather-button .weather-box {
@@ -1055,7 +1063,7 @@ StScrollBar {
   color: #666b6f;
   border-radius: 4px;
   box-shadow: none;
-  background-color: #eeeeee; }
+  background-color: rgba(0, 0, 0, 0.07); }
   .events-button .events-box {
     spacing: 2px; }
   .events-button .events-list {

@@ -21,11 +21,11 @@ Global Placeholder
 ******************/
 .calendar, .world-clocks-button, .weather-button, .events-button {
   background-color: #242a2f;
-  padding: 0;
-  padding: 4px 2px;
+  padding: 4px 8px;
   border: 1px;
   border-radius: 4px;
-  border-color: #15191c; }
+  border-color: #15191c;
+  box-shadow: 0.2px 0 0 1px rgba(21, 25, 28, 0.3); }
 
 /* Copyright 2009, 2015 Red Hat, Inc.
  *
@@ -574,8 +574,17 @@ StScrollBar {
   height: 2px;
   margin: 0;
   background-color: transparent;
-  border: none;
-  border-image: url("common-assets/menu/menu-separator.svg") 1 1 1 1; }
+  border: none; }
+
+.popup-separator-menu-item {
+  padding: 0; }
+  .popup-separator-menu-item .popup-separator-menu-item-separator {
+    height: 2px;
+    margin: 0;
+    background-color: transparent; }
+    .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+      margin: 0;
+      background-color: transparent; }
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -931,7 +940,7 @@ StScrollBar {
   text-align: center;
   font-feature-settings: "tnum"; }
   .calendar .calendar-day-base:hover, .calendar .calendar-day-base:focus {
-    background-color: #3a444d;
+    background-color: rgba(255, 255, 255, 0.08);
     border-radius: 16px; }
   .calendar .calendar-day-base:active, .calendar .calendar-day-base:selected {
     background-color: #3f4953; }
@@ -977,18 +986,17 @@ StScrollBar {
   height: 8px;
   width: 12px;
   border-radius: 2px;
-  padding: 4px;
-  padding: 1.1em 4px 0 4px;
+  margin: 4px;
+  padding: 0 4px 2px 4px;
   background-color: rgba(247, 248, 249, 0.08);
   color: #e2e3e5;
   text-align: center; }
 
 .world-clocks-button {
   color: #b7babc;
-  border-radius: 4px;
-  box-shadow: none; }
+  border-radius: 4px; }
   .world-clocks-button:hover {
-    background-color: #3a444d; }
+    background-color: rgba(255, 255, 255, 0.08); }
   .world-clocks-button:active {
     background-color: #3f4953; }
     .world-clocks-button:active .world-clocks-grid, .world-clocks-button:active .world-clocks-timezone {
@@ -1019,7 +1027,7 @@ StScrollBar {
   border-radius: 4px;
   box-shadow: none; }
   .weather-button:hover {
-    background-color: #3a444d; }
+    background-color: rgba(255, 255, 255, 0.08); }
   .weather-button:active {
     background-color: #3f4953; }
     .weather-button:active .weather-forecast-icon {
@@ -1055,7 +1063,7 @@ StScrollBar {
   color: #b7babc;
   border-radius: 4px;
   box-shadow: none;
-  background-color: #3a444d; }
+  background-color: rgba(255, 255, 255, 0.08); }
   .events-button .events-box {
     spacing: 2px; }
   .events-button .events-list {

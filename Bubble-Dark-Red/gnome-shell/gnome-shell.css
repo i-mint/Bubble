@@ -21,11 +21,11 @@ Global Placeholder
 ******************/
 .calendar, .world-clocks-button, .weather-button, .events-button {
   background-color: #251a1a;
-  padding: 0;
-  padding: 4px 2px;
+  padding: 4px 8px;
   border: 1px;
   border-radius: 4px;
-  border-color: #130d0d; }
+  border-color: #130d0d;
+  box-shadow: 0.2px 0 0 1px rgba(19, 13, 13, 0.3); }
 
 /* Copyright 2009, 2015 Red Hat, Inc.
  *
@@ -510,7 +510,7 @@ StScrollBar {
   spacing-columns: 1em; }
 
 .popup-menu {
-  min-width: 15em;
+  min-width: 10em;
   color: #f9f7f7;
   border-image: url("dark-assets/menu/menu.svg") 9 9 9 9; }
   .popup-menu .popup-sub-menu {
@@ -523,9 +523,9 @@ StScrollBar {
     spacing: 12px;
     margin: 0 4px 0 4px; }
     .popup-menu .popup-menu-item:ltr {
-      padding: .4em 3em .4em 0em; }
+      padding: .4em 1.75em .4em 0em; }
     .popup-menu .popup-menu-item:rtl {
-      padding: .4em 0em .4em 3em; }
+      padding: .4em 0em .4em 1.75em; }
     .popup-menu .popup-menu-item:checked {
       font-weight: normal;
       background: none;
@@ -537,7 +537,6 @@ StScrollBar {
         color: #f8f7f7; }
     .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
       color: #f9f7f7;
-      background-color: transparent;
       background-color: rgba(255, 255, 255, 0.08); }
     .popup-menu .popup-menu-item:insensitive {
       color: rgba(249, 247, 247, 0.5);
@@ -575,8 +574,17 @@ StScrollBar {
   height: 2px;
   margin: 0;
   background-color: transparent;
-  border: none;
-  border-image: url("common-assets/menu/menu-separator.svg") 1 1 1 1; }
+  border: none; }
+
+.popup-separator-menu-item {
+  padding: 0; }
+  .popup-separator-menu-item .popup-separator-menu-item-separator {
+    height: 2px;
+    margin: 0;
+    background-color: transparent; }
+    .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+      margin: 0;
+      background-color: transparent; }
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -932,7 +940,7 @@ StScrollBar {
   text-align: center;
   font-feature-settings: "tnum"; }
   .calendar .calendar-day-base:hover, .calendar .calendar-day-base:focus {
-    background-color: #443030;
+    background-color: rgba(255, 255, 255, 0.08);
     border-radius: 16px; }
   .calendar .calendar-day-base:active, .calendar .calendar-day-base:selected {
     background-color: #4a3434; }
@@ -978,18 +986,17 @@ StScrollBar {
   height: 8px;
   width: 12px;
   border-radius: 2px;
-  padding: 4px;
-  padding: 1.1em 4px 0 4px;
+  margin: 4px;
+  padding: 0 4px 2px 4px;
   background-color: rgba(249, 247, 247, 0.08);
   color: #e4e1e1;
   text-align: center; }
 
 .world-clocks-button {
   color: #b9b4b4;
-  border-radius: 4px;
-  box-shadow: none; }
+  border-radius: 4px; }
   .world-clocks-button:hover {
-    background-color: #443030; }
+    background-color: rgba(255, 255, 255, 0.08); }
   .world-clocks-button:active {
     background-color: #4a3434; }
     .world-clocks-button:active .world-clocks-grid, .world-clocks-button:active .world-clocks-timezone {
@@ -1020,7 +1027,7 @@ StScrollBar {
   border-radius: 4px;
   box-shadow: none; }
   .weather-button:hover {
-    background-color: #443030; }
+    background-color: rgba(255, 255, 255, 0.08); }
   .weather-button:active {
     background-color: #4a3434; }
     .weather-button:active .weather-forecast-icon {
@@ -1056,7 +1063,7 @@ StScrollBar {
   color: #b9b4b4;
   border-radius: 4px;
   box-shadow: none;
-  background-color: #443030; }
+  background-color: rgba(255, 255, 255, 0.08); }
   .events-button .events-box {
     spacing: 2px; }
   .events-button .events-list {
