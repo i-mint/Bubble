@@ -375,6 +375,9 @@ button {
     border-color: #AF2929; }
     button.suggested-action label {
       color: inherit; }
+    button.suggested-action:backdrop label {
+      color: inherit;
+      opacity: 0.6; }
     button.suggested-action.flat {
       border-color: transparent;
       background-color: transparent;
@@ -382,6 +385,9 @@ button {
       color: #AF2929; }
       button.suggested-action.flat label {
         color: inherit; }
+      button.suggested-action.flat:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
     button.suggested-action:hover {
       background-clip: border-box;
       color: white;
@@ -389,6 +395,9 @@ button {
       border-color: #d13a3a; }
       button.suggested-action:hover label {
         color: inherit; }
+      button.suggested-action:hover:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
     button.suggested-action:active, button.suggested-action:checked {
       background-clip: border-box;
       color: white;
@@ -396,6 +405,9 @@ button {
       border-color: #861f1f; }
       button.suggested-action:active label, button.suggested-action:checked label {
         color: inherit; }
+      button.suggested-action:active:backdrop label, button.suggested-action:checked:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
     button.suggested-action.flat:disabled {
       border-color: transparent;
       background-color: transparent;
@@ -403,6 +415,9 @@ button {
       color: rgba(52, 40, 40, 0.55); }
       button.suggested-action.flat:disabled label {
         color: inherit; }
+      button.suggested-action.flat:disabled:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
     button.suggested-action:disabled {
       border-color: rgba(232, 232, 232, 0.55);
       background-color: rgba(253, 253, 253, 0.55); }
@@ -410,6 +425,9 @@ button {
         color: rgba(52, 40, 40, 0.55); }
       button.suggested-action:disabled label {
         color: inherit; }
+      button.suggested-action:disabled:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
   button.destructive-action {
     background-clip: border-box;
     color: white;
@@ -417,6 +435,9 @@ button {
     border-color: #F04A50; }
     button.destructive-action label {
       color: inherit; }
+    button.destructive-action:backdrop label {
+      color: inherit;
+      opacity: 0.6; }
     button.destructive-action.flat {
       border-color: transparent;
       background-color: transparent;
@@ -424,6 +445,9 @@ button {
       color: #F04A50; }
       button.destructive-action.flat label {
         color: inherit; }
+      button.destructive-action.flat:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
     button.destructive-action:hover {
       background-clip: border-box;
       color: white;
@@ -431,6 +455,9 @@ button {
       border-color: #f4797e; }
       button.destructive-action:hover label {
         color: inherit; }
+      button.destructive-action:hover:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
     button.destructive-action:active, button.destructive-action:checked {
       background-clip: border-box;
       color: white;
@@ -438,6 +465,9 @@ button {
       border-color: #ec1b22; }
       button.destructive-action:active label, button.destructive-action:checked label {
         color: inherit; }
+      button.destructive-action:active:backdrop label, button.destructive-action:checked:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
     button.destructive-action.flat:disabled {
       border-color: transparent;
       background-color: transparent;
@@ -445,6 +475,9 @@ button {
       color: rgba(52, 40, 40, 0.55); }
       button.destructive-action.flat:disabled label {
         color: inherit; }
+      button.destructive-action.flat:disabled:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
     button.destructive-action:disabled {
       border-color: rgba(232, 232, 232, 0.55);
       background-color: rgba(253, 253, 253, 0.55); }
@@ -452,6 +485,9 @@ button {
         color: rgba(52, 40, 40, 0.55); }
       button.destructive-action:disabled label {
         color: inherit; }
+      button.destructive-action:disabled:backdrop label {
+        color: inherit;
+        opacity: 0.6; }
   .stack-switcher > button {
     outline-offset: -3px; }
     .stack-switcher > button > label {
