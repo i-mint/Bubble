@@ -1040,7 +1040,7 @@ headerbar, .titlebar:not(headerbar) {
 .titlebar {
   border-radius: 4px 4px 0 0; }
 
-headerbar entry, headerbar button, headerbar separator {
+headerbar entry, headerbar button {
   margin-top: 6px;
   margin-bottom: 6px; }
 separator:first-child + headerbar, separator:first-child + headerbar:backdrop, headerbar:first-child, headerbar:first-child:backdrop {
@@ -1051,6 +1051,8 @@ headerbar:last-child, headerbar:last-child:backdrop {
   border-top-right-radius: 4px; }
   .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
     border-radius: 0; }
+headerbar separator.sidebar {
+  background-image: image(#e1e1e1); }
 
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
   padding: 0;
@@ -1065,7 +1067,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   min-height: 1px;
   background: none;
   border-width: 0 1px;
-  border-image: linear-gradient(to bottom, rgba(57, 35, 35, 0) 25%, rgba(57, 35, 35, 0.15) 25%, rgba(57, 35, 35, 0.15) 75%, rgba(57, 35, 35, 0) 75%) 0 1/0 1px stretch; }
+  border-image: linear-gradient(to bottom, rgba(57, 35, 35, 0) 25%, rgba(57, 35, 35, 0.05) 25%, rgba(57, 35, 35, 0.05) 75%, rgba(57, 35, 35, 0) 75%) 0 1/0 1px stretch; }
   .primary-toolbar:not(.libreoffice-toolbar) separator:backdrop, headerbar separator.titlebutton:backdrop, .titlebar:not(headerbar) separator.titlebutton:backdrop {
     opacity: 0.6; }
 
@@ -2652,18 +2654,18 @@ filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent; }
 
-.sidebar {
+.sidebar:not(separator) {
   border-style: none;
   background-color: #fdfdfd; }
-  stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl) {
+  stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:not(separator):dir(ltr), .sidebar:not(separator).left, .sidebar:not(separator).left:dir(rtl) {
     border-right: 1px solid #e1e1e1;
     border-left-style: none; }
-  stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:dir(rtl), .sidebar.right {
+  stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:not(separator):dir(rtl), .sidebar:not(separator).right {
     border-left: 1px solid #e1e1e1;
     border-right-style: none; }
-  .sidebar list {
+  .sidebar:not(separator) list {
     background-color: transparent; }
-  paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
+  paned .sidebar:not(separator).left, paned .sidebar:not(separator).right, paned .sidebar:not(separator).left:dir(rtl), paned .sidebar:not(separator):dir(rtl), paned .sidebar:not(separator):dir(ltr), paned .sidebar:not(separator) {
     border-style: none; }
 
 stacksidebar row {
@@ -4499,7 +4501,7 @@ GtkListBox .h4 {
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px 1px;
-  box-shadow: inset 0 1px rgba(69, 51, 51, 0.95); }
+  box-shadow: inset 0 1px rgba(60, 44, 44, 0.95); }
 
 #buttonbox_frame button {
   color: #F7F8F8;
@@ -4565,14 +4567,14 @@ GtkListBox .h4 {
   font-weight: bold; }
 
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, rgba(69, 51, 51, 0.95), rgba(69, 51, 51, 0.95)); }
+  background-image: linear-gradient(to bottom, rgba(60, 44, 44, 0.95), rgba(60, 44, 44, 0.95)); }
   .nautilus-window paned > separator:dir(ltr) {
     margin-left: -1px; }
   .nautilus-window paned > separator:dir(rtl) {
     margin-right: -1px; }
 
 filechooser paned > separator {
-  background-image: linear-gradient(to bottom, rgba(69, 51, 51, 0.95), rgba(69, 51, 51, 0.95)); }
+  background-image: linear-gradient(to bottom, rgba(60, 44, 44, 0.95), rgba(60, 44, 44, 0.95)); }
 
 filechooser.csd.background, filechooser placessidebar list,
 .nautilus-window.csd.background,
@@ -4668,7 +4670,7 @@ filechooser placessidebar.sidebar,
         color: #f8f7f7; }
   filechooser placessidebar.sidebar separator,
   .nautilus-window placessidebar.sidebar separator {
-    background-color: rgba(0, 0, 0, 0.95); }
+    background-color: rgba(60, 44, 44, 0.95); }
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #453333; }
@@ -4873,7 +4875,7 @@ filechooser actionbar {
   background-color: #FFFFFF; }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(69, 51, 51, 0.95), rgba(69, 51, 51, 0.95)); }
+  background-image: linear-gradient(to bottom, rgba(60, 44, 44, 0.95), rgba(60, 44, 44, 0.95)); }
 
 .gedit-bottom-panel-paned > separator {
   background-image: linear-gradient(to bottom, #e1e1e1, #e1e1e1); }
