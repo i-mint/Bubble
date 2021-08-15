@@ -1,15 +1,11 @@
 # Credits
-This themes base on <b>Arc-Theme</b> </br>
-Links : https://github.com/horst3180/arc-theme</br>
-License : GPLv3 (https://choosealicense.com/licenses/gpl-3.0/)</br>
+Gnome shell themes base on [Arc-Theme](https://github.com/horst3180/arc-theme) </br>
+License : [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)</br>
 
 # Installation
-Install themes : 
-- Extract Archive File On Directory<i> /usr/share/themes (as root),</i> </br>
-- Or Extract Archive File On Directory<i> Home/.themes</i></br>
-- Or Extract Archive File On Directory <i>Home/.local/share/themes</i></br>
+Extract archive files in directory /.themes, /.local/share/themes or /usr/share/themes (as root)</b>
 
-This themes have been test on gnome shell 3.30 & 3.36 </br>
+This themes have been test on gnome shell 3.30, 3.36 & 3.38 </br>
 
-## Change themes
-Debian, Ubuntu (Gnome Desktop) : Use Tweak Tool to change the themes, <i>Gnome Tweak > Appeareance > Themes > Shell</i></br>
+# Change themes
+Gnome Desktop : Use Tweak Tool to change the themes, Gnome Tweak > Appeareance > Themes > Shell</br>
