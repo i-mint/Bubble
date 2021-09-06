@@ -4598,7 +4598,7 @@ filechooser placessidebar.sidebar,
     filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
     .nautilus-window placessidebar.sidebar row.sidebar-row:hover {
-      background-color: rgba(247, 248, 248, 0.05); }
+      background-color: rgba(247, 248, 248, 0.07); }
       filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop, filechooser placessidebar.sidebar row.sidebar-row:hover:backdrop,
       .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop,
       .nautilus-window placessidebar.sidebar row.sidebar-row:hover:backdrop {
@@ -4826,8 +4826,10 @@ filechooser headerbar widget stack box.path-bar-box,
       .nemo-window .sidebar .view.cell:selected:backdrop, .nemo-window .sidebar iconview.cell:selected:backdrop, .nemo-window .sidebar .view.cell:selected:hover:backdrop, .nemo-window .sidebar iconview.cell:selected:hover:backdrop, .nemo-window .sidebar .view.cell:selected:focus:backdrop, .nemo-window .sidebar iconview.cell:selected:focus:backdrop, .nemo-window .sidebar row.cell:selected:backdrop, .nemo-window .sidebar row.cell:selected:hover:backdrop, .nemo-window .sidebar row.cell:selected:focus:backdrop {
         color: rgba(247, 248, 248, 0.67); }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
-      background-color: rgba(0, 0, 0, 0.3);
-      color: #ffffff; }
+      background-color: rgba(247, 248, 248, 0.07);
+      color: #F7F8F8; }
+      .nemo-window .sidebar .view.cell:hover:backdrop, .nemo-window .sidebar iconview.cell:hover:backdrop, .nemo-window .sidebar row.cell:hover:backdrop {
+        color: rgba(247, 248, 248, 0.78); }
     .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
       color: rgba(154, 159, 163, 0.975); }
       .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
