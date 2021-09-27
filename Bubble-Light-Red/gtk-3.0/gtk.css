@@ -3132,71 +3132,71 @@ flowbox flowboxchild:selected, row:selected, calendar:selected, .nemo-window .ne
 .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar .view.cell:selected:focus, .nemo-window .sidebar iconview.cell:selected:focus, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover, .nemo-window .sidebar row.cell:selected:focus {
   background-color: #AF2929; }
   row:selected label, label:selected, flowbox flowboxchild:selected, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
   .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-  .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
+  .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar .view.cell:selected:focus, .nemo-window .sidebar iconview.cell:selected:focus, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover, .nemo-window .sidebar row.cell:selected:focus {
     color: #f8f7f7; }
     row:selected label:backdrop, label:backdrop:selected, flowbox flowboxchild:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
+    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected:hover, .nemo-window .sidebar iconview.cell:backdrop:selected:focus, .nemo-window .sidebar row.cell:backdrop:selected {
       color: rgba(248, 247, 247, 0.78); }
     row:selected label:disabled, label:disabled:selected, flowbox flowboxchild:disabled:selected, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-    .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover {
+    .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected:hover, .nemo-window .sidebar iconview.cell:disabled:selected:focus, .nemo-window .sidebar row.cell:disabled:selected {
       color: #d49090; }
   flowbox flowboxchild:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
   .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-  .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
+  .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected:hover, .nemo-window .sidebar iconview.cell:backdrop:selected:focus, .nemo-window .sidebar row.cell:backdrop:selected {
     background-color: rgba(175, 41, 41, 0.78);
     color: rgba(248, 247, 247, 0.78); }
 
-.view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
-.view text:selected,
-iconview text:selected,
-textview text:selected,
-.view text:selected:focus,
-iconview text:selected:focus,
-textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
+.view:selected:not(treeview), iconview:selected:not(treeview), .view:selected:not(treeview):focus, iconview:selected:not(treeview):focus,
+.view text:selected:not(treeview),
+iconview text:selected:not(treeview),
+textview text:selected:not(treeview),
+.view text:selected:not(treeview):focus,
+iconview text:selected:not(treeview):focus,
+textview text:selected:not(treeview):focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
 textview text selection:focus,
 textview text selection, .thunar notebook .view:selected, .thunar notebook iconview:selected {
   background-color: #AF2929;
   border-radius: 2px; }
-  .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
-  .view text:selected,
-  iconview text:selected,
-  textview text:selected,
-  .view text:selected:focus,
-  iconview text:selected:focus,
-  textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
+  .view:selected:not(treeview), iconview:selected:not(treeview), .view:selected:not(treeview):focus, iconview:selected:not(treeview):focus,
+  .view text:selected:not(treeview),
+  iconview text:selected:not(treeview),
+  textview text:selected:not(treeview),
+  .view text:selected:not(treeview):focus,
+  iconview text:selected:not(treeview):focus,
+  textview text:selected:not(treeview):focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
   textview text selection, .thunar notebook .view:selected, .thunar notebook iconview:selected {
     color: #f8f7f7; }
-    .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
-    .view text:backdrop:selected,
-    iconview text:backdrop:selected,
-    textview text:backdrop:selected,
-    iconview text:backdrop:selected:focus,
-    textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
+    .view:backdrop:selected:not(treeview), iconview:backdrop:selected:not(treeview), iconview:backdrop:selected:not(treeview):focus,
+    .view text:backdrop:selected:not(treeview),
+    iconview text:backdrop:selected:not(treeview),
+    textview text:backdrop:selected:not(treeview),
+    iconview text:backdrop:selected:not(treeview):focus,
+    textview text:backdrop:selected:not(treeview):focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
     textview text selection:backdrop, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected {
       color: rgba(248, 247, 247, 0.56); }
-    .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus,
-    .view text:disabled:selected,
-    iconview text:disabled:selected,
-    textview text:disabled:selected,
-    iconview text:disabled:selected:focus,
-    textview text:disabled:selected:focus, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
+    .view:disabled:selected:not(treeview), iconview:disabled:selected:not(treeview), iconview:disabled:selected:not(treeview):focus,
+    .view text:disabled:selected:not(treeview),
+    iconview text:disabled:selected:not(treeview),
+    textview text:disabled:selected:not(treeview),
+    iconview text:disabled:selected:not(treeview):focus,
+    textview text:disabled:selected:not(treeview):focus, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
     textview text selection:disabled, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected {
       color: #f8f7f7; }
-  .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
-  .view text:backdrop:selected,
-  iconview text:backdrop:selected,
-  textview text:backdrop:selected,
-  iconview text:backdrop:selected:focus,
-  textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
+  .view:backdrop:selected:not(treeview), iconview:backdrop:selected:not(treeview), iconview:backdrop:selected:not(treeview):focus,
+  .view text:backdrop:selected:not(treeview),
+  iconview text:backdrop:selected:not(treeview),
+  textview text:backdrop:selected:not(treeview),
+  iconview text:backdrop:selected:not(treeview):focus,
+  textview text:backdrop:selected:not(treeview):focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
   textview text selection:backdrop, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected {
     color: rgba(248, 247, 247, 0.56);
     background-image: linear-gradient(to right, rgba(104, 40, 40, 0.6) 95%, rgba(175, 41, 41, 0.78) 5%);
@@ -4813,11 +4813,6 @@ filechooser headerbar widget stack box.path-bar-box,
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
     background-color: transparent;
     color: #F7F8F8; }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar .view.cell:selected:focus, .nemo-window .sidebar iconview.cell:selected:focus, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover, .nemo-window .sidebar row.cell:selected:focus {
-      background-color: #AF2929;
-      color: #f8f7f7; }
-      .nemo-window .sidebar .view.cell:selected:backdrop, .nemo-window .sidebar iconview.cell:selected:backdrop, .nemo-window .sidebar .view.cell:selected:hover:backdrop, .nemo-window .sidebar iconview.cell:selected:hover:backdrop, .nemo-window .sidebar .view.cell:selected:focus:backdrop, .nemo-window .sidebar iconview.cell:selected:focus:backdrop, .nemo-window .sidebar row.cell:selected:backdrop, .nemo-window .sidebar row.cell:selected:hover:backdrop, .nemo-window .sidebar row.cell:selected:focus:backdrop {
-        color: rgba(248, 247, 247, 0.67); }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
       background-color: rgba(247, 248, 248, 0.07);
       color: #F7F8F8; }
