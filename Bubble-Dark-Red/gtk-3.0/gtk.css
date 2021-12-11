@@ -17,6 +17,8 @@
 .background {
   color: #f9f7f7;
   background-color: rgba(37, 25, 25, 0.999); }
+  .background.popup {
+    background-color: transparent; }
 
 *:disabled {
   -gtk-icon-effect: dim; }
@@ -1598,7 +1600,7 @@ menu, .menu {
   .csd menu,
   .csd .menu {
     padding: 4px 0px;
-    border-radius: 2px;
+    border-radius: 4px;
     border: none; }
   menu separator, .csd menu separator, .menu separator, .csd .menu separator {
     margin: 2px 0;
@@ -1660,7 +1662,7 @@ menu, .menu {
 
 popover, popover.background {
   padding: 2px;
-  border-radius: 3px;
+  border-radius: 4px;
   background-clip: border-box;
   background-color: #251919;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.35); }
@@ -3051,7 +3053,7 @@ decoration {
     .ssd decoration.maximized {
       border-radius: 0; }
   .csd.popup decoration {
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45), 0 0 0 1px #070404; }
   tooltip.csd decoration {
     border-radius: 2px;
