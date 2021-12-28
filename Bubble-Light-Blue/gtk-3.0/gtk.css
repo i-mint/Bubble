@@ -116,7 +116,7 @@ entry {
   border: 1px solid;
   padding: 2px 8px;
   caret-color: currentColor;
-  border-radius: 3px;
+  border-radius: 4px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #23282D;
   border-color: #F0F0F0;
@@ -142,7 +142,7 @@ entry {
   entry:focus {
     background-clip: border-box;
     color: #F7F8F8;
-    border-color: #F0F0F0;
+    border-color: #486d99;
     background-color: #557FAF; }
     entry:focus image, entry:focus image:hover {
       color: #F7F8F8; }
@@ -719,8 +719,8 @@ headerbar .linked:not(.vertical).path-bar > button:first-child:active,
 headerbar .linked:not(.vertical).path-bar > button:first-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:first-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
 .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:disabled,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child,
@@ -729,8 +729,8 @@ headerbar .linked:not(.vertical).path-bar > button:last-child:active,
 headerbar .linked:not(.vertical).path-bar > button:last-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:last-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-right-style: solid; }
 .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked:not(.vertical) > button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:disabled,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
@@ -740,7 +740,7 @@ headerbar .linked:not(.vertical).path-bar > button:only-child:active,
 headerbar .linked:not(.vertical).path-bar > button:only-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:only-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 .linked.vertical > entry, .linked.vertical > entry:focus, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked, spinbutton.vertical button, spinbutton.vertical entry {
@@ -748,14 +748,14 @@ headerbar .linked:not(.vertical).path-bar > button:only-child:disabled, .nemo-wi
   border-bottom-style: none; }
 
 .linked.vertical > entry:first-child, .linked.vertical > button:first-child, spinbutton.vertical button:first-child, spinbutton.vertical entry:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 .linked.vertical > entry:last-child, .linked.vertical > button:last-child, spinbutton.vertical button:last-child, spinbutton.vertical entry:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 .linked.vertical > entry:only-child, .linked.vertical > button:only-child, spinbutton.vertical button:only-child, spinbutton.vertical entry:only-child {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 menuitem.button.flat,
@@ -851,6 +851,13 @@ spinbutton.vertical > entry:drop(active) + button {
 spinbutton entry {
   background-color: #FFFFFF;
   border-color: #e8e8e8; }
+spinbutton:focus, spinbutton entry:focus {
+  background-color: #557FAF;
+  border-color: #486d99;
+  border-radius: 4px;
+  caret-color: currentColor; }
+  spinbutton:focus label, spinbutton:focus, spinbutton entry:focus label, spinbutton entry:focus {
+    color: #F7F8F8; }
 
 combobox button.combo {
   min-width: 0;
@@ -964,7 +971,7 @@ searchbar {
       color: rgba(40, 46, 52, 0.55); }
     searchbar entry.search:focus {
       color: #F7F8F8;
-      border-color: #F0F0F0;
+      border-color: #486d99;
       background-color: #557FAF; }
       searchbar entry.search:focus image, searchbar entry.search:focus image:hover {
         color: #F7F8F8; }
@@ -3336,7 +3343,7 @@ button.nautilus-circular-button.image-button {
   border: 1px solid;
   border-radius: 3px;
   color: #F7F8F8;
-  border-color: #F0F0F0;
+  border-color: #486d99;
   background-color: #557FAF; }
   .nemo-window .nemo-window-pane widget.entry image, .nemo-window .nemo-window-pane widget.entry image:hover {
     color: #F7F8F8; }
@@ -3946,7 +3953,7 @@ popover {
       color: rgba(40, 46, 52, 0.55); }
     popover entry:focus, popover entry.search:focus {
       color: #F7F8F8;
-      border-color: #F0F0F0;
+      border-color: #486d99;
       background-color: #557FAF; }
       popover entry:focus image, popover entry:focus image:hover, popover entry.search:focus image, popover entry.search:focus image:hover {
         color: #F7F8F8; }
@@ -4146,7 +4153,7 @@ popover {
       color: #F7F8F8; }
   #whiskermenu-window entry:focus, #whiskermenu-window entry.search {
     color: #F7F8F8;
-    border-color: #F0F0F0;
+    border-color: #486d99;
     background-color: #557FAF; }
     #whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
       color: #F7F8F8; }
