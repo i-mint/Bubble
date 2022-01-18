@@ -1568,7 +1568,7 @@ treeview.view {
     border-radius: 0;
     border-style: none; }
 
-treeview.view:not(.places-treeview):selected, treeview.view:not(.places-treeview):selected:focus {
+treeview.view:not(.places-treeview):not(.sidebar):selected, treeview.view:not(.places-treeview):not(.sidebar):selected:focus {
   background-color: #557FAF;
   color: #F7F8F8;
   background-image: url("assets/selected-img.png");
@@ -5019,11 +5019,32 @@ event.slanted-end label {
 @define-color wm_icon_unfocused_bg #B6B8C0;
 @define-color wm_icon_hover_bg #7A7F8B;
 @define-color wm_icon_active_bg #F7F8F8;
-.budgie-menu.background {
+.budgie-menu row {
   background-color: #FFFFFF;
-  padding: 0px;
+  border-radius: 4px;
   border-color: #FFFFFF; }
-.budgie-menu .container {
+  .budgie-menu row label, .budgie-menu row {
+    color: #23282D; }
+
+.budgie-menu row button:hover, .budgie-menu row:hover, .budgie-popover list > row:hover, .budgie-popover.background list > row:hover, .budgie-popover list > row button:hover, .budgie-popover.background list > row button:hover {
+  background-color: #ededed;
+  border-color: #e1e1e1; }
+  .budgie-menu row button:hover label, .budgie-menu row:hover label, .budgie-popover list > row:hover label, .budgie-popover.background list > row:hover label, .budgie-popover list > row button:hover label, .budgie-popover.background list > row button:hover label, .budgie-menu row button:hover, .budgie-menu row:hover, .budgie-popover list > row:hover, .budgie-popover.background list > row:hover, .budgie-popover list > row button:hover, .budgie-popover.background list > row button:hover {
+    color: #282E34; }
+
+.budgie-menu .category-button:hover, .budgie-popover .sidebar:hover, .budgie-popover .sidebar button:hover, .budgie-popover.background .sidebar:hover, .budgie-popover.background .sidebar button:hover {
+  background-color: gainsboro;
+  border-color: borders_color; }
+  .budgie-menu .category-button:hover label, .budgie-popover .sidebar:hover label, .budgie-popover .sidebar button:hover label, .budgie-popover.background .sidebar:hover label, .budgie-popover.background .sidebar button:hover label, .budgie-menu .category-button:hover, .budgie-popover .sidebar:hover, .budgie-popover .sidebar button:hover, .budgie-popover.background .sidebar:hover, .budgie-popover.background .sidebar button:hover {
+    color: #282E34; }
+
+.budgie-menu .category-button:active, .budgie-menu .category-button:checked, .budgie-popover .sidebar:active button, .budgie-popover .sidebar:active, .budgie-popover .sidebar:checked button, .budgie-popover .sidebar:checked, .budgie-popover .sidebar:selected button, .budgie-popover .sidebar:selected, .budgie-popover.background .sidebar:active button, .budgie-popover.background .sidebar:active, .budgie-popover.background .sidebar:checked button, .budgie-popover.background .sidebar:checked, .budgie-popover.background .sidebar:selected button, .budgie-popover.background .sidebar:selected, .budgie-popover .sidebar button:active, .budgie-popover .sidebar button:checked, .budgie-popover .sidebar button:selected, .budgie-popover.background .sidebar button:active, .budgie-popover.background .sidebar button:checked, .budgie-popover.background .sidebar button:selected {
+  background-color: #557FAF;
+  border-color: borders_color; }
+  .budgie-menu .category-button:active label, .budgie-menu .category-button:checked label, .budgie-popover .sidebar:active label, .budgie-popover .sidebar:checked label, .budgie-popover .sidebar:selected label, .budgie-popover.background .sidebar:active label, .budgie-popover.background .sidebar:checked label, .budgie-popover.background .sidebar:selected label, .budgie-popover .sidebar button:active label, .budgie-popover .sidebar button:checked label, .budgie-popover .sidebar button:selected label, .budgie-popover.background .sidebar button:active label, .budgie-popover.background .sidebar button:checked label, .budgie-popover.background .sidebar button:selected label, .budgie-menu .category-button:active, .budgie-menu .category-button:checked, .budgie-popover .sidebar:active button, .budgie-popover .sidebar:active, .budgie-popover .sidebar:checked button, .budgie-popover .sidebar:checked, .budgie-popover .sidebar:selected button, .budgie-popover .sidebar:selected, .budgie-popover.background .sidebar:active button, .budgie-popover.background .sidebar:active, .budgie-popover.background .sidebar:checked button, .budgie-popover.background .sidebar:checked, .budgie-popover.background .sidebar:selected button, .budgie-popover.background .sidebar:selected, .budgie-popover .sidebar button:active, .budgie-popover .sidebar button:checked, .budgie-popover .sidebar button:selected, .budgie-popover.background .sidebar button:active, .budgie-popover.background .sidebar button:checked, .budgie-popover.background .sidebar button:selected {
+    color: #F7F8F8; }
+
+.budgie-menu.background, .budgie-menu .container {
   background-color: #FFFFFF;
   padding: 0px;
   border-color: #FFFFFF; }
@@ -5036,70 +5057,62 @@ event.slanted-end label {
   border-color: transparent;
   border-bottom: 2px solid #557FAF;
   box-shadow: none;
-  font-size: 102%;
-  color: #282E34; }
-  .budgie-menu entry.search label, .budgie-menu entry.search:focus label {
-    color: #282E34; }
-  .budgie-menu entry.search image, .budgie-menu entry.search:focus image {
+  font-size: 102%; }
+  .budgie-menu entry.search label, .budgie-menu entry.search image, .budgie-menu entry.search, .budgie-menu entry.search:focus label, .budgie-menu entry.search:focus image, .budgie-menu entry.search:focus {
     color: #282E34; }
   .budgie-menu entry.search selection, .budgie-menu entry.search selection:focus, .budgie-menu entry.search:focus selection, .budgie-menu entry.search:focus selection:focus {
     color: #d7d1cb;
     background-image: linear-gradient(to left, #070707, #070707);
     border-color: transparent; }
 .budgie-menu .categories {
-  background-color: #F8F8F8; }
-  .budgie-menu .categories label {
+  background-color: #eeeeee; }
+  .budgie-menu .categories label, .budgie-menu .categories {
     color: #282E34; }
 .budgie-menu .category-button {
   background-color: transparent; }
   .budgie-menu .category-button label {
     color: #282E34; }
-  .budgie-menu .category-button:hover {
-    background-color: #eeeeee;
-    border-color: #F8F8F8; }
-    .budgie-menu .category-button:hover label {
-      color: #282E34; }
-  .budgie-menu .category-button:active {
-    background-color: #557FAF;
-    border-color: #557FAF; }
-    .budgie-menu .category-button:active label {
-      color: #F7F8F8; }
-  .budgie-menu .category-button:checked {
-    background-color: #557FAF;
-    border-color: #557FAF; }
-    .budgie-menu .category-button:checked label {
-      color: #F7F8F8; }
-.budgie-menu row {
-  background-color: #FFFFFF;
-  padding: 0px;
-  border-color: #FFFFFF; }
-  .budgie-menu row label {
-    color: #282E34; }
-  .budgie-menu row button {
-    background-color: transparent;
-    border-color: transparent; }
-    .budgie-menu row button label {
-      color: #282E34; }
-    .budgie-menu row button:hover {
-      background-color: transparent;
-      border-color: transparent; }
-      .budgie-menu row button:hover label {
-        color: #282E34; }
-  .budgie-menu row:hover {
-    background-color: whitesmoke; }
-    .budgie-menu row:hover label {
-      color: #282E34; }
+.budgie-menu row button {
+  border-radius: 4px;
+  padding: 4px 2px 4px 2px; }
 
 .budgie-popover, .budgie-popover.background {
-  border-style: none;
-  border-width: 0px;
-  border-color: rgba(0, 0, 0, 0.23);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e1e1e1;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
   background-color: #FFFFFF;
   background-clip: border-box; }
   .budgie-popover list, .budgie-popover.background list {
     background-color: transparent; }
+  .budgie-popover list > row, .budgie-popover.background list > row {
+    margin: 1px 0; }
+    .budgie-popover list > row:first-child, .budgie-popover.background list > row:first-child {
+      margin-top: 2px; }
+  .budgie-popover list > row button, .budgie-popover.background list > row button {
+    border-radius: 4px;
+    padding: 2px 0px; }
+    .budgie-popover list > row button:hover, .budgie-popover.background list > row button:hover {
+      border-color: transparent; }
+  .budgie-popover .sidebar, .budgie-popover.background .sidebar {
+    background-color: #eeeeee; }
+    .budgie-popover .sidebar label, .budgie-popover .sidebar, .budgie-popover.background .sidebar label, .budgie-popover.background .sidebar {
+      color: #282E34; }
+    .budgie-popover .sidebar button, .budgie-popover.background .sidebar button {
+      border-radius: 0px;
+      padding: 5.5px 2px; }
+    .budgie-popover .sidebar button:first-child, .budgie-popover.background .sidebar button:first-child {
+      margin-top: -2px; }
+    .budgie-popover .sidebar:hover, .budgie-popover .sidebar button:hover, .budgie-popover.background .sidebar:hover, .budgie-popover.background .sidebar button:hover {
+      border-radius: 4px; }
+    .budgie-popover .sidebar:active button, .budgie-popover .sidebar:active, .budgie-popover .sidebar:checked button, .budgie-popover .sidebar:checked, .budgie-popover .sidebar:selected button, .budgie-popover .sidebar:selected, .budgie-popover.background .sidebar:active button, .budgie-popover.background .sidebar:active, .budgie-popover.background .sidebar:checked button, .budgie-popover.background .sidebar:checked, .budgie-popover.background .sidebar:selected button, .budgie-popover.background .sidebar:selected {
+      background-image: none;
+      border-radius: 4px; }
+    .budgie-popover .sidebar button, .budgie-popover.background .sidebar button {
+      border-radius: 4px; }
+      .budgie-popover .sidebar button:active, .budgie-popover .sidebar button:checked, .budgie-popover .sidebar button:selected, .budgie-popover.background .sidebar button:active, .budgie-popover.background .sidebar button:checked, .budgie-popover.background .sidebar button:selected {
+        background-image: none; }
   .budgie-popover.places-menu, .budgie-popover.background.places-menu {
     background-color: #FFFFFF;
     border-color: rgba(0, 0, 0, 0.23);
@@ -5320,14 +5333,14 @@ event.slanted-end label {
       .top .budgie-panel widget button#tasklist-button:hover label, .top .budgie-panel widget button#tasklist-button:hover image, .right .budgie-panel widget button#tasklist-button:hover label, .right .budgie-panel widget button#tasklist-button:hover image, .bottom .budgie-panel widget button#tasklist-button:hover label, .bottom .budgie-panel widget button#tasklist-button:hover image, .left .budgie-panel widget button#tasklist-button:hover label, .left .budgie-panel widget button#tasklist-button:hover image {
         color: rgba(35, 46, 57, 0.58); }
     .top .budgie-panel widget button#tasklist-button:active, .right .budgie-panel widget button#tasklist-button:active, .bottom .budgie-panel widget button#tasklist-button:active, .left .budgie-panel widget button#tasklist-button:active {
-      background-color: rgba(255, 255, 255, 0.29);
+      background-color: rgba(246, 246, 246, 0.29);
       border-color: transparent;
       border-top: 2px solid #557FAF;
       color: rgba(35, 46, 57, 0.8); }
       .top .budgie-panel widget button#tasklist-button:active label, .top .budgie-panel widget button#tasklist-button:active image, .right .budgie-panel widget button#tasklist-button:active label, .right .budgie-panel widget button#tasklist-button:active image, .bottom .budgie-panel widget button#tasklist-button:active label, .bottom .budgie-panel widget button#tasklist-button:active image, .left .budgie-panel widget button#tasklist-button:active label, .left .budgie-panel widget button#tasklist-button:active image {
         color: rgba(35, 46, 57, 0.8); }
     .top .budgie-panel widget button#tasklist-button:checked, .right .budgie-panel widget button#tasklist-button:checked, .bottom .budgie-panel widget button#tasklist-button:checked, .left .budgie-panel widget button#tasklist-button:checked {
-      background-color: rgba(210, 210, 210, 0.4);
+      background-color: rgba(255, 255, 255, 0.4);
       border-color: transparent;
       border-top: 2px solid #557FAF;
       color: rgba(35, 46, 57, 0.8); }
