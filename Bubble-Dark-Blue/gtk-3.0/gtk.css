@@ -4731,7 +4731,8 @@ filechooser headerbar widget stack box.path-bar-box,
     border-top: 2px solid #3A587A;
     border-bottom: 2px solid transparent;
     color: #F7F8F8;
-    margin: 0px; }
+    margin: 0px;
+    padding: 0 1px; }
     filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image,
     .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label,
     .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image {
