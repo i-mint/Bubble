@@ -1986,16 +1986,6 @@ treeview.view header.button.dnd:active {
   border-style: none;
 }
 
-treeview.view:not(.places-treeview):not(.sidebar):selected, treeview.view:not(.places-treeview):not(.sidebar):selected:focus {
-  background-color: #AF2929;
-  color: #f8f7f7;
-  background-image: url("assets/selected-img.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-clip: border-box;
-  background-size: 100px 40px;
-}
-
 menubar,
 .menubar {
   -GtkWidget-window-dragging: true;
@@ -3414,6 +3404,15 @@ messagedialog.csd .dialog-action-area button:only-child {
 filechooser #pathbarbox {
   border-bottom: 1px solid rgba(225, 225, 225, 0.5);
 }
+filechooser treeview.view:not(.places-treeview):not(.sidebar):selected, filechooser treeview.view:not(.places-treeview):not(.sidebar):selected:focus {
+  background-color: #AF2929;
+  color: #f8f7f7;
+  background-image: url("assets/selected-img.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-clip: border-box;
+  background-size: 100px 40px;
+}
 
 filechooserbutton:drop(active) {
   box-shadow: none;
@@ -4406,13 +4405,37 @@ button.nautilus-circular-button.image-button label {
   border-right-width: 1px;
 }
 
-paned.gedit-side-panel-paned treeview {
+paned.gedit-side-panel-paned treeview.view {
   background-color: rgba(69, 51, 51, 0.95);
   color: #F7F8F8;
   border-color: #e1e1e1;
 }
-paned.gedit-side-panel-paned treeview:backdrop {
-  color: rgba(247, 248, 248, 0.6);
+paned.gedit-side-panel-paned treeview.view:hover {
+  background-color: rgba(81, 60, 60, 0.95);
+  box-shadow: none;
+  border: none;
+}
+paned.gedit-side-panel-paned treeview.view:hover:backdrop {
+  color: rgba(247, 248, 248, 0.78);
+}
+paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, paned.gedit-side-panel-paned treeview.view:selected:hover, paned.gedit-side-panel-paned treeview.view:checked, paned.gedit-side-panel-paned treeview.view:checked:focus, paned.gedit-side-panel-paned treeview.view:checked:hover {
+  background-color: #AF2929;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+paned.gedit-side-panel-paned treeview.view:selected label, paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus label, paned.gedit-side-panel-paned treeview.view:selected:focus, paned.gedit-side-panel-paned treeview.view:selected:hover label, paned.gedit-side-panel-paned treeview.view:selected:hover, paned.gedit-side-panel-paned treeview.view:checked label, paned.gedit-side-panel-paned treeview.view:checked, paned.gedit-side-panel-paned treeview.view:checked:focus label, paned.gedit-side-panel-paned treeview.view:checked:focus, paned.gedit-side-panel-paned treeview.view:checked:hover label, paned.gedit-side-panel-paned treeview.view:checked:hover {
+  color: #f8f7f7;
+}
+paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop, paned.gedit-side-panel-paned treeview.view:selected:hover:backdrop, paned.gedit-side-panel-paned treeview.view:checked:backdrop, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop, paned.gedit-side-panel-paned treeview.view:checked:hover:backdrop {
+  box-shadow: none;
+  border: none;
+}
+paned.gedit-side-panel-paned treeview.view:selected:backdrop label, paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop label, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop, paned.gedit-side-panel-paned treeview.view:selected:hover:backdrop label, paned.gedit-side-panel-paned treeview.view:selected:hover:backdrop, paned.gedit-side-panel-paned treeview.view:checked:backdrop label, paned.gedit-side-panel-paned treeview.view:checked:backdrop, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop label, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop, paned.gedit-side-panel-paned treeview.view:checked:hover:backdrop label, paned.gedit-side-panel-paned treeview.view:checked:hover:backdrop {
+  color: rgba(248, 247, 247, 0.6);
+}
+paned.gedit-side-panel-paned treeview.view:backdrop {
+  color: rgba(247, 248, 248, 0.78);
   border-color: #e1e1e1;
 }
 
