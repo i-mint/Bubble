@@ -894,7 +894,7 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:hover,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:active,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:checked,
-.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:disabled, .panel.xfce4-panel #pulseaudio-button menu .linked button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
   border-radius: 0;
@@ -902,14 +902,14 @@ headerbar .linked:not(.vertical).path-bar > button, spinbutton:not(.vertical) bu
 }
 
 filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child,
-.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child, .panel.xfce4-panel #pulseaudio-button menu .linked button:first-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child, spinbutton:not(.vertical) button:first-child, spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked:not(.vertical) > button:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child,
-.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child, .panel.xfce4-panel #pulseaudio-button menu .linked button:last-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked:not(.vertical) > button:last-child {
   border-top-right-radius: 4px;
@@ -917,7 +917,7 @@ headerbar .linked:not(.vertical).path-bar > button:last-child, spinbutton:not(.v
   border-right-style: solid;
 }
 filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child,
-.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child, .panel.xfce4-panel #pulseaudio-button menu .linked button:only-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked:not(.vertical) > button:only-child {
   border-radius: 4px;
@@ -4793,71 +4793,79 @@ panel-toplevel.background na-tray-applet {
   -NaTrayApplet-icon-size: 16px;
 }
 
-.xfce4-panel.panel {
+.panel.xfce4-panel button,
+.panel.xfce4-panel #sn-button,
+.panel.xfce4-panel #xfce4-notification-plugin, .mate-panel-menu-bar button:not(#tasklist-button),
+panel-toplevel.background button:not(#tasklist-button) {
+  color: rgba(250, 246, 246, 0.8);
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(8, 6, 6, 0.95);
+}
+.panel.xfce4-panel button:hover,
+.panel.xfce4-panel #sn-button:hover,
+.panel.xfce4-panel #xfce4-notification-plugin:hover, .mate-panel-menu-bar button:hover:not(#tasklist-button),
+panel-toplevel.background button:hover:not(#tasklist-button) {
+  background-color: rgba(39, 26, 26, 0.95);
+}
+.panel.xfce4-panel button:active,
+.panel.xfce4-panel #sn-button:active,
+.panel.xfce4-panel #xfce4-notification-plugin:active, .mate-panel-menu-bar button:active:not(#tasklist-button),
+panel-toplevel.background button:active:not(#tasklist-button), .panel.xfce4-panel button:checked,
+.panel.xfce4-panel #sn-button:checked,
+.panel.xfce4-panel #xfce4-notification-plugin:checked, .mate-panel-menu-bar button:checked:not(#tasklist-button),
+panel-toplevel.background button:checked:not(#tasklist-button) {
+  background-color: #850707;
+  color: #f8f7f7;
+}
+
+.panel.xfce4-panel {
   background-color: rgba(8, 6, 6, 0.95);
   color: rgba(250, 246, 246, 0.8);
   font-weight: normal;
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
-.xfce4-panel .tasklist button {
-  color: rgba(250, 246, 246, 0.6);
-  border-radius: 0;
-  border: none;
-  border-top: 2px solid transparent;
-  background-color: rgba(55, 36, 36, 0.95);
-}
-.xfce4-panel .tasklist button:hover {
-  background-color: rgba(70, 46, 46, 0.95);
-  border: none;
-  border-top: 2px solid #850707;
+.panel.xfce4-panel .tasklist button {
   color: rgba(250, 246, 246, 0.8);
+  text-shadow: none;
+  font-weight: normal;
+  background-color: rgba(27, 18, 18, 0.95);
+  border: 1px solid "#000000";
 }
-.xfce4-panel .tasklist button:active {
-  background-color: rgba(86, 56, 56, 0.95);
-  border: none;
-  border-top: 2px solid #850707;
-  color: rgba(250, 246, 246, 0.8);
+.panel.xfce4-panel .tasklist button:hover {
+  background-color: rgba(39, 26, 26, 0.95);
+  border: 1px solid "#000000";
 }
-.xfce4-panel .tasklist button:checked {
-  background-color: rgba(70, 46, 46, 0.95);
-  border: none;
-  border-top: 2px solid #850707;
-  color: rgba(250, 246, 246, 0.8);
-}
-
-.xfce4-panel wnck-pager {
-  background-color: rgba(133, 7, 7, 0.45);
+.panel.xfce4-panel .tasklist button:active, .panel.xfce4-panel .tasklist button:checked, .panel.xfce4-panel .tasklist button:checked:hover {
   color: #f8f7f7;
+  background-color: rgba(133, 7, 7, 0.8);
+  border: 1px solid "#000000";
 }
-
-.mate-panel-menu-bar button:not(#tasklist-button),
-panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat {
-  color: rgba(250, 246, 246, 0.8);
-  border-radius: 0;
-  border: none;
-  background-color: rgba(8, 6, 6, 0);
+.panel.xfce4-panel wnck-pager {
+  background-color: rgba(52, 34, 34, 0.95);
 }
-.mate-panel-menu-bar button:hover:not(#tasklist-button),
-panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover {
-  border: none;
-  background-color: rgba(55, 36, 36, 0.95);
+.panel.xfce4-panel wnck-pager:hover {
+  background-color: rgba(70, 46, 46, 0.95);
 }
-.mate-panel-menu-bar button:active:not(#tasklist-button),
-panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active, .mate-panel-menu-bar button:checked:not(#tasklist-button),
-panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked {
-  color: #f8f7f7;
-  border: none;
+.panel.xfce4-panel wnck-pager:selected {
   background-color: #850707;
 }
-.mate-panel-menu-bar button:active:not(#tasklist-button) label,
-panel-toplevel.background button:active:not(#tasklist-button) label, .xfce4-panel.panel button.flat:active label, .mate-panel-menu-bar button:active:not(#tasklist-button) image,
-panel-toplevel.background button:active:not(#tasklist-button) image, .xfce4-panel.panel button.flat:active image, .mate-panel-menu-bar button:checked:not(#tasklist-button) label,
-panel-toplevel.background button:checked:not(#tasklist-button) label, .xfce4-panel.panel button.flat:checked label, .mate-panel-menu-bar button:checked:not(#tasklist-button) image,
-panel-toplevel.background button:checked:not(#tasklist-button) image, .xfce4-panel.panel button.flat:checked image {
-  color: inherit;
+.panel.xfce4-panel window.popup {
+  border-radius: 4px;
 }
-
+.panel.xfce4-panel #clock-button {
+  background-color: rgba(27, 18, 18, 0.95);
+  color: rgba(250, 246, 246, 0.8);
+  border-radius: 2px;
+}
+.panel.xfce4-panel #clock-button:hover {
+  background-color: rgba(39, 26, 26, 0.95);
+}
+.panel.xfce4-panel #clock-button:active, .panel.xfce4-panel #clock-button:checked {
+  background-color: #850707;
+  color: #f8f7f7;
+}
 .nautilus-window .floating-bar {
   padding: 1px;
   background-color: #850707;
@@ -5284,54 +5292,6 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   background-color: #6b4b4b;
   border: 0.5px solid #1a1212;
   border-radius: 2px;
-}
-
-#whiskermenu-window {
-  background-color: #251919;
-  color: #f9f7f7;
-}
-#whiskermenu-window stack {
-  background-color: #251919;
-  color: #f9f7f7;
-}
-#whiskermenu-window .view, #whiskermenu-window iconview {
-  background-color: #2F2121;
-  color: #F8F8F8;
-}
-#whiskermenu-window .view:selected, #whiskermenu-window iconview:selected {
-  background-color: #654747;
-  background-size: 0% 0%;
-  color: inherit;
-}
-#whiskermenu-window button {
-  margin-right: 9px;
-  background-color: #251919;
-  color: #f9f7f7;
-  border: none;
-}
-#whiskermenu-window button:hover {
-  background-color: #5c3e3e;
-  color: inherit;
-}
-#whiskermenu-window button:active, #whiskermenu-window button:checked {
-  background-color: #850707;
-  color: #f8f7f7;
-}
-#whiskermenu-window entry:focus, #whiskermenu-window entry.search {
-  color: #f8f7f7;
-  border-color: #630505;
-  background-color: #850707;
-  box-shadow: inset 1px 0 #850707, inset -1px 0 #850707, inset 0 1px #850707, inset 0 -1px #850707;
-}
-#whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
-  color: #f8f7f7;
-}
-
-#whiskermenu-button {
-  color: rgba(250, 246, 246, 0.8);
-  border-left: 22px solid rgba(76, 50, 50, 0.95);
-  border-right: 22px solid rgba(76, 50, 50, 0.95);
-  background-color: rgba(76, 50, 50, 0.95);
 }
 
 UnityDecoration {
