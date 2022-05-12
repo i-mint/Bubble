@@ -5297,6 +5297,53 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   border-radius: 2px;
 }
 
+.path-buttons-box:not(.vertical) {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  margin: 7px 0;
+}
+.path-buttons-box:not(.vertical) label.dim-label, .path-buttons-box:not(.vertical) label.separator, .path-buttons-box:not(.vertical) headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) label.subtitle,
+.path-buttons-box:not(.vertical) .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) label.subtitle {
+  color: transparent;
+}
+.path-buttons-box:not(.vertical) button {
+  background-color: #FFFFFF;
+  border-color: transparent;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  margin: 0;
+  padding: 0 7px;
+}
+.path-buttons-box:not(.vertical) button label.dim-label, .path-buttons-box:not(.vertical) button label.separator, .path-buttons-box:not(.vertical) button headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button label.subtitle,
+.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button label.subtitle,
+.path-buttons-box:not(.vertical) button image.dim-label,
+.path-buttons-box:not(.vertical) button headerbar image.subtitle,
+headerbar .path-buttons-box:not(.vertical) button image.subtitle,
+.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) image.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button image.subtitle, .path-buttons-box:not(.vertical) button {
+  color: rgba(35, 46, 57, 0.8);
+}
+.path-buttons-box:not(.vertical) button:hover {
+  background-color: #f6f6f6;
+  color: rgba(40, 46, 52, 0.89);
+  border-top: 2px solid #d4d4d4;
+  border-bottom: 2px solid transparent;
+}
+.path-buttons-box:not(.vertical) button:active {
+  background-color: #e5e5e5;
+  color: #282E34;
+  border-top: 2px solid #557FAF;
+  border-bottom: 2px solid transparent;
+}
+.path-buttons-box:not(.vertical) button.current-dir {
+  background-color: #f9f9f9;
+  border-top: 2px solid #557FAF;
+  border-bottom: 2px solid transparent;
+  color: #282E34;
+}
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
