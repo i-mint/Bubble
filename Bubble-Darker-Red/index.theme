@@ -1,9 +1,0 @@
-[X-GNOME-Metatheme]
-Name=Bubble-Darker-Red
-Type=X-GNOME-Metatheme
-Comment= Bubble Gtk Themes 
-Encoding=UTF-8
-GtkTheme=Bubble-Darker-Red
-IconTheme=Mint-Y-Red
-CursorTheme=Adwaita
-CursorSize=24
