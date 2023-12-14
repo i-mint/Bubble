@@ -2,22 +2,22 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="16"
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="checkbox-unchecked.svg"
    inkscape:export-filename="/home/steffen/.local/share/themes/neu2/gtk-3.0/assets/dark/checkbox-unchecked.png"
    inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   inkscape:export-ydpi="90"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4">
     <linearGradient
@@ -48,8 +48,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.627418"
-     inkscape:cx="6.4778481"
-     inkscape:cy="10.673704"
+     inkscape:cx="6.4965433"
+     inkscape:cy="10.69499"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -58,14 +58,15 @@
      inkscape:guide-bbox="true"
      inkscape:showpageshadow="false"
      showborder="true"
-     inkscape:window-width="1006"
-     inkscape:window-height="702"
-     inkscape:window-x="358"
-     inkscape:window-y="38"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
-     inkscape:snap-bbox-edge-midpoints="true">
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:pagecheckerboard="0">
     <inkscape:grid
        type="xygrid"
        id="grid2985"
@@ -82,7 +83,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -92,47 +92,47 @@
      id="layer1"
      transform="translate(0,-1036.3622)">
     <g
-       transform="translate(-17,1036)"
-       style="display:inline;opacity:1"
-       id="checkbox-unchecked-7"
-       inkscape:label="#g22047">
+       inkscape:label="#g22047"
+       id="checkbox-unchecked"
+       style="display:inline"
+       transform="translate(-17,1036)">
       <g
-         inkscape:label="#g21853"
-         id="sdsd-0">
+         id="sdsd-0"
+         inkscape:label="#g21853">
         <g
-           id="scdsdcd-0"
+           transform="translate(0,-30)"
            inkscape:label="#g14325"
-           transform="translate(0,-30)">
+           id="scdsdcd-0">
           <g
-             style="display:inline"
+             transform="matrix(0.92951982,0,0,0.92914368,-156.75069,-212.9618)"
              id="g15812-6-6-1-4"
-             transform="matrix(0.92951982,0,0,0.92914368,-156.75069,-212.9618)">
+             style="display:inline">
             <g
-               transform="matrix(0.5089163,0,0,0.51739823,161.7932,197.56426)"
+               style="display:inline"
                id="g5489-2-9-6-8-8-9"
-               style="display:inline">
+               transform="matrix(0.5089163,0,0,0.51739823,161.7932,197.56426)">
               <g
                  id="g5428-8-1-4-0-0-65" />
             </g>
           </g>
           <rect
-             y="30.362183"
-             x="17"
-             height="16"
-             width="16"
+             style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
              id="rect13523-4"
-             style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" />
+             width="16"
+             height="16"
+             x="17"
+             y="30.362183" />
           <g
              id="g5400-2">
             <rect
-               ry="2"
-               style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;stroke:#cedae8;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-               id="rect5147-9-1-5-7-6-3"
-               width="13"
-               height="12.999997"
-               x="18.5"
+               rx="2"
                y="31.862183"
-               rx="2" />
+               x="18.5"
+               height="12.999997"
+               width="13"
+               id="rect5147-9-1-5-7-6-3"
+               style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.5;fill:#fafafa;fill-opacity:1;stroke:#557faf;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+               ry="2" />
           </g>
         </g>
       </g>

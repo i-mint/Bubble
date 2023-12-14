@@ -1,9 +1,9 @@
 [X-GNOME-Metatheme]
-Name=Bubble-Light-Blue
+Name=Bubble
 Type=X-GNOME-Metatheme
 Comment= Bubble Gtk Themes 
 Encoding=UTF-8
-GtkTheme=Bubble-Light-Blue
+GtkTheme=Bubble
 IconTheme=Papirus-Light
 CursorTheme=Adwaita
 CursorSize=24
