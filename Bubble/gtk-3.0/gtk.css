@@ -205,7 +205,7 @@ entry:disabled {
 }
 entry selection:focus, entry selection {
   color: #557FAF;
-  background-image: linear-gradient(to left, #F7F8F8, #F7F8F8);
+  background-color: #F7F8F8;
   border-color: transparent;
 }
 entry.warning {
@@ -1227,7 +1227,7 @@ searchbar entry.search:focus image:hover {
 }
 searchbar entry.search selection, searchbar entry.search selection:focus {
   color: #557FAF;
-  background-image: linear-gradient(to left, #F7F8F8, #F7F8F8);
+  background-color: #F7F8F8;
   border-color: transparent;
 }
 
@@ -1410,7 +1410,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
 }
 .primary-toolbar entry selection, headerbar entry selection {
   color: #557FAF;
-  background-image: linear-gradient(to left, #F7F8F8, #F7F8F8);
+  background-color: #F7F8F8;
   border-color: transparent;
 }
 .primary-toolbar entry progress, headerbar entry progress {
@@ -4116,30 +4116,30 @@ headerbar button.titlebutton.minimize:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), row:selected, calendar:selected {
   background-color: #557FAF;
 }
 row:selected label, label:selected, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar .view.cell:selected:focus, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover, .nemo-window .sidebar row.cell:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), row:selected, calendar:selected {
   color: #F7F8F8;
 }
 row:selected label:backdrop, label:backdrop:selected, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), row:backdrop:selected, calendar:backdrop:selected {
   color: rgba(247, 248, 248, 0.78);
 }
 row:selected label:disabled, label:disabled:selected, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected:hover, .nemo-window .sidebar row.cell:disabled:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .nemo-window .nemo-window-pane widget.entry:disabled:selected, flowbox flowboxchild:disabled:selected, box.path-bar-box .linked > button.image-button.text-button:disabled:last-child:not(:only-child), row:disabled:selected, calendar:disabled:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, flowbox flowboxchild:disabled:selected, box.path-bar-box .linked > button.image-button.text-button:disabled:last-child:not(:only-child), row:disabled:selected, calendar:disabled:selected {
   color: #a6bcd4;
 }
 
 .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), row:backdrop:selected, calendar:backdrop:selected {
   background-color: rgba(85, 127, 175, 0.78);
   color: rgba(247, 248, 248, 0.78);
 }
@@ -4355,10 +4355,16 @@ button.nautilus-circular-button.image-button label {
   color: #F7F8F8;
   border-color: rgba(0, 0, 0, 0.2);
   background-color: #557FAF;
+  caret-color: currentColor;
 }
 .nemo-window .nemo-window-pane widget.entry image,
 .nemo-window .nemo-window-pane widget.entry image:hover {
   color: inherit;
+}
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+  color: #557FAF;
+  background-color: #F7F8F8;
+  border-color: transparent;
 }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
   color: #565656;
