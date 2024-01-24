@@ -4116,30 +4116,30 @@ headerbar button.titlebutton.minimize:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
   background-color: #557FAF;
 }
 row:selected label, label:selected, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar .view.cell:selected:focus, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover, .nemo-window .sidebar row.cell:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
   color: #F7F8F8;
 }
 row:selected label:backdrop, label:backdrop:selected, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
   color: rgba(247, 248, 248, 0.78);
 }
 row:selected label:disabled, label:disabled:selected, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected:hover, .nemo-window .sidebar row.cell:disabled:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, flowbox flowboxchild:disabled:selected, box.path-bar-box .linked > button.image-button.text-button:disabled:last-child:not(:only-child), row:disabled:selected, calendar:disabled:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, flowbox flowboxchild:disabled:selected, box.path-bar-box .linked > button.image-button.text-button:disabled:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:disabled:only-child, row:disabled:selected, calendar:disabled:selected {
   color: #a6bcd4;
 }
 
 .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
   background-color: rgba(85, 127, 175, 0.78);
   color: rgba(247, 248, 248, 0.78);
 }
