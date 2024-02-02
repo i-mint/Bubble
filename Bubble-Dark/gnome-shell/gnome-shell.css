@@ -632,7 +632,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu .popup-sub-menu {
   box-shadow: none;
   background-color: #2B3239;
+  border-bottom: 1px solid #3A587A;
   border-color: #3A587A;
+  border-radius: 0 !important;
 }
 .popup-menu .popup-menu-content {
   padding: 1em 0em 1em 0em;
@@ -651,20 +653,22 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu .popup-menu-item:rtl {
   padding: 0.4em 0em 0.4em 1.75em;
 }
-.popup-menu .popup-menu-item:checked {
+.popup-menu .popup-menu-item:checked, .popup-menu .popup-menu-item:checked:hover {
   font-weight: normal;
   background: none;
   box-shadow: none;
-  background-color: #3A587A;
+  background-color: #3A587A !important;
   color: #F7F8F8;
+  border-radius: 0 !important;
 }
-.popup-menu .popup-menu-item:checked:hover {
+.popup-menu .popup-menu-item:checked:hover, .popup-menu .popup-menu-item:checked:hover:hover {
   background-color: #3A587A;
   color: #F7F8F8;
 }
 .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
   color: #c2c2c2;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-radius: 0 !important;
 }
 .popup-menu .popup-menu-item:insensitive {
   color: rgba(194, 194, 194, 0.5);
@@ -1090,7 +1094,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #calendarArea {
-  padding: 0px;
+  padding: 0.1em 1.4em;
 }
 
 .datemenu-calendar-column {
@@ -1100,11 +1104,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .datemenu-calendar-column:ltr {
   margin-right: 8px;
-  border-left-width: 0.5px;
+  border-left-width: 0;
 }
 .datemenu-calendar-column:rtl {
   margin-left: 8px;
-  border-right-width: 0.5px;
+  border-right-width: 0;
 }
 .datemenu-calendar-column .datemenu-displays-box {
   spacing: 6px;
@@ -1187,18 +1191,22 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #929496;
   width: 32px;
   height: 32px;
-  border-radius: 2px;
-  margin: 1px;
+  border-radius: 99%;
+  margin: 4px;
   padding: 0.5px;
   text-align: center;
   font-feature-settings: "tnum";
 }
 .calendar .calendar-day-base:hover, .calendar .calendar-day-base:focus {
   background-color: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
+  border-radius: 99%;
 }
 .calendar .calendar-day-base:active, .calendar .calendar-day-base:selected {
-  background-color: #3f4953;
+  background-color: #3A587A;
+  color: #F7F8F8;
+  border-radius: 99%;
+  font-weight: bold !important;
+  box-shadow: inset 0 0 0 2px #3A587A;
 }
 .calendar .calendar-day-base.calendar-day-heading {
   color: white;
@@ -1226,19 +1234,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-weight: bold;
   background-color: transparent;
 }
-.calendar .calendar-today {
-  background-color: #3A587A;
-  color: #F7F8F8;
-  border-radius: 16px;
-  font-weight: bold;
+.calendar .calendar-today:hover, .calendar .calendar-today:focus, .calendar .calendar-today:active, .calendar .calendar-today:selected, .calendar .calendar-today:checked, .calendar .calendar-today:checked:hover, .calendar .calendar-today {
+  color: #ffffff !important;
+  background-color: #3f4953 !important;
+  box-shadow: inset 0 0 0 2px #3A587A;
+  border-radius: 99%;
+  font-weight: bold !important;
 }
-.calendar .calendar-today:hover, .calendar .calendar-today:focus {
-  background-color: #416288;
-  color: #F7F8F8;
-}
-.calendar .calendar-today:active, .calendar .calendar-today:selected {
-  background-color: #3A587A;
-  color: #F7F8F8;
+.calendar .calendar-today:hover StLabel, .calendar .calendar-today:hover StIcon, .calendar .calendar-today:focus StLabel, .calendar .calendar-today:focus StIcon, .calendar .calendar-today:active StLabel, .calendar .calendar-today:active StIcon, .calendar .calendar-today:selected StLabel, .calendar .calendar-today:selected StIcon, .calendar .calendar-today:checked StLabel, .calendar .calendar-today:checked StIcon, .calendar .calendar-today:checked:hover StLabel, .calendar .calendar-today:checked:hover StIcon, .calendar .calendar-today StLabel, .calendar .calendar-today StIcon {
+  color: inherit;
 }
 .calendar .calendar-day-with-events {
   background-image: url("common-assets/misc/calendar-today.svg");
