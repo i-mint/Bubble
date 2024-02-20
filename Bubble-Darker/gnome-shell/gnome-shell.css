@@ -42,7 +42,7 @@ stage {
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 0;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .hotplug-notification-item, .notification-banner .notification-button,
@@ -1674,11 +1674,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: inset 0px 0px 0px 1px rgba(85, 127, 175, 0);
 }
 
-.window-caption, .window-caption:hover {
+.window-caption,
+.window-caption:hover {
   spacing: 25px;
-  color: #595353;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: #E6E3CF;
+  border-radius: 4px;
   padding: 4px 12px;
   -shell-caption-spacing: 12px;
 }
