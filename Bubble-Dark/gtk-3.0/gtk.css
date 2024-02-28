@@ -5055,20 +5055,23 @@ panel-toplevel.background button:checked:not(#tasklist-button) {
 .thunar notebook .view:backdrop, .thunar notebook iconview:backdrop {
   color: rgba(194, 194, 194, 0.67);
 }
-.thunar notebook tabs > tab button.flat image {
+.thunar notebook tabs > tab.reorderable-page button.flat image {
   background-color: transparent;
-  border: 0.5px solid transparent;
-  border-radius: 2px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  padding: 2px;
 }
-.thunar notebook tabs > tab button.flat:hover image {
-  background-color: #1c2025;
-  border: 0.5px solid #0c0e10;
-  border-radius: 2px;
+.thunar notebook tabs > tab.reorderable-page button.flat:hover image {
+  background-color: #4e5b68;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  padding: 2px;
 }
-.thunar notebook tabs > tab button.flat:active image {
-  background-color: #576573;
-  border: 0.5px solid #1c2025;
-  border-radius: 2px;
+.thunar notebook tabs > tab.reorderable-page button.flat:active image {
+  background-color: #5b6a79;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  padding: 2px;
 }
 
 .path-buttons-box:not(.vertical) {
