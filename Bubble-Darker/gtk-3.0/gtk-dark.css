@@ -3417,10 +3417,9 @@ calendar {
   color: #595353;
   border: 1px solid #e1e1e1;
   border-radius: 3px;
-  padding: 2px;
 }
 calendar:selected {
-  border-radius: 1.5px;
+  border-radius: 4px;
 }
 calendar.header {
   color: #595353;

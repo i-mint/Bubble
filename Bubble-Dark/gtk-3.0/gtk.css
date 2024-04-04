@@ -3413,10 +3413,9 @@ calendar {
   color: #c2c2c2;
   border: 1px solid #15191c;
   border-radius: 3px;
-  padding: 2px;
 }
 calendar:selected {
-  border-radius: 1.5px;
+  border-radius: 4px;
 }
 calendar.header {
   color: #c2c2c2;
