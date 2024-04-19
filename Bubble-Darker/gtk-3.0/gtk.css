@@ -1,4 +1,4 @@
-box.path-bar-box .linked > button.image-button.text-button:only-child, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child) {
+.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked, box.path-bar-box .linked > button.image-button.text-button:only-child, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child) {
   font-size: 1.4em;
   font-weight: bold;
 }
@@ -126,6 +126,8 @@ textview {
 .osd .scale-popup, popover.osd, popover.magnifier, .csd popover.osd, .csd popover.magnifier,
 popover.background.osd,
 popover.background.magnifier,
+.csd popover.background.osd,
+.csd popover.background.magnifier,
 .osd {
   color: #c4c0c0;
   border: none;
@@ -3929,7 +3931,8 @@ colorchooser .popover.osd {
 }
 
 .context-menu, popover.touch-selection, .csd popover.touch-selection,
-popover.background.touch-selection {
+popover.background.touch-selection,
+.csd popover.background.touch-selection {
   font: initial;
 }
 
