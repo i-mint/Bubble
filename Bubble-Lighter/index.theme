@@ -1,9 +1,10 @@
 [X-GNOME-Metatheme]
 Name=Bubble-Lighter
 Type=X-GNOME-Metatheme
-Comment= Bubble Gtk Themes 
+Comment= Bubble Lighter Gtk Themes 
 Encoding=UTF-8
 GtkTheme=Bubble-Lighter
-IconTheme=Papirus-Light
+MetacityTheme=Bubble-Lighter
+IconTheme=Papirus
 CursorTheme=Adwaita
 CursorSize=24

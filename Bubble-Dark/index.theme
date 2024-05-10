@@ -1,9 +1,10 @@
 [X-GNOME-Metatheme]
 Name=Bubble-Dark
 Type=X-GNOME-Metatheme
-Comment= Bubble Gtk Themes 
+Comment= Bubble Dark Gtk Themes 
 Encoding=UTF-8
 GtkTheme=Bubble-Dark
+MetacityTheme=Bubble-Dark
 IconTheme=Papirus-Dark
 CursorTheme=Adwaita
 CursorSize=24
