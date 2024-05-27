@@ -4137,30 +4137,30 @@ headerbar button.titlebutton.minimize:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
   background-color: #557FAF;
 }
 row:selected label, label:selected, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar .view.cell:selected:focus, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover, .nemo-window .sidebar row.cell:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
   color: #F7F8F8;
 }
 row:selected label:backdrop, label:backdrop:selected, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
   color: rgba(247, 248, 248, 0.78);
 }
 row:selected label:disabled, label:disabled:selected, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected:hover, .nemo-window .sidebar row.cell:disabled:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, flowbox flowboxchild:disabled:selected, box.path-bar-box .linked > button.image-button.text-button:disabled:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:disabled:only-child, row:disabled:selected, calendar:disabled:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .caja-side-pane .frame treeview.view:disabled:selected, .caja-side-pane .frame treeview.view:disabled:active:hover, flowbox flowboxchild:disabled:selected, box.path-bar-box .linked > button.image-button.text-button:disabled:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:disabled:only-child, row:disabled:selected, calendar:disabled:selected {
   color: #a6bcd4;
 }
 
 .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
   background-color: rgba(85, 127, 175, 0.78);
   color: rgba(247, 248, 248, 0.78);
 }
@@ -4424,6 +4424,22 @@ button.nautilus-circular-button.image-button label {
 
 .caja-side-pane .frame {
   border-width: 1px 0 0;
+}
+.caja-side-pane .frame treeview.view {
+  color: #5c5050;
+}
+.caja-side-pane .frame treeview.view:hover {
+  background-color: rgba(92, 80, 80, 0.07);
+}
+.caja-side-pane .frame treeview.view:hover:backdrop {
+  color: rgba(92, 80, 80, 0.78);
+}
+.caja-side-pane .frame treeview.view:selected:backdrop, .caja-side-pane .frame treeview.view:selected:hover:backdrop, .caja-side-pane .frame treeview.view:active:hover:backdrop {
+  color: rgba(247, 248, 248, 0.78);
+  background-color: rgba(85, 127, 175, 0.78);
+}
+.caja-side-pane .frame treeview.view:backdrop {
+  color: rgba(92, 80, 80, 0.78);
 }
 
 .caja-notebook .frame {
@@ -4828,40 +4844,106 @@ MsdOsdWindow.background.osd .trough {
   border-radius: 5px;
 }
 
+.mate-panel-menu-bar button,
+.mate-panel-menu-bar #tasklist-button,
+panel-toplevel.background button,
+panel-toplevel.background #tasklist-button {
+  color: #565656;
+  background-color: transparent;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  box-shadow: none;
+  text-shadow: none;
+}
+.mate-panel-menu-bar button label,
+.mate-panel-menu-bar #tasklist-button label,
+panel-toplevel.background button label,
+panel-toplevel.background #tasklist-button label, .mate-panel-menu-bar button image,
+.mate-panel-menu-bar #tasklist-button image,
+panel-toplevel.background button image,
+panel-toplevel.background #tasklist-button image {
+  color: inherit;
+}
+.mate-panel-menu-bar button:hover,
+.mate-panel-menu-bar #tasklist-button:hover,
+panel-toplevel.background button:hover,
+panel-toplevel.background #tasklist-button:hover {
+  background-color: rgba(192, 192, 192, 0.95);
+  color: #565656;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  box-shadow: none;
+  text-shadow: none;
+}
+.mate-panel-menu-bar button:hover label,
+.mate-panel-menu-bar #tasklist-button:hover label,
+panel-toplevel.background button:hover label,
+panel-toplevel.background #tasklist-button:hover label, .mate-panel-menu-bar button:hover image,
+.mate-panel-menu-bar #tasklist-button:hover image,
+panel-toplevel.background button:hover image,
+panel-toplevel.background #tasklist-button:hover image {
+  color: inherit;
+}
+.mate-panel-menu-bar button:active,
+.mate-panel-menu-bar #tasklist-button:active,
+panel-toplevel.background button:active,
+panel-toplevel.background #tasklist-button:active, .mate-panel-menu-bar button:checked,
+.mate-panel-menu-bar #tasklist-button:checked,
+panel-toplevel.background button:checked,
+panel-toplevel.background #tasklist-button:checked {
+  color: #F7F8F8;
+  border: 4px solid rgba(228, 228, 228, 0.95);
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 100px #557FAF;
+  text-shadow: none;
+}
+.mate-panel-menu-bar button:active label,
+.mate-panel-menu-bar #tasklist-button:active label,
+panel-toplevel.background button:active label,
+panel-toplevel.background #tasklist-button:active label, .mate-panel-menu-bar button:active image,
+.mate-panel-menu-bar #tasklist-button:active image,
+panel-toplevel.background button:active image,
+panel-toplevel.background #tasklist-button:active image, .mate-panel-menu-bar button:checked label,
+.mate-panel-menu-bar #tasklist-button:checked label,
+panel-toplevel.background button:checked label,
+panel-toplevel.background #tasklist-button:checked label, .mate-panel-menu-bar button:checked image,
+.mate-panel-menu-bar #tasklist-button:checked image,
+panel-toplevel.background button:checked image,
+panel-toplevel.background #tasklist-button:checked image {
+  color: inherit;
+}
+
 .mate-panel-menu-bar, .mate-panel-menu-bar menubar,
 panel-toplevel.background,
 panel-toplevel.background menubar {
   background-color: #e4e4e4;
 }
 .mate-panel-menu-bar menubar,
-.mate-panel-menu-bar #PanelApplet label,
-.mate-panel-menu-bar #PanelApplet image,
-panel-toplevel.background menubar,
-panel-toplevel.background #PanelApplet label,
-panel-toplevel.background #PanelApplet image {
+panel-toplevel.background menubar {
   color: #565656;
 }
-.mate-panel-menu-bar button label, .mate-panel-menu-bar button image,
-.mate-panel-menu-bar #tasklist-button label,
-.mate-panel-menu-bar #tasklist-button image,
-panel-toplevel.background button label,
-panel-toplevel.background button image,
-panel-toplevel.background #tasklist-button label,
-panel-toplevel.background #tasklist-button image {
-  color: inherit;
+.mate-panel-menu-bar #PanelApplet #PanelApplet label, .mate-panel-menu-bar #PanelApplet #PanelApplet image, .mate-panel-menu-bar #PanelApplet #PanelApplet,
+panel-toplevel.background #PanelApplet #PanelApplet label,
+panel-toplevel.background #PanelApplet #PanelApplet image,
+panel-toplevel.background #PanelApplet #PanelApplet {
+  color: #565656;
+}
+.mate-panel-menu-bar #PanelApplet #PanelApplet button:checked label, .mate-panel-menu-bar #PanelApplet #PanelApplet button:checked image, .mate-panel-menu-bar #PanelApplet #PanelApplet button:checked,
+panel-toplevel.background #PanelApplet #PanelApplet button:checked label,
+panel-toplevel.background #PanelApplet #PanelApplet button:checked image,
+panel-toplevel.background #PanelApplet #PanelApplet button:checked {
+  color: #F7F8F8;
 }
 .mate-panel-menu-bar .wnck-pager,
 panel-toplevel.background .wnck-pager {
-  color: #2b2b2b;
-  background-color: rgba(203, 203, 203, 0.95);
+  background-color: rgba(177, 177, 177, 0.95);
 }
 .mate-panel-menu-bar .wnck-pager:hover,
 panel-toplevel.background .wnck-pager:hover {
-  background-color: rgba(241, 241, 241, 0.95);
+  background-color: rgba(203, 203, 203, 0.95);
 }
 .mate-panel-menu-bar .wnck-pager:selected,
 panel-toplevel.background .wnck-pager:selected {
-  color: #9ab3d0;
   background-color: #557FAF;
 }
 .mate-panel-menu-bar na-tray-applet,
@@ -4872,8 +4954,7 @@ panel-toplevel.background na-tray-applet {
 
 .panel.xfce4-panel #clock-button, .panel.xfce4-panel .tasklist button, .panel.xfce4-panel button,
 .panel.xfce4-panel #sn-button,
-.panel.xfce4-panel #xfce4-notification-plugin, .mate-panel-menu-bar button:not(#tasklist-button),
-panel-toplevel.background button:not(#tasklist-button) {
+.panel.xfce4-panel #xfce4-notification-plugin {
   color: #565656;
   background-color: transparent;
   border: 4px solid transparent;
@@ -4883,8 +4964,7 @@ panel-toplevel.background button:not(#tasklist-button) {
 }
 .panel.xfce4-panel #clock-button:hover, .panel.xfce4-panel button:hover,
 .panel.xfce4-panel #sn-button:hover,
-.panel.xfce4-panel #xfce4-notification-plugin:hover, .mate-panel-menu-bar button:hover:not(#tasklist-button),
-panel-toplevel.background button:hover:not(#tasklist-button) {
+.panel.xfce4-panel #xfce4-notification-plugin:hover {
   background-color: rgba(192, 192, 192, 0.95);
   color: #565656;
   border: 4px solid transparent;
@@ -4894,11 +4974,9 @@ panel-toplevel.background button:hover:not(#tasklist-button) {
 }
 .panel.xfce4-panel #clock-button:active, .panel.xfce4-panel button:active,
 .panel.xfce4-panel #sn-button:active,
-.panel.xfce4-panel #xfce4-notification-plugin:active, .mate-panel-menu-bar button:active:not(#tasklist-button),
-panel-toplevel.background button:active:not(#tasklist-button), .panel.xfce4-panel #clock-button:checked, .panel.xfce4-panel button:checked,
+.panel.xfce4-panel #xfce4-notification-plugin:active, .panel.xfce4-panel #clock-button:checked, .panel.xfce4-panel button:checked,
 .panel.xfce4-panel #sn-button:checked,
-.panel.xfce4-panel #xfce4-notification-plugin:checked, .mate-panel-menu-bar button:checked:not(#tasklist-button),
-panel-toplevel.background button:checked:not(#tasklist-button) {
+.panel.xfce4-panel #xfce4-notification-plugin:checked {
   color: #F7F8F8;
   border: 4px solid rgba(228, 228, 228, 0.95);
   border-radius: 8px;
