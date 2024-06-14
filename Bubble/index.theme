@@ -1,10 +1,13 @@
-[X-GNOME-Metatheme]
-Name=Bubble
+[Desktop Entry]
 Type=X-GNOME-Metatheme
-Comment= Bubble Gtk Themes 
+Name=Bubble
+Comment=Bubble Gtk Themes 
 Encoding=UTF-8
+
+[X-GNOME-Metatheme]
 GtkTheme=Bubble
 MetacityTheme=Bubble
-IconTheme=Papirus
+IconTheme=Papirus-Light
 CursorTheme=Adwaita
 CursorSize=24
+ButtonLayout=:minimize,maximize,close
