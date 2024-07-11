@@ -205,7 +205,7 @@ entry:disabled {
   border-color: rgba(0, 0, 0, 0);
   background-color: rgba(240, 240, 240, 0.44);
 }
-entry selection:focus, entry selection {
+entry selection:focus {
   color: #557FAF;
   background-color: #F7F8F8;
   border-color: transparent;
@@ -369,8 +369,8 @@ treeview entry.flat:focus, treeview entry:focus {
   }
 }
 button {
-  min-height: 22px;
-  min-width: 20px;
+  min-height: 24px;
+  min-width: 22px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid;
   border-radius: 4px;
@@ -1279,33 +1279,6 @@ searchbar {
   border-width: 0 0 1px;
   padding: 3px;
 }
-searchbar entry.search {
-  color: #595353;
-  border-color: rgba(0, 0, 0, 0.2);
-  background-color: rgba(240, 240, 240, 0.89);
-  border-radius: 4px;
-}
-searchbar entry.search image,
-searchbar entry.search image:hover {
-  color: rgba(89, 83, 83, 0.55);
-}
-searchbar entry.search image {
-  color: rgba(89, 83, 83, 0.55);
-}
-searchbar entry.search:focus {
-  color: #F7F8F8;
-  border-color: rgba(0, 0, 0, 0.2);
-  background-color: #557FAF;
-}
-searchbar entry.search:focus image,
-searchbar entry.search:focus image:hover {
-  color: inherit;
-}
-searchbar entry.search selection, searchbar entry.search selection:focus {
-  color: #557FAF;
-  background-color: #F7F8F8;
-  border-color: transparent;
-}
 
 actionbar {
   padding: 6px;
@@ -1484,7 +1457,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.75);
 }
-.primary-toolbar entry selection, headerbar entry selection {
+.primary-toolbar entry selection:focus, headerbar entry selection:focus {
   color: #557FAF;
   background-color: #F7F8F8;
   border-color: transparent;
@@ -1611,7 +1584,6 @@ headerbar .linked:not(.vertical).path-bar > button {
   color: #565656;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  margin: 0px;
   margin: 0;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
@@ -1627,7 +1599,7 @@ headerbar .linked:not(.vertical).path-bar > button:hover {
   color: rgba(86, 86, 86, 0.7);
   background-color: #ededed;
   border-color: #FFFFFF;
-  margin: 0px;
+  margin: 0;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image,
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover label,
@@ -1644,7 +1616,7 @@ headerbar .linked:not(.vertical).path-bar > button:checked {
   color: #F7F8F8;
   background-color: #557FAF;
   border-color: #FFFFFF;
-  margin: 0px;
+  margin: 0;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active label,
@@ -1955,17 +1927,16 @@ box.path-bar-box {
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 6px;
-  margin-bottom: 6px;
-  padding: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 box.path-bar-box .linked > button {
   color: #565656;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  margin: 0px;
   padding: 0px 9px;
-  margin: 0;
+  margin: 0 0 1px 0;
 }
 box.path-bar-box .linked > button label, box.path-bar-box .linked > button image {
   color: inherit;
@@ -1974,7 +1945,7 @@ box.path-bar-box .linked > button:hover {
   color: rgba(86, 86, 86, 0.7);
   background-color: #ededed;
   border-color: #FFFFFF;
-  margin: 0px;
+  margin: 0 0 1px 0;
 }
 box.path-bar-box .linked > button:hover label, box.path-bar-box .linked > button:hover image {
   color: inherit;
@@ -1983,7 +1954,7 @@ box.path-bar-box .linked > button:active, box.path-bar-box .linked > button:chec
   color: #F7F8F8;
   background-color: #557FAF;
   border-color: #FFFFFF;
-  margin: 0px;
+  margin: 0 0 1px 0;
 }
 box.path-bar-box .linked > button:active label, box.path-bar-box .linked > button:active image, box.path-bar-box .linked > button:checked label, box.path-bar-box .linked > button:checked image {
   color: inherit;
@@ -4192,30 +4163,30 @@ headerbar button.titlebutton.minimize:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, entry.caja-location-entry selection, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, entry.caja-location-entry selection, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, flowbox flowboxchild:selected, entry selection, .primary-toolbar entry selection, headerbar entry selection, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
   background-color: #557FAF;
 }
 row:selected label, label:selected, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar .view.cell:selected:focus, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover, .nemo-window .sidebar row.cell:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, entry.caja-location-entry selection, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, flowbox flowboxchild:selected, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, entry.caja-location-entry selection, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, flowbox flowboxchild:selected, entry selection, .primary-toolbar entry selection, headerbar entry selection, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
   color: #F7F8F8;
 }
 row:selected label:backdrop, label:backdrop:selected, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, entry.caja-location-entry selection:backdrop, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
   color: rgba(247, 248, 248, 0.78);
 }
 row:selected label:disabled, label:disabled:selected, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected:hover, .nemo-window .sidebar row.cell:disabled:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, entry.caja-location-entry selection:disabled, .caja-side-pane .frame treeview.view:disabled:selected, .caja-side-pane .frame treeview.view:disabled:active:hover, flowbox flowboxchild:disabled:selected, box.path-bar-box .linked > button.image-button.text-button:disabled:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:disabled:only-child, row:disabled:selected, calendar:disabled:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .caja-side-pane .frame treeview.view:disabled:selected, .caja-side-pane .frame treeview.view:disabled:active:hover, flowbox flowboxchild:disabled:selected, entry selection:disabled, box.path-bar-box .linked > button.image-button.text-button:disabled:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:disabled:only-child, row:disabled:selected, calendar:disabled:selected {
   color: #a6bcd4;
 }
 
 .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, entry.caja-location-entry selection:backdrop, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
   background-color: rgba(85, 127, 175, 0.78);
   color: rgba(247, 248, 248, 0.78);
 }
@@ -5397,7 +5368,6 @@ panel-toplevel.background na-tray-applet {
   color: #565656;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  margin: 0px;
 }
 .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button image {
   color: inherit;
@@ -5406,7 +5376,6 @@ panel-toplevel.background na-tray-applet {
   color: rgba(86, 86, 86, 0.7);
   background-color: #ededed;
   border-color: #FFFFFF;
-  margin: 0px;
 }
 .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:hover label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:hover label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:hover image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:hover image {
   color: inherit;
@@ -5415,7 +5384,6 @@ panel-toplevel.background na-tray-applet {
   color: #F7F8F8;
   background-color: #557FAF;
   border-color: #FFFFFF;
-  margin: 0px;
 }
 .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active image, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked image {
   color: inherit;
