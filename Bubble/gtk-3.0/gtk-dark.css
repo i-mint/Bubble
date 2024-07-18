@@ -3344,47 +3344,11 @@ list > separator {
   background-image: linear-gradient(to bottom, #2e2e2e, #2e2e2e);
 }
 
-/*
-$duration: 75ms;
-$ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
-$ripple-fade-in-duration: 225ms;
-$ripple-fade-out-opacity-duration: 1200ms;
-$transition: all $duration $ease-out;
-$ripple-fade-in-duration: 225ms;
-$ripple-fade-out-duration: 300ms;
-$ripple-fade-out-opacity-duration: 1200ms;
-$overlay-normal: gtkalpha(currentColor, 0.05);
-*/
-row {
-  /*
-  transition: $transition,
-  background-size $ripple-fade-out-duration $ease-out,
-  background-image $ripple-fade-out-opacity-duration $ease-out;
-  outline: none;
-  box-shadow: inset 0 0 0 9999px transparent;
-  background-image: radial-gradient(circle, transparent 10%, transparent 0%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1000% 1000%;
-  */
-}
 row:not(:hover) {
   transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 row.activatable.has-open-popup, row.activatable:hover {
   background-color: rgba(255, 255, 255, 0.03);
-}
-row.activatable:active {
-  /*
-  color: $fg_color; 
-  transition: $transition,
-  background-size 0ms,
-  background-image 0ms;
-  animation: ripple $ripple-fade-in-duration $ease-out forwards;
-  box-shadow: inset 0 0 0 9999px $overlay-normal;
-  background-image: radial-gradient(circle, $overlay-normal 10%, transparent 0%);
-  background-size: 0% 0%;
-  */
 }
 row.activatable:disabled {
   color: rgba(194, 194, 194, 0.45);
@@ -4611,6 +4575,14 @@ entry.caja-location-entry:disabled label, entry.caja-location-entry:disabled ima
 .gedit-side-panel-paned statusbar {
   border-top: 1px solid #15191c;
   background-color: #22282E;
+}
+.gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected,
+.gedit-side-panel-paned .view:selected:hover {
+  color: #F7F8F8;
+  background-color: #3A587A;
+}
+.gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {
+  background-color: #31383e;
 }
 
 .gedit-search-slider {
