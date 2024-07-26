@@ -4438,6 +4438,17 @@ button.nautilus-circular-button.image-button label {
 .caja-notebook {
   border-top: 1px solid #e1e1e1;
 }
+.caja-notebook tabs > tab.reorderable-page > box > button.flat image {
+  margin: 1px 0;
+  padding: 0 2px;
+  border-radius: 99%;
+}
+.caja-notebook tabs > tab.reorderable-page > box > button.flat:hover image {
+  background-color: silver;
+}
+.caja-notebook tabs > tab.reorderable-page > box > button.flat:active image {
+  background-color: #cfcfcf;
+}
 
 .caja-navigation-window toolbar.horizontal.primary-toolbar, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar {
   border-bottom: 1px solid rgba(227, 227, 227, 0.95);
@@ -5281,22 +5292,15 @@ panel-toplevel.background na-tray-applet {
   color: rgba(89, 83, 83, 0.67);
 }
 .thunar notebook tabs > tab.reorderable-page button.flat image {
-  background-color: transparent;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  padding: 2px;
+  margin: 2px 0;
+  padding: 0 2px;
+  border-radius: 99%;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:hover image {
   background-color: silver;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  padding: 2px;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:active image {
   background-color: #cfcfcf;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  padding: 2px;
 }
 .thunar toolbar, .thunar .inline-toolbar {
   background-color: rgba(240, 240, 240, 0.95);
