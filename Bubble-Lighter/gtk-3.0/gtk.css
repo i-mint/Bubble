@@ -1,4 +1,4 @@
-.path-buttons-box:not(.vertical) button.current-dir, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked, box.path-bar-box .linked > button.image-button.text-button:only-child, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child) {
+.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:only-child, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:last-child {
   font-size: 1.4em;
   font-weight: bold;
 }
@@ -452,8 +452,8 @@ button.text-button {
   padding-right: 12px;
 }
 button.text-button.image-button {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 button.text-button.image-button label:first-child {
   padding-left: 8px;
@@ -973,27 +973,27 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
   box-shadow: none;
 }
 
-.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, dialog .linked.path-bar > button, dialog .linked.path-bar > button:hover, dialog .linked.path-bar > button:active, dialog .linked.path-bar > button:checked, dialog .linked.path-bar > button:disabled, box.path-bar-box .linked > button, box.path-bar-box .linked > button:hover, box.path-bar-box .linked > button:active, box.path-bar-box .linked > button:checked, box.path-bar-box .linked > button:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
+.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, dialog .linked.path-bar > button, dialog .linked.path-bar > button:hover, dialog .linked.path-bar > button:active, dialog .linked.path-bar > button:checked, dialog .linked.path-bar > button:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
   border-radius: 0;
   border-right-style: none;
 }
 
-.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:first-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, dialog .linked.path-bar > button:first-child, box.path-bar-box .linked > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
+.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:first-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, dialog .linked.path-bar > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child, spinbutton:not(.vertical) button:first-child, spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked:not(.vertical) > button:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:last-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, dialog .linked.path-bar > button:last-child, box.path-bar-box .linked > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
+.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:last-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, dialog .linked.path-bar > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked:not(.vertical) > button:last-child {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-right-style: solid;
 }
-.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:only-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, dialog .linked.path-bar > button:only-child, box.path-bar-box .linked > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
+.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:only-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, dialog .linked.path-bar > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked:not(.vertical) > button:only-child {
   border-radius: 4px;
@@ -1559,7 +1559,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   margin-right: 1px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > button, headerbar .linked:not(.vertical):not(.path-bar) > button {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child), headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child),
@@ -1921,70 +1921,6 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
 .path-bar button image {
   padding-left: 4px;
   padding-right: 4px;
-}
-
-box.path-bar-box {
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-box.path-bar-box .linked > button {
-  color: #565656;
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
-  padding: 0px 9px;
-  margin: 0 0 1px 0;
-}
-box.path-bar-box .linked > button label, box.path-bar-box .linked > button image {
-  color: inherit;
-}
-box.path-bar-box .linked > button:hover {
-  color: rgba(86, 86, 86, 0.7);
-  background-color: #ededed;
-  border-color: #FFFFFF;
-  margin: 0 0 1px 0;
-}
-box.path-bar-box .linked > button:hover label, box.path-bar-box .linked > button:hover image {
-  color: inherit;
-}
-box.path-bar-box .linked > button:active, box.path-bar-box .linked > button:checked {
-  color: #F7F8F8;
-  background-color: #557FAF;
-  border-color: #FFFFFF;
-  margin: 0 0 1px 0;
-}
-box.path-bar-box .linked > button:active label, box.path-bar-box .linked > button:active image, box.path-bar-box .linked > button:checked label, box.path-bar-box .linked > button:checked image {
-  color: inherit;
-}
-box.path-bar-box .linked > button:disabled {
-  color: rgba(86, 86, 86, 0.6);
-}
-box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child) label, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child) image {
-  padding: 0px;
-}
-box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child):active {
-  opacity: 0.5;
-}
-box.path-bar-box .linked > button.image-button.text-button:only-child label, box.path-bar-box .linked > button.image-button.text-button:only-child image {
-  padding-right: 2px;
-}
-
-headerbar stack box.linked > button.popup.toggle:not(.disclosure-button) {
-  color: #595353;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(86, 86, 86, 0.3);
-  border-radius: 0 4px 4px 0;
-}
-headerbar stack box.linked > button.popup.toggle:not(.disclosure-button) image, headerbar stack box.linked > button.popup.toggle:not(.disclosure-button) {
-  color: inherit;
-}
-headerbar stack box.linked > button.popup.toggle:not(.disclosure-button):focus, headerbar stack box.linked > button.popup.toggle:not(.disclosure-button):active, headerbar stack box.linked > button.popup.toggle:not(.disclosure-button):checked {
-  color: #F7F8F8;
-  border: 1px solid rgba(86, 86, 86, 0.3);
-  background-color: #557FAF;
 }
 
 treeview.view {
@@ -4127,30 +4063,30 @@ headerbar button.titlebutton.minimize:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, entry.caja-location-entry selection, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, flowbox flowboxchild:selected, entry selection, .primary-toolbar entry selection, headerbar entry selection, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, entry.caja-location-entry selection, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:only-child, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:last-child, flowbox flowboxchild:selected, entry selection, .primary-toolbar entry selection, headerbar entry selection, row:selected, calendar:selected {
   background-color: #557FAF;
 }
 row:selected label, label:selected, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar .view.cell:selected:focus, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover, .nemo-window .sidebar row.cell:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, entry.caja-location-entry selection, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, flowbox flowboxchild:selected, entry selection, .primary-toolbar entry selection, headerbar entry selection, box.path-bar-box .linked > button.image-button.text-button:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:only-child, row:selected, calendar:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, entry.caja-location-entry selection, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:only-child, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:last-child, flowbox flowboxchild:selected, entry selection, .primary-toolbar entry selection, headerbar entry selection, row:selected, calendar:selected {
   color: #F7F8F8;
 }
 row:selected label:backdrop, label:backdrop:selected, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:backdrop:only-child, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:backdrop:last-child, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, row:backdrop:selected, calendar:backdrop:selected {
   color: rgba(247, 248, 248, 0.78);
 }
 row:selected label:disabled, label:disabled:selected, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected:hover, .nemo-window .sidebar row.cell:disabled:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .caja-side-pane .frame treeview.view:disabled:selected, .caja-side-pane .frame treeview.view:disabled:active:hover, flowbox flowboxchild:disabled:selected, entry selection:disabled, box.path-bar-box .linked > button.image-button.text-button:disabled:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:disabled:only-child, row:disabled:selected, calendar:disabled:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .caja-side-pane .frame treeview.view:disabled:selected, .caja-side-pane .frame treeview.view:disabled:active:hover, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:disabled:only-child, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:disabled:last-child, flowbox flowboxchild:disabled:selected, entry selection:disabled, row:disabled:selected, calendar:disabled:selected {
   color: #a6bcd4;
 }
 
 .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected:hover, .nemo-window .sidebar row.cell:backdrop:selected:focus, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, box.path-bar-box .linked > button.image-button.text-button:backdrop:last-child:not(:only-child), box.path-bar-box .linked > button.image-button.text-button:backdrop:only-child, row:backdrop:selected, calendar:backdrop:selected {
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .caja-side-pane .frame treeview.view:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active:hover, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:backdrop:only-child, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:backdrop:last-child, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, row:backdrop:selected, calendar:backdrop:selected {
   background-color: rgba(85, 127, 175, 0.78);
   color: rgba(247, 248, 248, 0.78);
 }
@@ -4340,6 +4276,94 @@ button.nautilus-circular-button.image-button label {
 .conflict-row.activatable:selected {
   color: #F7F8F8;
   background-color: #557FAF;
+}
+
+.nautilus-window box.horizontal.path-bar-box {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nautilus-window .nautilus-path-bar.linked > button {
+  color: #565656;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 28px;
+}
+.nautilus-window .nautilus-path-bar.linked > button label, .nautilus-window .nautilus-path-bar.linked > button image {
+  color: inherit;
+}
+.nautilus-window .nautilus-path-bar.linked > button:not(.popup.toggle) {
+  border-width: 0;
+}
+.nautilus-window .nautilus-path-bar.linked > button:hover {
+  color: rgba(86, 86, 86, 0.7);
+  background-color: #ededed;
+  border-color: #FFFFFF;
+}
+.nautilus-window .nautilus-path-bar.linked > button:hover label, .nautilus-window .nautilus-path-bar.linked > button:hover image {
+  color: inherit;
+}
+.nautilus-window .nautilus-path-bar.linked > button:active, .nautilus-window .nautilus-path-bar.linked > button:checked {
+  color: #F7F8F8;
+  background-color: #557FAF;
+  border-color: #FFFFFF;
+}
+.nautilus-window .nautilus-path-bar.linked > button:active label, .nautilus-window .nautilus-path-bar.linked > button:active image, .nautilus-window .nautilus-path-bar.linked > button:checked label, .nautilus-window .nautilus-path-bar.linked > button:checked image {
+  color: inherit;
+}
+.nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:last-child:active {
+  opacity: 0.5;
+}
+.nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:only-child label {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.nautilus-window .linked > button.popup.toggle:not(.disclosure-button) {
+  border-radius: 0 4px 4px 0;
+  border-color: rgba(86, 86, 86, 0.3);
+}
+
+.nautilus-window .path-buttons-box:not(.vertical) {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+.nautilus-window .path-buttons-box:not(.vertical) > box > button {
+  color: #565656;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  border-radius: 4px;
+  margin: 0;
+  border-width: 0;
+}
+.nautilus-window .path-buttons-box:not(.vertical) > box > button label, .nautilus-window .path-buttons-box:not(.vertical) > box > button image {
+  color: inherit;
+}
+.nautilus-window .path-buttons-box:not(.vertical) > box > button:hover {
+  color: rgba(86, 86, 86, 0.7);
+  background-color: #ededed;
+  border-color: #FFFFFF;
+}
+.nautilus-window .path-buttons-box:not(.vertical) > box > button:hover label, .nautilus-window .path-buttons-box:not(.vertical) > box > button:hover image {
+  color: inherit;
+}
+.nautilus-window .path-buttons-box:not(.vertical) > box > button:active {
+  color: #F7F8F8;
+  background-color: #557FAF;
+  border-color: #FFFFFF;
+}
+.nautilus-window .path-buttons-box:not(.vertical) > box > button:active label, .nautilus-window .path-buttons-box:not(.vertical) > box > button:active image {
+  color: inherit;
+}
+.nautilus-window .path-buttons-box:not(.vertical) > box > button.current-dir:active, .nautilus-window .path-buttons-box:not(.vertical) > box > button.current-dir:hover, .nautilus-window .path-buttons-box:not(.vertical) > box > button.current-dir {
+  color: #565656;
+  background-color: transparent;
 }
 
 .nemo-desktop.nemo-canvas-item {
@@ -5373,40 +5397,6 @@ panel-toplevel.background na-tray-applet {
 }
 .thunar paned > separator {
   background-image: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
-}
-
-.path-buttons-box:not(.vertical) {
-  background-color: #FFFFFF;
-  margin: 6px 0;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-right: none;
-  border-radius: 4px 0 0 4px;
-}
-.path-buttons-box:not(.vertical) button {
-  color: #565656;
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
-  border-radius: 4px;
-  min-height: 16px;
-  margin: 0;
-}
-.path-buttons-box:not(.vertical) button label, .path-buttons-box:not(.vertical) button image {
-  color: inherit;
-}
-.path-buttons-box:not(.vertical) button:hover {
-  background-color: transparent;
-}
-.path-buttons-box:not(.vertical) button:hover label, .path-buttons-box:not(.vertical) button:hover image, .path-buttons-box:not(.vertical) button:hover {
-  color: #565656;
-}
-.path-buttons-box:not(.vertical) button:active, .path-buttons-box:not(.vertical) button.current-dir:active {
-  background-color: rgba(86, 86, 86, 0.1);
-}
-.path-buttons-box:not(.vertical) button:active label, .path-buttons-box:not(.vertical) button:active image, .path-buttons-box:not(.vertical) button:active, .path-buttons-box:not(.vertical) button.current-dir:active label, .path-buttons-box:not(.vertical) button.current-dir:active image, .path-buttons-box:not(.vertical) button.current-dir:active {
-  color: #565656;
-}
-.path-buttons-box:not(.vertical) button.current-dir label, .path-buttons-box:not(.vertical) button.current-dir image, .path-buttons-box:not(.vertical) button.current-dir {
-  color: #565656;
 }
 
 calendar-view event {
