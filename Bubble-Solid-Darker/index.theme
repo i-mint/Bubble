@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Bubble-Darker
+Comment=Bubble Darker Gtk Themes 
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Bubble-Darker
+MetacityTheme=Bubble-Darker
+IconTheme=Papirus-Dark
+CursorTheme=Adwaita
+CursorSize=24
+ButtonLayout=:minimize,maximize,close
