@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Bubble-Lighter
+Comment=Bubble Lighter Gtk Themes 
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Bubble-Lighter
+MetacityTheme=Bubble-Lighter
+IconTheme=Papirus-Light
+CursorTheme=Adwaita
+CursorSize=24
+ButtonLayout=:minimize,maximize,close
