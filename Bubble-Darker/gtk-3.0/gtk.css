@@ -5309,7 +5309,7 @@ panel-toplevel.background na-tray-applet {
   background-color: #cfcfcf;
 }
 .thunar toolbar, .thunar .inline-toolbar {
-  background-color: rgba(26, 30, 34, 0.95);
+  background-color: #1A1E22;
 }
 .thunar toolbar > toolbutton > button.flat.image-button, .thunar .inline-toolbar > toolbutton > button.flat.image-button {
   color: #c4c0c0;
@@ -5317,16 +5317,25 @@ panel-toplevel.background na-tray-applet {
   background-color: transparent;
   border: 1px solid transparent;
 }
+.thunar toolbar > toolbutton > button.flat.image-button image, .thunar .inline-toolbar > toolbutton > button.flat.image-button image {
+  color: inherit;
+}
 .thunar toolbar > toolbutton > button.flat.image-button:hover, .thunar .inline-toolbar > toolbutton > button.flat.image-button:hover {
   color: #c4c0c0;
   border: 1px solid rgba(0, 0, 0, 0.35);
   background-color: rgba(75, 86, 98, 0.35);
+}
+.thunar toolbar > toolbutton > button.flat.image-button:hover image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:hover image {
+  color: inherit;
 }
 .thunar toolbar > toolbutton > button.flat.image-button:active, .thunar .inline-toolbar > toolbutton > button.flat.image-button:active, .thunar toolbar > toolbutton > button.flat.image-button:checked, .thunar .inline-toolbar > toolbutton > button.flat.image-button:checked {
   color: #F7F8F8;
   border: 1px solid rgba(0, 0, 0, 0.35);
   background-color: #557FAF;
   background-clip: padding-box;
+}
+.thunar toolbar > toolbutton > button.flat.image-button:active image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:active image, .thunar toolbar > toolbutton > button.flat.image-button:checked image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:checked image {
+  color: inherit;
 }
 .thunar toolbar > toolbutton > button.flat.image-button:disabled, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled {
   background-color: rgba(26, 30, 34, 0);
@@ -5335,16 +5344,22 @@ panel-toplevel.background na-tray-applet {
 .thunar toolbar > toolbutton > button.flat.image-button:disabled label, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled label, .thunar toolbar > toolbutton > button.flat.image-button:disabled, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled {
   color: rgba(196, 192, 192, 0.55);
 }
+.thunar toolbar > toolbutton > button.flat.image-button:disabled image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled image {
+  color: inherit;
+}
+.thunar toolbar > toolbutton > button.flat.image-button:disabled:backdrop image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:backdrop image, .thunar toolbar > toolbutton > button.flat.image-button:disabled:backdrop, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:backdrop {
+  color: rgba(196, 192, 192, 0.25);
+}
 .thunar toolbar > toolbutton > button.flat.image-button:disabled:active, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:active, .thunar toolbar > toolbutton > button.flat.image-button:disabled:checked, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:checked {
   color: rgba(247, 248, 248, 0.75);
   border-color: rgba(85, 127, 175, 0.65);
   background-color: rgba(85, 127, 175, 0.65);
 }
-.thunar toolbar > toolbutton > button.flat.image-button:backdrop, .thunar .inline-toolbar > toolbutton > button.flat.image-button:backdrop {
-  opacity: 0.5;
+.thunar toolbar > toolbutton > button.flat.image-button:disabled:active image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:active image, .thunar toolbar > toolbutton > button.flat.image-button:disabled:checked image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:checked image {
+  color: inherit;
 }
-.thunar toolbar > toolbutton > button.flat.image-button > image, .thunar .inline-toolbar > toolbutton > button.flat.image-button > image {
-  color: #c4c0c0;
+.thunar toolbar > toolbutton > button.flat.image-button:not(:disabled):not(:checked):backdrop image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:not(:disabled):not(:checked):backdrop image, .thunar toolbar > toolbutton > button.flat.image-button:not(:disabled):not(:checked):backdrop, .thunar .inline-toolbar > toolbutton > button.flat.image-button:not(:disabled):not(:checked):backdrop {
+  color: rgba(196, 192, 192, 0.55);
 }
 .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button {
   color: #c4c0c0;
@@ -5370,8 +5385,28 @@ panel-toplevel.background na-tray-applet {
 .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active image, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked image {
   color: inherit;
 }
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:backdrop, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:backdrop {
-  opacity: 0.5;
+.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked:backdrop, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked:backdrop {
+  background-color: rgba(85, 127, 175, 0.55);
+  border-color: transparent;
+}
+.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked:backdrop label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked:backdrop label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked:backdrop image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked:backdrop image, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked:backdrop, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked:backdrop {
+  color: rgba(247, 248, 248, 0.55);
+}
+.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled image, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled {
+  color: rgba(196, 192, 192, 0.55);
+}
+.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled:backdrop label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled:backdrop label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled:backdrop image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled:backdrop image, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled:backdrop, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled:backdrop {
+  color: rgba(196, 192, 192, 0.25);
+}
+.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:not(:disabled):not(:checked):backdrop label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:not(:disabled):not(:checked):backdrop label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:not(:disabled):not(:checked):backdrop image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:not(:disabled):not(:checked):backdrop image, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:not(:disabled):not(:checked):backdrop, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:not(:disabled):not(:checked):backdrop {
+  color: rgba(196, 192, 192, 0.55);
+}
+.thunar toolbar:backdrop, .thunar .inline-toolbar:backdrop {
+  background-color: #1d2226;
+}
+.thunar menubar:backdrop {
+  color: rgba(196, 192, 192, 0.7);
+  background-color: #1d2226;
 }
 .thunar paned > .frame.sidebar,
 .thunar paned > box > .frame.sidebar {
