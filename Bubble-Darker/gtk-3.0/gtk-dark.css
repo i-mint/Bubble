@@ -1,8 +1,3 @@
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:only-child, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:last-child {
-  font-size: 1.4em;
-  font-weight: bold;
-}
-
 * {
   background-clip: padding-box;
   -GtkToolButton-icon-spacing: 4;
@@ -4124,6 +4119,11 @@ iconview text:backdrop:selected,
 iconview text:backdrop:selected:focus, iconview text selection:backdrop,
 iconview text selection:backdrop:focus {
   color: rgba(247, 248, 248, 0.56);
+}
+
+.nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:only-child, .nautilus-window .nautilus-path-bar.linked > button.image-button.text-button:last-child {
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 *:selected {
