@@ -188,26 +188,26 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .check-box StBin {
   width: 16px;
   height: 16px;
-  background-image: url("light-assets/checkbox/checkbox-unchecked.svg");
+  background-image: url("dark-assets/checkbox/checkbox-unchecked.svg");
 }
 .check-box:focus StBin {
-  background-image: url("light-assets/checkbox/checkbox-unchecked-focused.svg");
+  background-image: url("dark-assets/checkbox/checkbox-unchecked-focused.svg");
 }
 .check-box:checked StBin {
-  background-image: url("light-assets/checkbox/checkbox-checked.svg");
+  background-image: url("dark-assets/checkbox/checkbox-checked.svg");
 }
 .check-box:focus:checked StBin {
-  background-image: url("light-assets/checkbox/checkbox-checked-focused.svg");
+  background-image: url("dark-assets/checkbox/checkbox-checked-focused.svg");
 }
 
 .toggle-switch {
   width: 30px;
   height: 30px;
   background-size: contain;
-  background-image: url("light-assets/switch/switch-off.svg");
+  background-image: url("dark-assets/switch/switch-off.svg");
 }
 .toggle-switch:checked {
-  background-image: url("light-assets/switch/switch-on.svg");
+  background-image: url("dark-assets/switch/switch-on.svg");
 }
 .popup-menu-item.selected .toggle-switch {
   background-image: url("common-assets/switch/switch-off-selected.svg");
@@ -1074,8 +1074,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .system-menu-action {
   padding: 13px;
   color: #595353;
-  border-radius: 32px;
-  /* wish we could do 50% */
+  border-radius: 32px; /* wish we could do 50% */
   border: 1px solid transparent;
 }
 .system-menu-action:hover, .system-menu-action:focus {
@@ -1406,17 +1405,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 0px;
   color: transparent;
   background-color: transparent;
-  background-image: url("light-assets/misc/message-close.svg");
+  background-image: url("dark-assets/misc/message-close.svg");
 }
 .message-list-section-close:hover > StIcon {
   color: transparent;
   background-color: transparent;
-  background-image: url("light-assets/misc/message-close-hover.svg");
+  background-image: url("dark-assets/misc/message-close-hover.svg");
 }
 .message-list-section-close:active > StIcon {
   color: transparent;
   background-color: transparent;
-  background-image: url("light-assets/misc/message-close-active.svg");
+  background-image: url("dark-assets/misc/message-close-active.svg");
 }
 
 .message-close-button {

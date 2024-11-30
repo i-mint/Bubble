@@ -1075,8 +1075,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .system-menu-action {
   padding: 13px;
   color: #c2c2c2;
-  border-radius: 32px;
-  /* wish we could do 50% */
+  border-radius: 32px; /* wish we could do 50% */
   border: 1px solid transparent;
 }
 .system-menu-action:hover, .system-menu-action:focus {
