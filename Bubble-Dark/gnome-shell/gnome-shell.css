@@ -1258,15 +1258,15 @@ StScrollBar StButton#hhandle:active:hover {
   color: rgba(194, 194, 194, 0.23);
 }
 .calendar .calendar-week-number {
+  font-size: 6.3;
   font-weight: bold;
-  height: 8px;
-  width: 12px;
-  border-radius: 2px;
-  margin: 4px;
-  padding: 0 4px 2px 4px;
+  height: 7px;
+  width: 14px;
+  border-radius: 4px;
+  margin: 7px 0;
+  padding: 0 4px 0 3px;
   background-color: rgba(194, 194, 194, 0.08);
   color: #b2b3b3;
-  text-align: center;
 }
 
 .world-clocks-button {
@@ -1719,52 +1719,61 @@ StScrollBar StButton#hhandle:active:hover {
 }
 
 #searchResultsContent {
-  spacing: 8px;
+  spacing: 12px;
   max-width: 1000px;
 }
 
 .search-section {
-  spacing: 8px;
-  background-color: transparent;
+  spacing: 12px;
+}
+.search-section .search-section-separator {
+  background-color: rgba(255, 255, 255, 0.2);
+  -margin-horizontal: 1.5em;
+  height: 1px;
 }
 
 .search-section-content {
-  spacing: 16px;
+  spacing: 18px;
   background-color: #2B3239;
 }
 .search-section-content StLabel {
   color: #c2c2c2;
 }
 
+.grid-search-results {
+  spacing: 36px;
+}
+
 .list-search-results {
-  spacing: 3px;
+  spacing: 6px;
 }
 
-.search-section-separator {
-  background-color: rgba(255, 255, 255, 0.2);
-  -margin-horizontal: 1.5em;
-  height: 1px;
-}
-
-.list-search-result-content {
+.list-search-results .list-search-result-content {
   spacing: 12px;
-  padding: 12px;
+  padding: 18px;
 }
-
-.list-search-result-title {
+.list-search-results .list-search-result-title {
   font-size: 1.5em;
   color: #c2c2c2;
+  spacing: 12px;
 }
-.list-search-result-title StLabel {
+.list-search-results .list-search-result-title StLabel {
   color: inherit;
 }
-
-.list-search-result-description {
+.list-search-results .list-search-result-description {
   color: #c2c2c2;
 }
 
 .search-provider-icon {
   padding: 15px;
+}
+.search-provider-icon .list-search-provider-content {
+  spacing: 12px;
+}
+.search-provider-icon .list-search-provider-content .list-search-provider-details {
+  width: 120px;
+  margin-top: 0;
+  color: #aeaeae;
 }
 
 .search-provider-icon-more {
