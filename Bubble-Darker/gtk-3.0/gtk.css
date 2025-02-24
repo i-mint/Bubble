@@ -1382,8 +1382,7 @@ headerbar.default-decoration, .csd headerbar.default-decoration, headerbar.defau
 }
 
 headerbar entry,
-headerbar button,
-headerbar separator {
+headerbar button {
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -1399,8 +1398,8 @@ headerbar:last-child, headerbar:last-child:backdrop {
 .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
   border-radius: 0;
 }
-headerbar separator.sidebar {
-  background-image: linear-gradient(to bottom, #1f1f1f, #1f1f1f);
+headerbar > separator.sidebar {
+  background-image: linear-gradient(to bottom, #111416, #111416);
 }
 headerbar.windowhandle viewswitcher > box > button {
   margin-top: 0;
@@ -1435,7 +1434,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   box-shadow: none;
 }
 .titlebar:not(headerbar) > separator {
-  background-image: linear-gradient(to bottom, rgba(17, 20, 22, 0.95), rgba(17, 20, 22, 0.95));
+  background-image: linear-gradient(to bottom, #111416, #111416);
 }
 
 .csd headerbar headerbar, .csd headerbar headerbar:backdrop {
@@ -2114,12 +2113,12 @@ menu separator, .csd menu separator,
 .menu separator,
 .csd .menu separator {
   margin: 2px 0;
-  background-image: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ededed, #ededed);
 }
 menu .separator:not(label), .csd menu .separator:not(label),
 .menu .separator:not(label),
 .csd .menu .separator:not(label) {
-  color: #FFFFFF;
+  color: #ededed;
 }
 menu menuitem,
 .menu menuitem {
@@ -2216,7 +2215,7 @@ popover.background {
 }
 popover separator,
 popover.background separator {
-  background-image: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ededed, #ededed);
 }
 popover label.separator,
 popover.background label.separator {
@@ -3287,11 +3286,23 @@ scrolledwindow junction:dir(rtl) {
   border-image-slice: 0 1 0 0;
 }
 
-separator,
-separator.sidebar {
-  background-image: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+separator {
+  background-color: rgba(0, 0, 0, 0.1);
   min-width: 1px;
   min-height: 1px;
+}
+
+separator.sidebar:dir(ltr), separator.sidebar:dir(rtl), separator.sidebar.left, separator.sidebar.left:dir(rtl), separator.sidebar.right {
+  background-image: linear-gradient(to bottom, #e1e1e1, #e1e1e1);
+  border: 0;
+}
+.titlebar separator.sidebar:dir(ltr), .titlebar separator.sidebar:dir(rtl), .titlebar separator.sidebar.left, .titlebar separator.sidebar.left:dir(rtl), .titlebar separator.sidebar.right {
+  background-image: linear-gradient(to bottom, #111416, #111416);
+  margin: 0;
+}
+
+hdyleaflet:not(.titlebar) > separator {
+  background-image: linear-gradient(to bottom, #e1e1e1, #e1e1e1);
 }
 
 list {
@@ -3676,8 +3687,9 @@ paned > separator {
   min-height: 1px;
   -gtk-icon-source: none;
   border-style: none;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #e1e1e1, #e1e1e1);
   background-size: 1px 1px;
-  background-image: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
 }
 paned > separator:selected {
   background-image: linear-gradient(to bottom, #557FAF, #557FAF);
@@ -5725,7 +5737,7 @@ filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):se
 }
 filechooser placessidebar.sidebar separator,
 .nautilus-window placessidebar.sidebar separator {
-  background-image: linear-gradient(to bottom, #363636, #363636);
+  background-image: linear-gradient(to bottom, rgba(42, 50, 57, 0.95), rgba(42, 50, 57, 0.95));
 }
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
