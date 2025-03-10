@@ -1139,47 +1139,87 @@ StScrollBar StButton#hhandle:active:hover {
   font-weight: bold;
   padding: 6px 0;
 }
-.calendar .calendar-change-month-back, .calendar .calendar-change-month-back StIcon {
+.calendar .calendar-change-month-back,
+.calendar .calendar-change-month-back StIcon {
+  background-color: transparent;
+  color: #c2c2c2;
+  border-radius: 4px;
+}
+.calendar .calendar-change-month-back:focus, .calendar .calendar-change-month-back:focus StIcon, .calendar .calendar-change-month-back:hover, .calendar .calendar-change-month-back:hover StIcon,
+.calendar .calendar-change-month-back StIcon:focus,
+.calendar .calendar-change-month-back StIcon:focus StIcon,
+.calendar .calendar-change-month-back StIcon:hover,
+.calendar .calendar-change-month-back StIcon:hover StIcon {
+  color: #c2c2c2;
+  border-color: rgba(10, 10, 10, 0.5);
+  background-color: #3f4953;
+}
+.calendar .calendar-change-month-back:active, .calendar .calendar-change-month-back:active StIcon,
+.calendar .calendar-change-month-back StIcon:active,
+.calendar .calendar-change-month-back StIcon:active StIcon {
+  color: #F7F8F8;
+  border-color: rgba(5, 5, 5, 0.5);
+  background-color: #3A587A;
+}
+.calendar .calendar-change-month-back:active:backdrop, .calendar .calendar-change-month-back:active StIcon:backdrop,
+.calendar .calendar-change-month-back StIcon:active:backdrop,
+.calendar .calendar-change-month-back StIcon:active StIcon:backdrop {
+  color: rgba(247, 248, 248, 0.67);
+}
+.calendar .calendar-change-month-back:rtl,
+.calendar .calendar-change-month-back StIcon:rtl {
   background-color: transparent;
   color: #c2c2c2;
 }
-.calendar .calendar-change-month-back:focus, .calendar .calendar-change-month-back:hover, .calendar .calendar-change-month-back StIcon:focus, .calendar .calendar-change-month-back StIcon:hover {
+.calendar .calendar-change-month-back:rtl:focus, .calendar .calendar-change-month-back:rtl:hover,
+.calendar .calendar-change-month-back StIcon:rtl:focus,
+.calendar .calendar-change-month-back StIcon:rtl:hover {
   background-color: transparent;
 }
-.calendar .calendar-change-month-back:active, .calendar .calendar-change-month-back StIcon:active {
+.calendar .calendar-change-month-back:rtl:active,
+.calendar .calendar-change-month-back StIcon:rtl:active {
   background-color: transparent;
   color: white;
 }
-.calendar .calendar-change-month-back:rtl, .calendar .calendar-change-month-back StIcon:rtl {
+.calendar .calendar-change-month-forward,
+.calendar .calendar-change-month-forward StIcon {
+  background-color: transparent;
+  color: #c2c2c2;
+  border-radius: 4px;
+}
+.calendar .calendar-change-month-forward:focus, .calendar .calendar-change-month-forward:focus StIcon, .calendar .calendar-change-month-forward:hover, .calendar .calendar-change-month-forward:hover StIcon,
+.calendar .calendar-change-month-forward StIcon:focus,
+.calendar .calendar-change-month-forward StIcon:focus StIcon,
+.calendar .calendar-change-month-forward StIcon:hover,
+.calendar .calendar-change-month-forward StIcon:hover StIcon {
+  color: #c2c2c2;
+  border-color: rgba(10, 10, 10, 0.5);
+  background-color: #3f4953;
+}
+.calendar .calendar-change-month-forward:active, .calendar .calendar-change-month-forward:active StIcon,
+.calendar .calendar-change-month-forward StIcon:active,
+.calendar .calendar-change-month-forward StIcon:active StIcon {
+  color: #F7F8F8;
+  border-color: rgba(5, 5, 5, 0.5);
+  background-color: #3A587A;
+}
+.calendar .calendar-change-month-forward:active:backdrop, .calendar .calendar-change-month-forward:active StIcon:backdrop,
+.calendar .calendar-change-month-forward StIcon:active:backdrop,
+.calendar .calendar-change-month-forward StIcon:active StIcon:backdrop {
+  color: rgba(247, 248, 248, 0.67);
+}
+.calendar .calendar-change-month-forward:rtl,
+.calendar .calendar-change-month-forward StIcon:rtl {
   background-color: transparent;
   color: #c2c2c2;
 }
-.calendar .calendar-change-month-back:rtl:focus, .calendar .calendar-change-month-back:rtl:hover, .calendar .calendar-change-month-back StIcon:rtl:focus, .calendar .calendar-change-month-back StIcon:rtl:hover {
+.calendar .calendar-change-month-forward:rtl:focus, .calendar .calendar-change-month-forward:rtl:hover,
+.calendar .calendar-change-month-forward StIcon:rtl:focus,
+.calendar .calendar-change-month-forward StIcon:rtl:hover {
   background-color: transparent;
 }
-.calendar .calendar-change-month-back:rtl:active, .calendar .calendar-change-month-back StIcon:rtl:active {
-  background-color: transparent;
-  color: white;
-}
-.calendar .calendar-change-month-forward, .calendar .calendar-change-month-forward StIcon {
-  background-color: transparent;
-  color: #c2c2c2;
-}
-.calendar .calendar-change-month-forward:focus, .calendar .calendar-change-month-forward:hover, .calendar .calendar-change-month-forward StIcon:focus, .calendar .calendar-change-month-forward StIcon:hover {
-  background-color: transparent;
-}
-.calendar .calendar-change-month-forward:active, .calendar .calendar-change-month-forward StIcon:active {
-  background-color: transparent;
-  color: white;
-}
-.calendar .calendar-change-month-forward:rtl, .calendar .calendar-change-month-forward StIcon:rtl {
-  background-color: transparent;
-  color: #c2c2c2;
-}
-.calendar .calendar-change-month-forward:rtl:focus, .calendar .calendar-change-month-forward:rtl:hover, .calendar .calendar-change-month-forward StIcon:rtl:focus, .calendar .calendar-change-month-forward StIcon:rtl:hover {
-  background-color: transparent;
-}
-.calendar .calendar-change-month-forward:rtl:active, .calendar .calendar-change-month-forward StIcon:rtl:active {
+.calendar .calendar-change-month-forward:rtl:active,
+.calendar .calendar-change-month-forward StIcon:rtl:active {
   background-color: transparent;
   color: white;
 }
