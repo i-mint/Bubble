@@ -5975,13 +5975,16 @@ filechooser placessidebar.sidebar scrollbar trough,
 .budgie-popover.budgie-menu .categories {
   background-color: #eeeeee;
 }
-.budgie-popover.budgie-menu .categories button {
+.budgie-popover.budgie-menu .categories button.category-button {
   margin: 2px 4px;
 }
+.budgie-popover.budgie-menu .categories button:first-child {
+  margin-top: -1px;
+}
 .budgie-popover.budgie-menu entry.search {
-  border-color: transparent;
+  border: none;
   border-bottom: 2px solid #557FAF;
-  border-radius: 0;
+  border-radius: 4px 4px 0 0;
   padding: 9px 4px;
   box-shadow: none;
   background: transparent;
@@ -6037,6 +6040,27 @@ filechooser placessidebar.sidebar scrollbar trough,
 
 frame.raven-frame > border {
   box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.28), 0 6px 6px 2px rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.raven-calendar:indeterminate {
+  color: alpha(currentColor,0.3);
+}
+.raven-calendar:selected {
+  color: #F7F8F8;
+  background-color: #557FAF;
+}
+.raven-calendar.header {
+  color: #595353;
+  border: none;
+  border-radius: 0;
+}
+.raven-calendar.button, .raven-calendar.button:focus {
+  color: alpha(currentColor,0.5);
+  background-color: transparent;
+}
+.raven-calendar.button:hover, .raven-calendar.button:focus:hover {
+  color: #595353;
+  background-color: transparent;
 }
 
 .budgie-run-dialog decoration, .budgie-run-dialog {
