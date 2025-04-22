@@ -5950,33 +5950,41 @@ filechooser placessidebar.sidebar scrollbar trough,
   border: none;
 }
 
-.budgie-popover {
+.budgie-popover,
+.budgie-popover.background {
   border-radius: 4px;
   background-color: #22282E;
-  border: 1px solid #22282E;
-  box-shadow: 0 0 0 1px #15191c, 0 2px 4px -1px rgba(0, 0, 0, 0.14), 0 4px 6px 0 rgba(0, 0, 0, 0.08), 0 1px 10px 0 rgba(0, 0, 0, 0.04);
+  border: 1px solid #1d2227;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.56), 0 4px 12px 0 rgba(0, 0, 0, 0.08), 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 }
-.budgie-popover border {
+.budgie-popover border,
+.budgie-popover.background border {
   border: none;
   background: transparent;
 }
-.budgie-popover row:hover {
+.budgie-popover row:hover,
+.budgie-popover.background row:hover {
   box-shadow: none;
   background: transparent;
 }
-.budgie-popover.budgie-menu {
+.budgie-popover.budgie-menu,
+.budgie-popover.background.budgie-menu {
   background-color: #22282E;
 }
-.budgie-popover.budgie-menu .categories {
+.budgie-popover.budgie-menu .categories,
+.budgie-popover.background.budgie-menu .categories {
   background-color: #262d34;
 }
-.budgie-popover.budgie-menu .categories button.category-button {
+.budgie-popover.budgie-menu .categories button.category-button,
+.budgie-popover.background.budgie-menu .categories button.category-button {
   margin: 2px 4px;
 }
-.budgie-popover.budgie-menu .categories button:first-child {
+.budgie-popover.budgie-menu .categories button:first-child,
+.budgie-popover.background.budgie-menu .categories button:first-child {
   margin-top: -1px;
 }
-.budgie-popover.budgie-menu entry.search {
+.budgie-popover.budgie-menu entry.search,
+.budgie-popover.background.budgie-menu entry.search {
   border: none;
   border-bottom: 2px solid #3A587A;
   border-radius: 4px 4px 0 0;
@@ -5984,7 +5992,10 @@ filechooser placessidebar.sidebar scrollbar trough,
   box-shadow: none;
   background: transparent;
 }
-.budgie-popover.budgie-menu entry.search label, .budgie-popover.budgie-menu entry.search image, .budgie-popover.budgie-menu entry.search {
+.budgie-popover.budgie-menu entry.search label, .budgie-popover.budgie-menu entry.search image, .budgie-popover.budgie-menu entry.search,
+.budgie-popover.background.budgie-menu entry.search label,
+.budgie-popover.background.budgie-menu entry.search image,
+.budgie-popover.background.budgie-menu entry.search {
   color: #c2c2c2;
 }
 
@@ -6006,7 +6017,7 @@ filechooser placessidebar.sidebar scrollbar trough,
 }
 .right frame.raven-frame > border {
   border: none;
-  border-left: 1px solid #15191c;
+  border-left: 1px solid #1d2227;
 }
 
 .left frame.raven-frame {
@@ -6014,7 +6025,7 @@ filechooser placessidebar.sidebar scrollbar trough,
 }
 .left frame.raven-frame > border {
   border: none;
-  border-right: 1px solid #15191c;
+  border-right: 1px solid #1d2227;
 }
 
 .top frame.raven-frame {
@@ -6022,7 +6033,7 @@ filechooser placessidebar.sidebar scrollbar trough,
 }
 .top frame.raven-frame > border {
   border: none;
-  border-bottom: 1px solid #15191c;
+  border-bottom: 1px solid #1d2227;
 }
 
 .bottom frame.raven-frame {
@@ -6034,7 +6045,7 @@ filechooser placessidebar.sidebar scrollbar trough,
 }
 
 frame.raven-frame > border {
-  box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.28), 0 6px 6px 2px rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 8px -2px rgba(0, 0, 0, 0.56), 0 6px 6px 2px rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.23);
 }
 
 .raven-calendar:indeterminate {
