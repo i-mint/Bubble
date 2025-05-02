@@ -6086,6 +6086,23 @@ frame.raven-frame > border {
   border-radius: 4px;
   margin: 0;
 }
+.budgie-notification-window button.close {
+  margin-top: 7px;
+  margin-right: 2px;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+.budgie-notification-window button.close:hover {
+  color: #595353;
+  border-color: rgba(0, 0, 0, 0.2);
+  background-color: #e6e6e6;
+}
+.budgie-notification-window button.close:active {
+  color: #F7F8F8;
+  border-color: rgba(0, 0, 0, 0.2);
+  background-color: #557FAF;
+}
 
 .budgie-notification .notification-title {
   font-size: 140%;
