@@ -55,6 +55,16 @@ textview text {
   color: #595353;
   background-color: #FFFFFF;
 }
+.view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
+.view text:selected,
+iconview text:selected,
+textview text:selected,
+.view text:selected:focus,
+iconview text:selected:focus,
+textview text:selected:focus {
+  border-radius: 4px;
+}
+
 textview border {
   background-color: #fcfcfc;
 }
@@ -4137,7 +4147,6 @@ iconview text:selected:focus, iconview text selection,
 iconview text selection:focus {
   color: #F7F8F8;
   background-color: #79818b;
-  border-radius: 4px;
 }
 .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .view:backdrop:selected,
 .view text:backdrop:selected,
