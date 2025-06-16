@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Bubble-Darker
-Comment=Bubble Darker Gtk Themes 
+Name=Bubble-Solid-Darker
+Comment=Bubble Solid Darker Gtk Themes 
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Bubble-Darker
-MetacityTheme=Bubble-Darker
+GtkTheme=Bubble-Solid-Darker
+MetacityTheme=Bubble-Solid-Darker
 IconTheme=Papirus-Dark
 CursorTheme=Adwaita
 CursorSize=24

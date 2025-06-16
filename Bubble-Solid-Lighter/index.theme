@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Bubble-Lighter
-Comment=Bubble Lighter Gtk Themes 
+Name=Bubble-Solid-Lighter
+Comment=Bubble Solid Lighter Gtk Themes 
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Bubble-Lighter
-MetacityTheme=Bubble-Lighter
+GtkTheme=Bubble-Solid-Lighter
+MetacityTheme=Bubble-Solid-Lighter
 IconTheme=Papirus-Light
 CursorTheme=Adwaita
 CursorSize=24
