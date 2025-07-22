@@ -1851,12 +1851,9 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
   color: rgba(200, 188, 188, 0.4);
 }
 .primary-toolbar combobox > .linked > button.combo, headerbar combobox > .linked > button.combo {
-  color: rgba(200, 188, 188, 0.55);
+  color: #c8bcbc;
   border: 1px solid rgba(0, 0, 0, 0.35);
-  background-color: rgba(43, 50, 57, 0.78);
-}
-.primary-toolbar combobox > .linked > button.combo image, headerbar combobox > .linked > button.combo image {
-  color: rgba(200, 188, 188, 0.55);
+  background-color: rgba(75, 86, 98, 0.35);
 }
 .primary-toolbar combobox > .linked > button.combo:hover, headerbar combobox > .linked > button.combo:hover {
   color: #F7F8F8;
@@ -1884,11 +1881,11 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
 .primary-toolbar combobox > .linked > entry.combo:dir(rtl):focus, headerbar combobox > .linked > entry.combo:dir(rtl):focus {
   box-shadow: none;
 }
-.primary-toolbar combobox > .linked > button.combo:dir(ltr), headerbar combobox > .linked > button.combo:dir(ltr) {
+.primary-toolbar combobox > .linked > button.combo:not(:only-child):dir(ltr), headerbar combobox > .linked > button.combo:not(:only-child):dir(ltr) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.primary-toolbar combobox > .linked > button.combo:dir(rtl), headerbar combobox > .linked > button.combo:dir(rtl) {
+.primary-toolbar combobox > .linked > button.combo:not(:only-child):dir(rtl), headerbar combobox > .linked > button.combo:not(:only-child):dir(rtl) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
