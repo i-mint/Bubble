@@ -5468,6 +5468,13 @@ event.color-light:backdrop {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/************
+* Rhythmbox *
+************/
+toolbar > toolitem > box > button, .inline-toolbar > toolitem > box > button {
+  padding: 3px 6px;
+}
+
 #panel_window {
   background-color: #0c0e10;
   color: #cfcfcf;
