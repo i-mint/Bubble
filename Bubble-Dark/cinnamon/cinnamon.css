@@ -234,13 +234,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .check-box StBin {
   width: 16px;
   height: 16px;
-  background-image: url("dark-assets/checkbox/checkbox-unchecked.svg");
+  background-image: url("assets/checkbox/checkbox-unchecked.svg");
 }
 .check-box:focus StBin {
-  background-image: url("dark-assets/checkbox/checkbox-unchecked.svg");
+  background-image: url("assets/checkbox/checkbox-unchecked.svg");
 }
 .check-box:checked StBin, .check-box:focus:checked StBin {
-  background-image: url("dark-assets/checkbox/checkbox-checked.svg");
+  background-image: url("assets/checkbox/checkbox-checked.svg");
 }
 
 /*****************
@@ -259,13 +259,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .radiobutton StBin {
   width: 16px;
   height: 16px;
-  background-image: url("dark-assets/checkbox/checkbox-unchecked.svg");
+  background-image: url("assets/checkbox/checkbox-unchecked.svg");
 }
 .radiobutton:focus StBin {
-  background-image: url("dark-assets/checkbox/checkbox-unchecked.svg");
+  background-image: url("assets/checkbox/checkbox-unchecked.svg");
 }
 .radiobutton:checked StBin, .radiobutton:focus:checked StBin {
-  background-image: url("dark-assets/checkbox/checkbox-checked.svg");
+  background-image: url("assets/checkbox/checkbox-checked.svg");
 }
 
 /************
@@ -275,16 +275,16 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   width: 50px;
   height: 20px;
   background-size: contain;
-  background-image: url("dark-assets/switch/switch-off.svg");
+  background-image: url("assets/switch/switch-off.svg");
 }
 .toggle-switch:checked {
-  background-image: url("dark-assets/switch/switch-on.svg");
+  background-image: url("assets/switch/switch-on.svg");
 }
 .popup-menu-item:active .toggle-switch {
-  background-image: url("dark-assets/switch/switch-off-selected.svg");
+  background-image: url("assets/switch/switch-off-selected.svg");
 }
 .popup-menu-item:active .toggle-switch:checked {
-  background-image: url("dark-assets/switch/switch-on-selected.svg");
+  background-image: url("assets/switch/switch-on-selected.svg");
 }
 
 /*********
@@ -615,19 +615,19 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 8px;
 }
 .workspace-add-button {
-  background-image: url("common-assets/misc/add-workspace.svg");
+  background-image: url("assets/misc/add-workspace.svg");
   height: 200px;
   width: 35px;
   transition-duration: 100;
 }
 .workspace-add-button:hover {
-  background-image: url("common-assets/misc/add-workspace-hover.svg");
+  background-image: url("assets/misc/add-workspace-hover.svg");
   transition-duration: 100;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 .workspace-add-button:active {
-  background-image: url("common-assets/misc/add-workspace-active.svg");
+  background-image: url("assets/misc/add-workspace-active.svg");
   transition-duration: 100;
 }
 .workspace-overview-background-shade {
@@ -636,7 +636,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .workspace-close-button,
 .window-close {
-  background-image: url("common-assets/misc/close.svg");
+  background-image: url("assets/misc/close.svg");
   background-size: 26px;
   height: 26px;
   width: 26px;
@@ -644,21 +644,21 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .workspace-close-button:hover,
 .window-close:hover {
-  background-image: url("common-assets/misc/close-hover.svg");
+  background-image: url("assets/misc/close-hover.svg");
   background-size: 26px;
   height: 26px;
   width: 26px;
 }
 .workspace-close-button:active,
 .window-close:active {
-  background-image: url("common-assets/misc/close-active.svg");
+  background-image: url("assets/misc/close-active.svg");
   background-size: 26px;
   height: 26px;
   width: 26px;
 }
 
 .window-close-area {
-  background-image: url("dark-assets/misc/trash-icon.svg");
+  background-image: url("assets/misc/trash-icon.svg");
   height: 120px;
   width: 400px;
 }
@@ -729,41 +729,41 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .calendar-change-month-back {
-  background-image: url("common-assets/misc/calendar-arrow-left.svg");
+  background-image: url("assets/misc/calendar-arrow-left.svg");
 }
 .calendar-change-month-back:focus, .calendar-change-month-back:hover {
-  background-image: url("common-assets/misc/calendar-arrow-left-hover.svg");
+  background-image: url("assets/misc/calendar-arrow-left-hover.svg");
 }
 .calendar-change-month-back:active {
-  background-image: url("common-assets/misc/calendar-arrow-left.svg");
+  background-image: url("assets/misc/calendar-arrow-left.svg");
 }
 .calendar-change-month-back:rtl {
-  background-image: url("common-assets/misc/calendar-arrow-right.svg");
+  background-image: url("assets/misc/calendar-arrow-right.svg");
 }
 .calendar-change-month-back:rtl:focus, .calendar-change-month-back:rtl:hover {
-  background-image: url("common-assets/misc/calendar-arrow-right-hover.svg");
+  background-image: url("assets/misc/calendar-arrow-right-hover.svg");
 }
 .calendar-change-month-back:rtl:active {
-  background-image: url("common-assets/misc/calendar-arrow-right.svg");
+  background-image: url("assets/misc/calendar-arrow-right.svg");
 }
 
 .calendar-change-month-forward {
-  background-image: url("common-assets/misc/calendar-arrow-right.svg");
+  background-image: url("assets/misc/calendar-arrow-right.svg");
 }
 .calendar-change-month-forward:focus, .calendar-change-month-forward:hover {
-  background-image: url("common-assets/misc/calendar-arrow-right-hover.svg");
+  background-image: url("assets/misc/calendar-arrow-right-hover.svg");
 }
 .calendar-change-month-forward:active {
-  background-image: url("common-assets/misc/calendar-arrow-right.svg");
+  background-image: url("assets/misc/calendar-arrow-right.svg");
 }
 .calendar-change-month-forward:rtl {
-  background-image: url("common-assets/misc/calendar-arrow-left.svg");
+  background-image: url("assets/misc/calendar-arrow-left.svg");
 }
 .calendar-change-month-forward:rtl:focus, .calendar-change-month-forward:rtl:hover {
-  background-image: url("common-assets/misc/calendar-arrow-left-hover.svg");
+  background-image: url("assets/misc/calendar-arrow-left-hover.svg");
 }
 .calendar-change-month-forward:rtl:active {
-  background-image: url("common-assets/misc/calendar-arrow-left.svg");
+  background-image: url("assets/misc/calendar-arrow-left.svg");
 }
 
 .datemenu-date-label {
@@ -971,7 +971,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .ripple-box {
   width: 104px;
   height: 104px;
-  background-image: url("dark-assets/misc/corner-ripple.svg");
+  background-image: url("assets/misc/corner-ripple.svg");
   background-size: contain;
 }
 
@@ -1713,10 +1713,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
  * Overview corner *
  *******************/
 #overview-corner {
-  background-image: url("common-assets/misc/overview.png");
+  background-image: url("assets/misc/overview.png");
 }
 #overview-corner:hover {
-  background-image: url("common-assets/misc/overview-hover.png");
+  background-image: url("assets/misc/overview-hover.png");
 }
 
 /***********************
