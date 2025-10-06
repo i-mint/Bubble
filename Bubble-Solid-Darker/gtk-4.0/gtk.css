@@ -1717,20 +1717,16 @@ dropdown > popover.menu.background > contents {
 dropdown > button > box {
   border-spacing: 6px;
 }
+dropdown > button > box > stack > row.activatable:hover {
+  background: none;
+  box-shadow: none;
+}
 
 dropdown arrow,
 combobox arrow {
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   min-height: 16px;
   min-width: 16px;
-}
-dropdown > button > box > stack > row.activatable, dropdown > button > box > stack > row.activatable:hover, dropdown > button > box > stack > row.activatable:active, dropdown > button > box > stack > row.activatable:backdrop, dropdown > button > box > stack > row.activatable:disabled,
-combobox > button > box > stack > row.activatable,
-combobox > button > box > stack > row.activatable:hover,
-combobox > button > box > stack > row.activatable:active,
-combobox > button > box > stack > row.activatable:backdrop,
-combobox > button > box > stack > row.activatable:disabled {
-  background: none;
 }
 dropdown > popover.menu > contents modelbutton,
 combobox > popover.menu > contents modelbutton {
@@ -1749,6 +1745,10 @@ combobox popover {
 dropdown popover listview,
 combobox popover listview {
   margin: 8px 0;
+}
+dropdown popover listview.view,
+combobox popover listview.view {
+  background-color: transparent;
 }
 dropdown popover listview > row, dropdown popover listview > row.activatable,
 combobox popover listview > row,
