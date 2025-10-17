@@ -555,9 +555,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .window-caption {
   background-color: rgba(51, 60, 69, 0.95);
-  border: 1px solid rgba(51, 60, 69, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.7);
   color: #c4c0c0;
-  spacing: 25px;
+  spacing: 5px;
   border-radius: 2px;
   font-size: 9pt;
   padding: 5px 8px;
@@ -567,7 +567,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: #3A587A;
   color: #F7F8F8;
   border: 1px solid #3A587A;
-  spacing: 25px;
+  spacing: 5px;
+}
+.window-caption:focus {
+  color: #c4c0c0;
+  background-color: rgba(58, 68, 78, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.window-border {
+  border: 4px solid #3A587A;
+  border-radius: 4px;
 }
 
 .expo-workspaces-name-entry,
