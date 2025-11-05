@@ -390,19 +390,20 @@ button separator {
   background: none;
   background-image: none;
 }
-button.flat {
+toolbar.primary-toolbar button.flat, .primary-toolbar.inline-toolbar button.flat, toolbar button.flat, .inline-toolbar button.flat, button.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
   transition: none;
 }
-button.flat:hover {
+toolbar button.flat:hover, .inline-toolbar button.flat:hover, button.flat:hover {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-duration: 350ms;
 }
 button.flat:hover:active {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 button:hover {
   color: #c2c2c2;
   border-color: rgba(10, 10, 10, 0.5);
@@ -971,27 +972,27 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, dialog .linked.path-bar > button, dialog .linked.path-bar > button:hover, dialog .linked.path-bar > button:active, dialog .linked.path-bar > button:checked, dialog .linked.path-bar > button:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
-headerbar .linked:not(.vertical).path-bar > button, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
+headerbar .linked:not(.vertical).path-bar > button, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
   border-radius: 0;
   border-right-style: none;
 }
 
 .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:first-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, dialog .linked.path-bar > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:first-child,
-headerbar .linked:not(.vertical).path-bar > button:first-child, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:first-child, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:first-child, spinbutton:not(.vertical) button:first-child, spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked:not(.vertical) > button:first-child {
+headerbar .linked:not(.vertical).path-bar > button:first-child, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:first-child, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:first-child, spinbutton:not(.vertical) button:first-child, spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked:not(.vertical) > button:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:last-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, dialog .linked.path-bar > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
-headerbar .linked:not(.vertical).path-bar > button:last-child, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:last-child, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked:not(.vertical) > button:last-child {
+headerbar .linked:not(.vertical).path-bar > button:last-child, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:last-child, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked:not(.vertical) > button:last-child {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-right-style: solid;
 }
 .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:only-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, dialog .linked.path-bar > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
-headerbar .linked:not(.vertical).path-bar > button:only-child, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:only-child, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked:not(.vertical) > button:only-child {
+headerbar .linked:not(.vertical).path-bar > button:only-child, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:only-child, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked:not(.vertical) > button:only-child {
   border-radius: 4px;
   border-style: solid;
 }
@@ -1198,7 +1199,7 @@ combobox:drop(active) button.combo {
 toolbar, .inline-toolbar {
   -GtkWidget-window-dragging: true;
   padding: 4px;
-  background-color: #22282E;
+  background-color: #1A1E22;
 }
 toolbar separator, .inline-toolbar separator {
   background: none;
@@ -1249,6 +1250,63 @@ toolbar:not(.inline-toolbar) .linked > button, .inline-toolbar:not(.inline-toolb
 toolbar:not(.inline-toolbar) .linked > entry,
 .inline-toolbar:not(.inline-toolbar) .linked > entry {
   margin-right: 0;
+}
+toolbar.primary-toolbar button.flat label, toolbar.primary-toolbar button.flat image, toolbar.primary-toolbar button.flat, .primary-toolbar.inline-toolbar button.flat, toolbar button.flat label, .inline-toolbar button.flat label, toolbar button.flat image, .inline-toolbar button.flat image, toolbar button.flat, .inline-toolbar button.flat {
+  color: #c8bcbc;
+}
+toolbar.primary-toolbar button.flat:hover, toolbar button.flat:hover, .inline-toolbar button.flat:hover {
+  color: #c8bcbc;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  background-color: rgba(75, 86, 98, 0.35);
+}
+toolbar.primary-toolbar button.flat:hover label, toolbar.primary-toolbar button.flat:hover image, toolbar button.flat:hover label, .inline-toolbar button.flat:hover label, toolbar button.flat:hover image, .inline-toolbar button.flat:hover image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:active, toolbar.primary-toolbar button.flat:checked, toolbar button.flat:active, .inline-toolbar button.flat:active, toolbar button.flat:checked, .inline-toolbar button.flat:checked {
+  color: #F7F8F8;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  background-color: #3A587A;
+  background-clip: padding-box;
+}
+toolbar.primary-toolbar button.flat:active label, toolbar.primary-toolbar button.flat:active image, toolbar.primary-toolbar button.flat:checked label, toolbar.primary-toolbar button.flat:checked image, toolbar button.flat:active label, .inline-toolbar button.flat:active label, toolbar button.flat:active image, .inline-toolbar button.flat:active image, toolbar button.flat:checked label, .inline-toolbar button.flat:checked label, toolbar button.flat:checked image, .inline-toolbar button.flat:checked image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:disabled, toolbar button.flat:disabled, .inline-toolbar button.flat:disabled {
+  background-color: rgba(26, 30, 34, 0);
+  border-color: rgba(26, 30, 34, 0);
+}
+toolbar.primary-toolbar button.flat:disabled label, toolbar.primary-toolbar button.flat:disabled, toolbar button.flat:disabled label, .inline-toolbar button.flat:disabled label, toolbar button.flat:disabled, .inline-toolbar button.flat:disabled {
+  color: rgba(200, 188, 188, 0.55);
+}
+toolbar.primary-toolbar button.flat:disabled label, toolbar.primary-toolbar button.flat:disabled image, toolbar button.flat:disabled label, .inline-toolbar button.flat:disabled label, toolbar button.flat:disabled image, .inline-toolbar button.flat:disabled image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:disabled:active, toolbar.primary-toolbar button.flat:disabled:checked, toolbar button.flat:disabled:active, .inline-toolbar button.flat:disabled:active, toolbar button.flat:disabled:checked, .inline-toolbar button.flat:disabled:checked {
+  color: rgba(247, 248, 248, 0.75);
+  border-color: rgba(58, 88, 122, 0.65);
+  background-color: rgba(58, 88, 122, 0.65);
+}
+toolbar.primary-toolbar button.flat:disabled:active label, toolbar.primary-toolbar button.flat:disabled:active image, toolbar.primary-toolbar button.flat:disabled:checked label, toolbar.primary-toolbar button.flat:disabled:checked image, toolbar button.flat:disabled:active label, .inline-toolbar button.flat:disabled:active label, toolbar button.flat:disabled:active image, .inline-toolbar button.flat:disabled:active image, toolbar button.flat:disabled:checked label, .inline-toolbar button.flat:disabled:checked label, toolbar button.flat:disabled:checked image, .inline-toolbar button.flat:disabled:checked image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:backdrop, toolbar button.flat:backdrop, .inline-toolbar button.flat:backdrop {
+  opacity: 0.5;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+toolbar.primary-toolbar button.flat:checked:backdrop, toolbar button.flat:checked:backdrop, .inline-toolbar button.flat:checked:backdrop {
+  color: #F7F8F8;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  background-color: #3A587A;
+  background-clip: padding-box;
+  opacity: 0.5;
+}
+toolbar.primary-toolbar button.flat:checked:backdrop label, toolbar.primary-toolbar button.flat:checked:backdrop image, toolbar button.flat:checked:backdrop label, .inline-toolbar button.flat:checked:backdrop label, toolbar button.flat:checked:backdrop image, .inline-toolbar button.flat:checked:backdrop image {
+  color: inherit;
+}
+toolbar.primary-toolbar:backdrop, .primary-toolbar.inline-toolbar:backdrop, toolbar:backdrop, .inline-toolbar:backdrop {
+  background-color: #1d2226;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) {
@@ -1465,34 +1523,46 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   opacity: 0.6;
 }
 
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button {
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button {
   color: #c8bcbc;
   background-color: #2B3239;
   border-color: #2B3239;
 }
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button image {
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button label, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button label, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button image, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button image {
   color: inherit;
 }
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:hover, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:hover {
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:hover, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:hover {
   color: rgba(200, 188, 188, 0.7);
   background-color: #3a444d;
   border-color: #3a444d;
 }
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:hover label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:hover label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:hover image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:hover image {
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:hover label, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:hover label, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:hover image, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:hover image {
   color: inherit;
 }
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked {
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:active, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:active, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:checked, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:checked {
   color: #F7F8F8;
   background-color: #3A587A;
   border-color: #3A587A;
 }
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:active image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:active image, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked label, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked label, .thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:checked image, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:checked image {
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:active label, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:active label, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:active image, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:active image, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:checked label, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:checked label, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:checked image, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:checked image {
   color: inherit;
 }
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:backdrop, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:backdrop {
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop {
+  color: #F7F8F8;
+  background-color: #3A587A;
+  border-color: #3A587A;
   opacity: 0.5;
 }
-.thunar toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled, .thunar .inline-toolbar > toolitem .linked.path-bar > button.path-bar-button:disabled {
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop label, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop label, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop image, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop image {
+  color: inherit;
+}
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop label, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop label, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop image, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:checked:backdrop image {
+  color: inherit;
+}
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:backdrop label, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:backdrop label, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:backdrop image, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:backdrop image, .thunar toolbar > toolitem .linked.path-bar button.path-bar-button:backdrop, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:backdrop {
+  color: rgba(200, 188, 188, 0.5);
+}
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:disabled, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:disabled {
   color: rgba(200, 188, 188, 0.6);
 }
 .primary-toolbar entry, headerbar entry {
@@ -2120,6 +2190,7 @@ menubar,
 menubar:backdrop,
 .menubar:backdrop {
   color: rgba(200, 188, 188, 0.7);
+  background-color: #1d2226;
 }
 menubar > menuitem,
 .menubar > menuitem {
@@ -5371,65 +5442,19 @@ panel-toplevel.background na-tray-applet {
 .thunar notebook tabs > tab.reorderable-page button.flat:active image {
   background-color: #5b6a79;
 }
-.thunar toolbar, .thunar .inline-toolbar {
-  background-color: #1A1E22;
+.thunar toolbar > toolitem .linked.path-bar, .thunar .inline-toolbar > toolitem .linked.path-bar {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
 }
-.thunar toolbar > toolbutton > button.flat.image-button, .thunar .inline-toolbar > toolbutton > button.flat.image-button {
-  color: #c8bcbc;
-  outline-offset: -3px;
-  background-color: transparent;
-  border: 1px solid transparent;
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button {
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
-.thunar toolbar > toolbutton > button.flat.image-button image, .thunar .inline-toolbar > toolbutton > button.flat.image-button image {
-  color: inherit;
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:first-child, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:first-child {
+  margin-left: 1px;
 }
-.thunar toolbar > toolbutton > button.flat.image-button:hover, .thunar .inline-toolbar > toolbutton > button.flat.image-button:hover {
-  color: #c8bcbc;
-  border: 1px solid rgba(0, 0, 0, 0.35);
-  background-color: rgba(75, 86, 98, 0.35);
-}
-.thunar toolbar > toolbutton > button.flat.image-button:hover image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:hover image {
-  color: inherit;
-}
-.thunar toolbar > toolbutton > button.flat.image-button:active, .thunar .inline-toolbar > toolbutton > button.flat.image-button:active, .thunar toolbar > toolbutton > button.flat.image-button:checked, .thunar .inline-toolbar > toolbutton > button.flat.image-button:checked {
-  color: #F7F8F8;
-  border: 1px solid rgba(0, 0, 0, 0.35);
-  background-color: #3A587A;
-  background-clip: padding-box;
-}
-.thunar toolbar > toolbutton > button.flat.image-button:active image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:active image, .thunar toolbar > toolbutton > button.flat.image-button:checked image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:checked image {
-  color: inherit;
-}
-.thunar toolbar > toolbutton > button.flat.image-button:disabled, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled {
-  background-color: rgba(26, 30, 34, 0);
-  border-color: rgba(26, 30, 34, 0);
-}
-.thunar toolbar > toolbutton > button.flat.image-button:disabled label, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled label, .thunar toolbar > toolbutton > button.flat.image-button:disabled, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled {
-  color: rgba(200, 188, 188, 0.55);
-}
-.thunar toolbar > toolbutton > button.flat.image-button:disabled image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled image {
-  color: inherit;
-}
-.thunar toolbar > toolbutton > button.flat.image-button:disabled:backdrop image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:backdrop image, .thunar toolbar > toolbutton > button.flat.image-button:disabled:backdrop, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:backdrop {
-  color: rgba(200, 188, 188, 0.25);
-}
-.thunar toolbar > toolbutton > button.flat.image-button:disabled:active, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:active, .thunar toolbar > toolbutton > button.flat.image-button:disabled:checked, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:checked {
-  color: rgba(247, 248, 248, 0.75);
-  border-color: rgba(58, 88, 122, 0.65);
-  background-color: rgba(58, 88, 122, 0.65);
-}
-.thunar toolbar > toolbutton > button.flat.image-button:disabled:active image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:active image, .thunar toolbar > toolbutton > button.flat.image-button:disabled:checked image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:disabled:checked image {
-  color: inherit;
-}
-.thunar toolbar > toolbutton > button.flat.image-button:not(:disabled):not(:checked):backdrop image, .thunar .inline-toolbar > toolbutton > button.flat.image-button:not(:disabled):not(:checked):backdrop image, .thunar toolbar > toolbutton > button.flat.image-button:not(:disabled):not(:checked):backdrop, .thunar .inline-toolbar > toolbutton > button.flat.image-button:not(:disabled):not(:checked):backdrop {
-  color: rgba(200, 188, 188, 0.55);
-}
-.thunar toolbar:backdrop, .thunar .inline-toolbar:backdrop {
-  background-color: #1d2226;
-}
-.thunar menubar:backdrop {
-  color: rgba(200, 188, 188, 0.7);
-  background-color: #1d2226;
+.thunar toolbar > toolitem .linked.path-bar button.path-bar-button:last-child, .thunar .inline-toolbar > toolitem .linked.path-bar button.path-bar-button:last-child {
+  margin-right: 1px;
 }
 .thunar paned > .frame.sidebar,
 .thunar paned > box > .frame.sidebar {
