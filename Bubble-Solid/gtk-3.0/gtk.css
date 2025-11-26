@@ -4733,6 +4733,9 @@ entry.caja-location-entry:disabled label, entry.caja-location-entry:disabled ima
 .gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {
   background-color: whitesmoke;
 }
+.gedit-side-panel-paned treeview.view.separator:backdrop, .gedit-side-panel-paned treeview.view.separator {
+  color: #e6e6e6;
+}
 
 .gedit-search-slider {
   background-color: #fdfdfd;
