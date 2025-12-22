@@ -5416,14 +5416,21 @@ panel-toplevel.background na-tray-applet {
 }
 .thunar notebook tabs > tab.reorderable-page button.flat image {
   margin: 2px 0;
-  padding: 0 2px;
+  padding: 2px;
   border-radius: 99%;
+  border: 1px solid transparent;
+  color: #595353;
+  background-color: transparent;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:hover image {
-  background-color: silver;
+  color: #494444;
+  background-color: #cfcfcf;
+  border: 1px solid #aba8a8;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:active image {
-  background-color: #cfcfcf;
+  color: #000000;
+  background-color: gainsboro;
+  border: 1px solid #aba8a8;
 }
 .thunar toolbar > toolitem .linked.path-bar, .thunar .inline-toolbar > toolitem .linked.path-bar {
   background-color: rgba(0, 0, 0, 0.1);
