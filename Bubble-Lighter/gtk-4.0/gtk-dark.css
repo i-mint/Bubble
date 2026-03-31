@@ -2074,6 +2074,11 @@ headerbar > windowhandle > box > box.end {
   border-spacing: 6px;
   margin: 0;
 }
+headerbar stack > box > entry {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
 headerbar button {
   padding: 4px 9px;
 }
@@ -2434,6 +2439,47 @@ headerbar viewswitcher > button.flat:active, headerbar viewswitcher > button.fla
   text-shadow: none;
   box-shadow: none;
   -gtk-icon-shadow: none;
+}
+
+/* Gnome 48 windowhandle margin */
+windowhandle > box {
+  padding: 0;
+  margin: 0;
+}
+
+/****************/
+/* Sidebar pane */
+/****************/
+.sidebar-pane {
+  color: #c2c2c2;
+  background: #2B3239;
+}
+.sidebar-pane .top-bar box.vertical > headerbar,
+.sidebar-pane .top-bar {
+  border-bottom-color: transparent;
+  box-shadow: none;
+  color: #c2c2c2;
+  background: #2B3239;
+}
+.sidebar-pane:backdrop .top-bar box.vertical > headerbar,
+.sidebar-pane:backdrop .top-bar {
+  border-bottom-color: transparent;
+  box-shadow: none;
+  background: #2B3239;
+}
+
+.content-pane .top-bar box.vertical > headerbar,
+.content-pane .top-bar {
+  border-bottom-color: transparent;
+  box-shadow: none;
+  color: #c2c2c2;
+  background: #22282E;
+}
+.content-pane:backdrop .top-bar box.vertical > headerbar,
+.content-pane:backdrop .top-bar {
+  border-bottom-color: transparent;
+  box-shadow: none;
+  background: #22282E;
 }
 
 window.csd > .titlebar:not(headerbar) {
@@ -4779,13 +4825,13 @@ separator.sidebar {
 listview,
 list {
   color: #c2c2c2;
-  background-color: #2B3239;
+  background: #2B3239;
   border-color: #15191c;
 }
 listview:backdrop,
 list:backdrop {
   color: #a4a6a7;
-  background-color: #2d353c;
+  background: #2B3239;
   border-color: #181c20;
 }
 listview > row,
@@ -5912,6 +5958,48 @@ statusbar {
   box-shadow: none;
   text-shadow: none;
   -gtk-icon-shadow: none;
+}
+.nautilus-window .sidebar-pane {
+  color: #c4c0c0;
+  background: #333C45;
+}
+.nautilus-window .sidebar-pane .top-bar box.vertical > headerbar,
+.nautilus-window .sidebar-pane .top-bar {
+  border-bottom-color: transparent;
+  box-shadow: none;
+  color: #c4c0c0;
+  background: #333C45;
+}
+.nautilus-window .sidebar-pane:backdrop {
+  background: #333C45;
+}
+.nautilus-window .sidebar-pane:backdrop .top-bar box.vertical > headerbar,
+.nautilus-window .sidebar-pane:backdrop .top-bar {
+  border-bottom-color: transparent;
+  box-shadow: none;
+  background: #333C45;
+}
+.nautilus-window .content-pane .top-bar headerbar,
+.nautilus-window .content-pane .top-bar {
+  border-bottom-color: transparent;
+  box-shadow: none;
+  color: #c2c2c2;
+  background: #2B3239;
+}
+.nautilus-window .content-pane:backdrop {
+  background: #2B3239;
+}
+.nautilus-window .content-pane:backdrop .top-bar,
+.nautilus-window .content-pane:backdrop .top-bar headerbar {
+  border-bottom-color: none;
+  box-shadow: none;
+  color: #c2c2c2;
+  background: #2B3239;
+}
+.nautilus-window windowhandle .end > menubutton > button,
+.nautilus-window windowhandle .start > button {
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 /* GTK NAMED COLORS
